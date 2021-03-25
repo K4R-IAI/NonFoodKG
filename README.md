@@ -5,7 +5,7 @@ AllIn is a non-food knowledge graph combining a non-food product taxonomy with i
 
 <a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/ProductTaxonomy.owl">Product Ontology</a>
 
-<a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/Ingredients.owl">Ingredients Ontology></a>
+<a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/Ingredients.owl">Ingredients Ontology</a>
 
 <a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/Allergen.owl">Allergen Ontology</a>
 
