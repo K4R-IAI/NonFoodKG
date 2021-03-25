@@ -5,14 +5,14 @@ AllIn is a non-food knowledge graph combining a non-food product taxonomy with i
 
 <a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/ProductTaxonomy.owl">Product Ontology</a>
 
-[![Ingredients Ontology](https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/Ingredients.owl)]
+<a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/Ingredients.owl">Ingredients Ontology></a>
 
-[![Allergen Ontology](https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/Allergen.owl)]
+<a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/Allergen.owl">Allergen Ontology</a>
 
-[![Product Information Ontology](https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/ProductInfo.owl)]
+<a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/ProductInfo.owl">Product Information Ontology</a>
 
-[![Product Dimensions Ontology](https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/ProductDimensions.owl)]
+<a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/ProductDimensions.owl">Product Dimensions Ontology</a>
 
-[![Product Location Ontology](https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/ProductToShelf.owl)]
+<a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/ProductToShelf.owl">Product Location Ontology</a>
 
 This knowledge graph has been created by the Institute for Artificial Intelligence at the University of Bremen. Please contact Michaela Kümpel for further info or collaboration: michaela(dot)kuempel(et)uni-bremen(dot)de
