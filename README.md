@@ -15,4 +15,4 @@ AllIn is a non-food knowledge graph combining a non-food product taxonomy with i
 
 [![Product Location Ontology](/WebGraph/ProductToShelf.owl)]
 
-This knowledge graph has been created by the Institute for Artificial Intelligence at the University of Bremen. Please contact Michaela Kümpel for further info or collaboration: michaela.kuempel@uni-bremen.de
+This knowledge graph has been created by the Institute for Artificial Intelligence at the University of Bremen. Please contact Michaela Kümpel for further info or collaboration: michaela(dot)kuempel(et)uni-bremen(dot)de
