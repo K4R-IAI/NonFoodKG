@@ -1,0 +1,2741 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://knowrob.org/kg/allergen.owl#"
+     xml:base="http://knowrob.org/kg/allergen.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:allergen="http://knowrob.org/kg/allergen.owl#"
+     xmlns:Ingredients="http://knowrob.org/kg/Ingredients.owl#">
+    <owl:Ontology rdf:about="http://knowrob.org/kg/allergen.owl">
+        <rdfs:comment>The allergen ontology contains contact allergen info about ingredients of non-food products according to information from the FDA web page: https://www.fda.gov</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#causes -->
+
+    <owl:ObjectProperty rdf:about="http://knowrob.org/kg/allergen.owl#causes">
+        <owl:inverseOf rdf:resource="https://www.wikidata.org/entity/Property:P828"/>
+        <rdfs:domain rdf:resource="http://knowrob.org/kg/allergen.owl#Allergen"/>
+        <rdfs:range rdf:resource="https://www.wikidata.org/entity/Q42982"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Property:P828 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/entity/Property:P828">
+        <rdfs:domain rdf:resource="https://www.wikidata.org/entity/Q42982"/>
+        <rdfs:range rdf:resource="http://knowrob.org/kg/allergen.owl#Allergen"/>
+        <rdfs:label>hasCause</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowrob.org/kg/allergen#Acid -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen#Acid">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Allergen -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Allergen">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen#Acid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Bleach -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Bleach">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#ContactAllergen -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#ContactAllergen">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#Allergen"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A contact allergen is an ingredient of a product that can cause allergic reactions - most likely skin conditions like contact dermatitis. The ingredients listed in this category are taken from the FDA website (https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Disinfectant -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Disinfectant">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Fragrance -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Fragrance">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Latex -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Latex">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Metal -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Metal">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Mineral_oil -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Mineral_oil">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Paraben -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Paraben">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Phthalates -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Phthalates">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Preservative -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Preservative">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Tenside -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Tenside">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Toxin -->
+
+    <owl:Class rdf:about="http://knowrob.org/kg/allergen.owl#Toxin">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q42982 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/entity/Q42982">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">&quot;Allergie&quot;@de</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">&quot;allergy&quot;@en</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#Acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#Acid">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen#Acid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#Bleach -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#Bleach">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Bleach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#Disinfectant -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#Disinfectant">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Disinfectant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#Fragrance -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#Fragrance">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#Paraben -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#Paraben">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Paraben"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#Preservative -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#Preservative">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#Surfactant -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#Surfactant">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Tenside"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#alpha_isomethyl_ionone -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#alpha_isomethyl_ionone">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Alpha-Isomethyl_Ionone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#amyl_cinnamal -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#amyl_cinnamal">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Amyl_cinnamal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#anionische_tenside -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#anionische_tenside">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Anionische_Tenside"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#anise_alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#anise_alcohol">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Anise_alcohol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#benzyl_alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#benzyl_alcohol">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Benzyl_alcohol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#benzyl_benzoate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#benzyl_benzoate">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Benzyl_benzoate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#benzyl_cinnamate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#benzyl_cinnamate">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Benzyl_cinnamate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#benzyl_salicylate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#benzyl_salicylate">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Benzyl_salicylate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#butylparaben -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#butylparaben">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Butylparaben"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#butylphenyl_methylpropional -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#butylphenyl_methylpropional">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Butylphenyl_Methylpropional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#caffeine -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#caffeine">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Caffeine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#cera_microcristallina -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#cera_microcristallina">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Cera_Microcristallina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#cinnamyl_alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#cinnamyl_alcohol">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Cinnamyl_alcohol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#citral -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#citral">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Citral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#citric_acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#citric_acid">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Citric_Acid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#citronellol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#citronellol">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Citronellol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#coumarin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#coumarin">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Coumarin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#diazolidinyl_urea -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#diazolidinyl_urea">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Diazolidinyl_urea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#ethylhexyl_stearate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#ethylhexyl_stearate">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Ethylhexyl_Stearate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#ethylparaben -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#ethylparaben">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Ethylparaben"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#eugenol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#eugenol">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Eugenol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#evernia_prunastri_extract -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#evernia_prunastri_extract">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Evernia_Prunastri_Extract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#farnesol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#farnesol">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Farnesol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#geraniol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#geraniol">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Geraniol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#glutaral -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#glutaral">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Glutaral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#glycerin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#glycerin">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Glycerin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#hexyl_cinnamal -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#hexyl_cinnamal">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Hexyl_cinnamal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#hydrogenated_castor_oil -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#hydrogenated_castor_oil">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Hydrogenated_Castor_Oil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#hydroxycitronellal -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#hydroxycitronellal">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Hydroxycitronellal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#hydroxyisohexyl_ -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#hydroxyisohexyl_">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Hydroxyisohexyl_3-cyclohexene_carboxaldehyde"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#imidazolidinyl_urea -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#imidazolidinyl_urea">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Imidazolidinyl_urea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#isoeugenol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#isoeugenol">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Isoeugenol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#isopropyl_palmitate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#isopropyl_palmitate">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Isopropyl_Palmitate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#limonene -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#limonene">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Limonene"/>
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#d-Limonene"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#magnesium_sulfate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#magnesium_sulfate">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Magnesium_Sulfate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#maltodextrin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#maltodextrin">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Maltodextrin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#methylisothiazolinone -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#methylisothiazolinone">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Methylchloroisothiazolinone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#methylparaben -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#methylparaben">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Methylparaben"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#microcrystalline_wax -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#microcrystalline_wax">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Microcrystalline_Wax"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#paraffinum_liquidum -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#paraffinum_liquidum">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Paraffinum_Liquidum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#parfum -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#parfum">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Parfum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#phenoxyethanol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#phenoxyethanol">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Phenoxyethanol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#propylparaben -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#propylparaben">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Propylparaben"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#salicylic_acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#salicylic_acid">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Salicylic_acid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#sodium_chloride -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#sodium_chloride">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Sodium_Chloride"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#sodium_lauryl_sulfate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#sodium_lauryl_sulfate">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Sodium_Lauryl_Sulfate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#sodium_salicylate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#sodium_salicylate">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Sodium_salicylate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#subtilisin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#subtilisin">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Subtilisin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#talc -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#talc">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Talc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/Ingredients.owl#xanthan_gum -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#xanthan_gum">
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Xanthan_Gum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen#Acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen#Acid">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Acid"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q11158"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Allergen -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Allergen">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q186752"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Alpha-Isomethyl_Ionone -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Alpha-Isomethyl_Ionone">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32325"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Alpha_Hydroxy_Acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Alpha_Hydroxy_Acid">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q413302"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Amyl_cinnamal -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Amyl_cinnamal">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Amylcinnamyl_alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Amylcinnamyl_alcohol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17177"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Anionische_Tenside -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Anionische_Tenside">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Tenside"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q548631"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Anise_alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Anise_alcohol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Anisyl_alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Anisyl_alcohol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q548873"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Aqueous_Latex_Adhesive -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Aqueous_Latex_Adhesive">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Latex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Benzalkonium_Chlorid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Benzalkonium_Chlorid">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Disinfectant"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3020"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q55261298"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Benzyl_alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Benzyl_alcohol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17987"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q52353"/>
+        <rdfs:seeAlso rdf:resource="https://www.drugbank.ca/drugs/DB06770"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Benzyl_benzoate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Benzyl_benzoate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.bioontology.org/ontology/NDFRT/N0000145990"/>
+        <owl:sameAs rdf:resource="https://www.drugbank.ca/drugs/DB00676"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q413755"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_41237"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Benzyl_cinnamate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Benzyl_cinnamate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q9197460"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_146174"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Benzyl_salicylate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Benzyl_salicylate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q416929"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Beta_hydroxy_acid"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q223081"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q4897299"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Beta_hydroxybutanoic_acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Beta_hydroxybutanoic_acid">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q223092"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_20067"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Bleach -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Bleach">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Bleach"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q11587"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q189720"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Bronopol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Bronopol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_31306"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q2462902"/>
+        <rdfs:seeAlso rdf:resource="https://www.drugbank.ca/r/DB13960"/>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q71064960"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Butylparaben -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Butylparaben">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Paraben"/>
+        <owl:sameAs rdf:resource="http://purl.bioontology.org/ontology/NDFRT/N0000023149"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_88542"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q3302873"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Butylphenyl_Methylpropional -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Butylphenyl_Methylpropional">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q209290"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Caffeine -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Caffeine">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q60235"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Calamide -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Calamide">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Cera_Microcristallina -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Cera_Microcristallina">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Mineral_oil"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q579764"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Ceresin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Ceresin">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Mineral_oil"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q1055000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Cinnamaldehyde -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Cinnamaldehyde">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q204036"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16731"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Cinnamyl_alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Cinnamyl_alcohol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17177"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Citral -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Citral">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23316"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q60176530"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Citric_Acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Citric_Acid">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30769"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q159683"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Citronellol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Citronellol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50462"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q27122080"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Coal-tar -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Coal-tar">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Bleach"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q948232"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Cocamide_DEA -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Cocamide_DEA">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q3681908"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Coconut_Diethanolamide -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Coconut_Diethanolamide">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Coconut_oil_acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Coconut_oil_acid">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Coumarin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Coumarin">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28794"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q111812"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#DMDM_hydantoin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#DMDM_hydantoin">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_143246"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q5205613"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Diazolidinyl_urea -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Diazolidinyl_urea">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_136014"/>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q67172457"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Dibutylphthalate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Dibutylphthalate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Phthalates"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q415612"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_34687"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Diethylphthalate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Diethylphthalate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Phthalates"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_34698"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Dimethylphthalate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Dimethylphthalate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Phthalates"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4609"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q423551"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Disinfectant -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Disinfectant">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Disinfectant"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q73984"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Ethylhexyl_Stearate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Ethylhexyl_Stearate">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q27277167"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Ethylparaben -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Ethylparaben">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Paraben"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_31575"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q229976"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Eugenol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Eugenol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4917"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q423357"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Evernia_Furfuracea_Extract -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Evernia_Furfuracea_Extract">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Evernia_Prunastri_Extract -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Evernia_Prunastri_Extract">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Farnesol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Farnesol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28600"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q60194891"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Formaldehyde -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Formaldehyde">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q161210"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16842"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Fragrance -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Fragrance">
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48318"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q2151963"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Geraniol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Geraniol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17447"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q410836"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Glutaral -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Glutaral">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Toxin"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64276"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q416475"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Glycerin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Glycerin">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q132501"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Gold -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Gold">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Metal"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q897"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Hexyl_cinnamal -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Hexyl_cinnamal">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Hexyl_cinnamaladehyde -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Hexyl_cinnamaladehyde">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Hydrogenated_Castor_Oil -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Hydrogenated_Castor_Oil">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Hydroxycitronellal -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Hydroxycitronellal">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_53459"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q25100775"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Hydroxyisohexyl_3-cyclohexene_carboxaldehyde -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Hydroxyisohexyl_3-cyclohexene_carboxaldehyde">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q5955634"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Imidazolidinyl_urea -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Imidazolidinyl_urea">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51805"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q2737856"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Isoeugenol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Isoeugenol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18224"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q420043"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Isopropyl_Palmitate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Isopropyl_Palmitate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q2631777"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Kationische_Tenside -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Kationische_Tenside">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Tenside"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q1736599"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Latex -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Latex">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Latex"/>
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Latex"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q244680"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Latex_Rubber -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Latex_Rubber">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Latex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Lilial -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Lilial">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q209290"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Limonene -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Limonene">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q27089405"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Linalool -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Linalool">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17580"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q410932"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Lyral -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Lyral">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q61068145"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Magnesium_Sulfate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Magnesium_Sulfate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q288266"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Maltodextrin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Maltodextrin">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q74691702"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Metal -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Metal">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Metal"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q11426"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Methyl_2-octynoate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Methyl_2-octynoate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Methylchloroisothiazolinone -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Methylchloroisothiazolinone">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_53621"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q204121"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Methylheptincarbonat -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Methylheptincarbonat">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Methylisothiazolinone -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Methylisothiazolinone">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_53620"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q423870"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Methylparaben -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Methylparaben">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Paraben"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_31835"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q229987"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Microcrystalline_Wax -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Microcrystalline_Wax">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Mineral_oil"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q579764"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Mineral_oil -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Mineral_oil">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Mineral_oil"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q72492483"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Myroxylon -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Myroxylon">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Natriumhypochlorid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Natriumhypochlorid">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Bleach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Natriumperborat -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Natriumperborat">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Bleach"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q415507"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Natriumpercarbonat -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Natriumpercarbonat">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Bleach"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q420070"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Natural_Centrifuged_Latex -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Natural_Centrifuged_Latex">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Latex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Natural_Latex -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Natural_Latex">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Latex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Natural_Latex_Rubber -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Natural_Latex_Rubber">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Latex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Natural_Liquid_Latex -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Natural_Liquid_Latex">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Latex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Natural_Rubber_Latex -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Natural_Rubber_Latex">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Latex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Nichtionische_Tenside -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Nichtionische_Tenside">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Tenside"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q1668147"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Nickel -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Nickel">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Metal"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q744"/>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28112"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Ninol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Ninol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Oak_moss_extract -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Oak_moss_extract">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Ozokerit -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Ozokerit">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Mineral_oil"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q909924"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Paraben -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Paraben">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Paraben"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q410780"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Paraffinum_Liquidum -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Paraffinum_Liquidum">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Mineral_oil"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q6557471"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Paraffinum_Subliquidum -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Paraffinum_Subliquidum">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Mineral_oil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Parahydroxybenzoic -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Parahydroxybenzoic">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Parfum -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Parfum">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#parfum"/>
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Perfume"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q131746"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Petrolatum -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Petrolatum">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Mineral_oil"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q457239"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Phenoxyethanol -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Phenoxyethanol">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64275"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q418038"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Phthalate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Phthalate">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q407650"/>
+        <rdfs:label xml:lang="de">&quot;Phtalat&quot;</rdfs:label>
+        <rdfs:label xml:lang="en">&quot;Phtalate&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Phthalates -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Phthalates">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Phthalate"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q407650"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Preservative -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Preservative">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Preservative"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q274579"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Propylparaben -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Propylparaben">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Paraben"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32063"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q511627"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Quaternium-15 -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Quaternium-15">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59607"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q7269571"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Rubber -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Rubber">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Rubber_Latex -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Rubber_Latex">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Latex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Salicylate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Salicylate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid"/>
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/allergen.owl#Salicylic_acid"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30762"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q193572"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Salicylic_acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Salicylic_acid">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16914"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Sodium_Chloride -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Sodium_Chloride">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q2314"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Sodium_Lauryl_Sulfate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Sodium_Lauryl_Sulfate">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q422241"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Sodium_hydroxymethylglycinate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Sodium_hydroxymethylglycinate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q27276411"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Sodium_salicylate -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Sodium_salicylate">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9180"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q414547"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Subtilisin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Subtilisin">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Toxin"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q423655"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Talc -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Talc">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q134583"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Tenside -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Tenside">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Surfactant"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q191154"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Toxin -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Toxin">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Toxin"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q184651"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Tree_moss_extract -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Tree_moss_extract">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Trethocanic_acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Trethocanic_acid">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Tropic_acid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Tropic_acid">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30765"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q72515608"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Vaseline -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Vaseline">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Mineral_oil"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q185120"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Wasserstoffperoxid -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Wasserstoffperoxid">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Bleach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Willow_extract -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Willow_extract">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid"/>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/CHEBI_79395"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Witcamide -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Witcamide">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#ContactAllergen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#Xanthan_Gum -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Xanthan_Gum">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q410768"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#d-Limonene -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#d-Limonene">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q27888324"/>
+        <rdfs:seeAlso rdf:resource="https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL449062"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#g-Methylionone -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#g-Methylionone">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Fragrance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#p-phenylenediamine -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#p-phenylenediamine">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Bleach"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q415024"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#parfum -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#parfum">
+        <owl:sameAs rdf:resource="http://www.productontology.org/id/Perfume"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kg/allergen.owl#5-bromo-5-nitro-1,3-dioxane -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#5-bromo-5-nitro-1,3-dioxane">
+        <rdf:type rdf:resource="http://knowrob.org/kg/allergen.owl#Preservative"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q4973879"/>
+        <owl:sameAs rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">bronidox</owl:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/NDFRT/N0000023149 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.bioontology.org/ontology/NDFRT/N0000023149"/>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/NDFRT/N0000145990 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.bioontology.org/ontology/NDFRT/N0000145990"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_136014 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_136014"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_143246 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_143246"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16914 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_16914"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_17177 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_17177"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_17447 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_17447"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_17580 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_17580"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_17987 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_17987"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_18224 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_18224"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23316 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_23316"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_28600 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_28600"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_28794 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_28794"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_3020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_3020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30762 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_30762"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30765 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_30765"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30769 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_30769"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_31306 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_31306"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_31575 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_31575"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_31835 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_31835"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_32063 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_32063"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_32325 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_32325"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_34698 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_34698"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4609 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_4609"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_48318 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_48318"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4917 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_4917"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50462 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_50462"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_51805 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_51805"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53459 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_53459"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53620 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_53620"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53621 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_53621"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59607 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_59607"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_64275 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_64275"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_64276 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_64276"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_79395 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_79395"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_88542 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_88542"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9180 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_9180"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Acid -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Acid"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Beta_hydroxy_acid -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Beta_hydroxy_acid"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Bleach -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Bleach"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Disinfectant -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Disinfectant"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Latex -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Latex"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Metal -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Metal"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Mineral_oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Mineral_oil"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Paraben -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Paraben"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Perfume -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Perfume"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Phthalate -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Phthalate"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Preservative -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Preservative"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Surfactant -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Surfactant"/>
+    
+
+
+    <!-- http://www.productontology.org/id/Toxin -->
+
+    <owl:NamedIndividual rdf:about="http://www.productontology.org/id/Toxin"/>
+    
+
+
+    <!-- https://www.drugbank.ca/drugs/DB00676 -->
+
+    <owl:NamedIndividual rdf:about="https://www.drugbank.ca/drugs/DB00676"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q1055000 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q1055000"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q11158 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q11158"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q111812 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q111812"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q11426 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q11426"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q11587 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q11587"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q131746 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q131746"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q132501 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q132501"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q134583 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q134583"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q159683 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q159683"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q161210 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q161210"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q1668147 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q1668147"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q1736599 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q1736599"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q184651 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q184651"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q185120 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q185120"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q186752 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q186752"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q189720 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q189720"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q191154 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q191154"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q193572 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q193572"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q204036 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q204036"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q204121 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q204121"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q209290 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q209290"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q2151963 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q2151963"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q223081 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q223081"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q223092 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q223092"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q229976 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q229976"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q229987 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q229987"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q2314 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q2314"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q244680 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q244680"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q2462902 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q2462902"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q25100775 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q25100775"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q2631777 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q2631777"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q27089405 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q27089405"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q27122080 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q27122080"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q27276411 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q27276411"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q27277167 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q27277167"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q2737856 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q2737856"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q274579 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q274579"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q27888324 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q27888324"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q288266 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q288266"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q3302873 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q3302873"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q3681908 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q3681908"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q407650 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q407650"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q410768 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q410768"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q410780 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q410780"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q410836 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q410836"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q410932 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q410932"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q413302 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q413302"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q413755 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q413755"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q414547 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q414547"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q415024 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q415024"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q415507 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q415507"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q415612 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q415612"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q416475 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q416475"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q416929 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q416929"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q418038 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q418038"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q420043 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q420043"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q420070 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q420070"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q422241 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q422241"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q423357 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q423357"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q423551 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q423551"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q423655 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q423655"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q423870 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q423870"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q457239 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q457239"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q4897299 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q4897299"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q4973879 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q4973879"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q511627 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q511627"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q5205613 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q5205613"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q52353 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q52353"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q548631 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q548631"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q548873 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q548873"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q55261298 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q55261298"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q579764 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q579764"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q5955634 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q5955634"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q60176530 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q60176530"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q60194891 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q60194891"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q60235 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q60235"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q6557471 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q6557471"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q72492483 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q72492483"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q72515608 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q72515608"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q7269571 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q7269571"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q73984 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q73984"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q744 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q744"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q74691702 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q74691702"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q897 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q897"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q909924 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q909924"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q9197460 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q9197460"/>
+    
+
+
+    <!-- https://www.wikidata.org/entity/Q948232 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/entity/Q948232"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen#Acid">
+        <rdfs:label>&quot;Acid&quot;@en</rdfs:label>
+        <rdfs:label>&quot;Säure&quot;@de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Allergen">
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">&quot;allergen&quot;@en</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">&quot;Allergen&quot;@de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Beta_Hydroxy_Acid">
+        <rdfs:label>&quot;Beta Hydroxy Acid&quot;@en</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Bleach">
+        <rdfs:label xml:lang="de">&quot;Bleichmittel&quot;</rdfs:label>
+        <rdfs:label xml:lang="en">&quot;Bleach&quot;</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Disinfectant">
+        <rdfs:label xml:lang="de">&quot;Desinfektionsmittel&quot;</rdfs:label>
+        <rdfs:label xml:lang="en">&quot;Disinfectant&quot;</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Fragrance">
+        <rdfs:label xml:lang="de">&quot;Duftstoff&quot;</rdfs:label>
+        <rdfs:label xml:lang="en">&quot;Fragrance&quot;</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Latex">
+        <rdfs:label xml:lang="de">&quot;Latex&quot;</rdfs:label>
+        <rdfs:label xml:lang="en">&quot;Latex&quot;</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Metal">
+        <rdfs:label xml:lang="en">&quot;Metal&quot;</rdfs:label>
+        <rdfs:label xml:lang="de">&quot;Metall&quot;</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Mineral_oil">
+        <rdfs:label xml:lang="de">&quot;Mineralöl&quot;</rdfs:label>
+        <rdfs:label xml:lang="en">&quot;Mineral_oil&quot;</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Paraben">
+        <rdfs:label xml:lang="en">&quot;Paraben&quot;</rdfs:label>
+        <rdfs:label xml:lang="de">&quot;Paraben&quot;</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Phthalates">
+        <rdfs:label>&quot;Phthalate&quot;@en</rdfs:label>
+        <rdfs:label>&quot;Phthalate&quot;@de</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Preservative">
+        <rdfs:label xml:lang="de">&quot;Konservierungsmittel&quot;</rdfs:label>
+        <rdfs:label xml:lang="en">&quot;Preservative&quot;</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Tenside">
+        <rdfs:label xml:lang="en">&quot;Surfactant&quot;</rdfs:label>
+        <rdfs:label xml:lang="de">&quot;Tensid&quot;</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://knowrob.org/kg/allergen.owl#Toxin">
+        <rdfs:label xml:lang="en">&quot;Toxin&quot;</rdfs:label>
+        <rdfs:label xml:lang="de">&quot;Giftstoff&quot;</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
