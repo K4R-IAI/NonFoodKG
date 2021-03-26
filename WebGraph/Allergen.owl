@@ -5,10 +5,15 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:allergen="http://knowrob.org/kg/allergen.owl#"
+     xmlns:sm="https://www.omg.org/techprocess/ab/SpecificationMetadata/"
      xmlns:Ingredients="http://knowrob.org/kg/Ingredients.owl#">
     <owl:Ontology rdf:about="http://knowrob.org/kg/allergen.owl">
+	<dct:contributor>Michaela Kümpel</dct:contributor>
+        <sm:copyright>Copyright (c) 2021 Michaela Kümpel</sm:copyright>
+        <dct:license rdf:datatype="&xsd;anyURI">https://opendatacommons.org/licenses/by/1-0/</dct:license>
         <rdfs:comment>The allergen ontology contains contact allergen info about ingredients of non-food products according to information from the FDA web page: https://www.fda.gov
 Its allergens and classes are linked to the Ingredients ontology as well as https://www.wikidata.org, http://www.productontology.org, https://www.ebi.ac.uk/chebi/, https://bioportal.bioontology.org/ontologies/NDFRT/,  https://go.drugbank.com/</rdfs:comment>
     </owl:Ontology>

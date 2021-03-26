@@ -5,9 +5,14 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:sm="https://www.omg.org/techprocess/ab/SpecificationMetadata/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ProductToShelf="http://knowrob.org/kg/ProductToShelf.owl#">
     <owl:Ontology rdf:about="http://knowrob.org/kg/ProductToShelf.owl">
+	<dct:contributor>Michaela Kümpel</dct:contributor>
+        <sm:copyright>Copyright (c) 2021 Michaela Kümpel</sm:copyright>
+        <dct:license rdf:datatype="&xsd;anyURI">https://opendatacommons.org/licenses/by/1-0/</dct:license>
         <rdfs:comment>The product to shelf ontology stores robot inventory information about product locations in the retail test store at the Institute for Artificial Intelligence at the University of Bremen (https://ai.uni-bremen.de/).</rdfs:comment>
     </owl:Ontology>
     

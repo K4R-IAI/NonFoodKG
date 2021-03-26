@@ -7,10 +7,15 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:sm="https://www.omg.org/techprocess/ab/SpecificationMetadata/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ProductTaxonomy="http://knowrob.org/kg/ProductTaxonomy.owl#"
      xmlns:ProductInfo="http://knowrob.org/kg/ProductInfo.owl#">
     <owl:Ontology rdf:about="http://knowrob.org/kg/ProductInfo.owl">
+	<dct:contributor>Michaela Kümpel</dct:contributor>
+        <sm:copyright>Copyright (c) 2021 Michaela Kümpel</sm:copyright>
+        <dct:license rdf:datatype="&xsd;anyURI">https://opendatacommons.org/licenses/by/1-0/</dct:license>
         <rdfs:comment>Most of the information in this ontology was extracted from: https://world.openfoodfacts.org/</rdfs:comment>
         <rdfs:comment>The product info ontology contains the product name and brand and holds nutritional information, if applicable.</rdfs:comment>
     </owl:Ontology>

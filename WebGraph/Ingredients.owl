@@ -6,11 +6,16 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:sm="https://www.omg.org/techprocess/ab/SpecificationMetadata/"
      xmlns:pto="http://www.productontology.org/id/"
      xmlns:allergen="http://knowrob.org/kg/allergen.owl#"
      xmlns:ProductTaxonomy="http://knowrob.org/kg/ProductTaxonomy.owl#"
      xmlns:Ingredients="http://knowrob.org/kg/Ingredients.owl#">
     <owl:Ontology rdf:about="http://knowrob.org/kg/Ingredients.owl">
+	<dct:contributor>Michaela Kümpel</dct:contributor>
+        <sm:copyright>Copyright (c) 2021 Michaela Kümpel</sm:copyright>
+        <dct:license rdf:datatype="&xsd;anyURI">https://opendatacommons.org/licenses/by/1-0/</dct:license>
         <rdfs:comment>Ingredients ontology for all products that can be found at the retail lab at the Institute for Artificial Intelligence. Ingredients information is manually classified based on inventory data and word matching (e.g. if an ingredient contains the string &quot;alcohol&quot; or &quot;alkohol&quot;, it is classified as alcohol).
 Ingredient classes are linked to https://www.wikidata.org/ and http://www.productontology.org/.</rdfs:comment>
     </owl:Ontology>
