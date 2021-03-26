@@ -24,6 +24,14 @@ base file: <a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/ma
 Retail stores are competing with online stores. They are aiming at digitization of shopping experiences. We believe that one main advantage of online stores is its connection to web information. Consumer needs can be unique but also change fast. It would be very time-consuming to manually model consumer preferences in a database. The Semantic Web already offers much information, mainly for food products (e.g. https://world.openfoodfacts.org/ ). Unfortunately, we could not find much information about non-food products like allergens contained in cosmetics. Therefore we decided to create this non-food knowledge graph to model cosumer preferences. For future applications we also created ontologies with further product information.
 We have just started working on this knowledge graph and are continuously adding more ontologies.
 
+# Querying the knowledge graph
+
+The knowledge graph is publicly available here and on triply (https://triply.cc/), many thanks to the <a href="https://krr.cs.vu.nl/">knowledge representation and reasoning group at the Vrije Universiteit Amsterdam</a>.
+
+It can be queried easily: <a href="grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">Try out some predefined queries.</a>
+
+You can also query the dataset here: <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">triply SPARQL api</a>
+
 # Use Cases
 
 <b>Highlighting consumer preferences</b>
