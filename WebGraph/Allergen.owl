@@ -9,7 +9,8 @@
      xmlns:allergen="http://knowrob.org/kg/allergen.owl#"
      xmlns:Ingredients="http://knowrob.org/kg/Ingredients.owl#">
     <owl:Ontology rdf:about="http://knowrob.org/kg/allergen.owl">
-        <rdfs:comment>The allergen ontology contains contact allergen info about ingredients of non-food products according to information from the FDA web page: https://www.fda.gov</rdfs:comment>
+        <rdfs:comment>The allergen ontology contains contact allergen info about ingredients of non-food products according to information from the FDA web page: https://www.fda.gov
+Its allergens and classes are linked to the Ingredients ontology as well as https://www.wikidata.org, http://www.productontology.org, https://www.ebi.ac.uk/chebi/, https://bioportal.bioontology.org/ontologies/NDFRT/,  https://go.drugbank.com/</rdfs:comment>
     </owl:Ontology>
     
 
