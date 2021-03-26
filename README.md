@@ -28,7 +28,7 @@ We have just started working on this knowledge graph and are continuously adding
 
 The knowledge graph is publicly available here and on <a href="https://triply.cc/">triply</a>, many thanks to the <a href="https://krr.cs.vu.nl/">knowledge representation and reasoning group</a> at the Vrije Universiteit Amsterdam.
 
-It can be queried easily: <a href="http://grlc.io/api-git/K4R-IAI/NonFoodKG/SPARQLfiles/">Try out some predefined queries with grlc</a>.
+It can be queried easily: <a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">Try out some predefined queries with grlc</a>.
 
 You can also query the dataset here: <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">triply SPARQL api</a>
 
