@@ -26,7 +26,7 @@ We have just started working on this knowledge graph and are continuously adding
 
 # Querying the knowledge graph
 
-The knowledge graph is publicly available here and on <a href="https://triply.cc/">triply</a>, many thanks to the <a href="https://krr.cs.vu.nl/">knowledge representation and reasoning group at the Vrije Universiteit Amsterdam</a>.
+The knowledge graph is publicly available here and on <a href="https://triply.cc/">triply</a>, many thanks to the <a href="https://krr.cs.vu.nl/">knowledge representation and reasoning group</a> at the Vrije Universiteit Amsterdam.
 
 It can be queried easily: <a href="http://grlc.io/api-git/K4R-IAI/NonFoodKG/SPARQLfiles/">Try out some predefined queries with grlc</a>.
 
@@ -43,4 +43,4 @@ You can also query the dataset here: <a href="https://api.krr.triply.cc/datasets
 
 This NonFoodKG is made available under the Open Data Commons Attribution License: http://opendatacommons.org/licenses/by/1.0/
 
-This knowledge graph has been created by the Institute for Artificial Intelligence at the University of Bremen. Please contact Michaela Kümpel for further info or collaboration: michaela(dot)kuempel(at)uni-bremen(dot)de
+This knowledge graph has been created by the <a href="https://ai.uni-bremen.de/">Institute for Artificial Intelligence</a> at the University of Bremen. Please contact <a href="https://ai.uni-bremen.de/team/michaela_k%C3%BCmpel">Michaela Kümpel</a> for further info or collaboration: michaela(dot)kuempel(at)uni-bremen(dot)de
