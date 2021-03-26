@@ -1,5 +1,5 @@
 
-# Non-FoodKG - A non-Food product knowledge graph for retail applications
+# NonFoodKG - A non-food product knowledge graph
 
 Non-FoodKG is a non-food knowledge graph interlinking different ontologies designed for retail, household and robotic applications. It is based on a merged product taxonomy reflecting product classification in grocery stores and drugstores that is linked to a product location ontology created from a robot belief state while performing stocktaking in a retail store. The <b>product location ontology</b> therefore stores inventory data like stock and price of products as well as their positions relative to shelves (instead of coordinates). The <b>product taxonomy</b> classifies products that were recognized during stocktaking. It is linked to an <b>ingredients classification</b> based on string matching, which is connected to an <b>allergen classification</b>. The product taxonomy is also linked to further product information like name and place of production in <b>product information</b> or <b>product dimensions</b>, i.e. dimensions of product packaging as well as product weight/ filling information. 
 
