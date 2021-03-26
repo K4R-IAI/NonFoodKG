@@ -34,7 +34,7 @@ You can also query the dataset here: <a href="https://api.krr.triply.cc/datasets
 
 # Use Cases
 
-<b>Highlighting consumer preferences</b>
+<h2>Highlighting consumer preferences</h2>
 
 Customers have different preferences. Searching for products that meet a given preference can be exhausting. We created an AR application to ease this shopping task.
 Based on the product taxonomy, location information in the product location ontology and ingredients information in the ingredients and allergen ontology, we created a consumer preference demo in AR:
@@ -43,7 +43,7 @@ Based on the product taxonomy, location information in the product location onto
 
 In this demo we used the query for organic products (among others),that can also be found in the predefined queries above.
 
-<b>Routing to product destination</b>
+<h2>Routing to product destination</h2>
 
 Customers or store workers often search for product locations. We also created an AR demo based on the predefined query for product class locations:
 
