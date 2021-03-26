@@ -31,5 +31,8 @@ We have just started working on this knowledge graph and are continuously adding
 
 <b>Routing to product destination</b>
 
+# Disclaimer
+
+This NonFoodKG is made available under the Open Data Commons Attribution License: http://opendatacommons.org/licenses/by/1.0/
 
 This knowledge graph has been created by the Institute for Artificial Intelligence at the University of Bremen. Please contact Michaela Kümpel for further info or collaboration: michaela(dot)kuempel(at)uni-bremen(dot)de
