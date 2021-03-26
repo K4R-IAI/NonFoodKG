@@ -1,0 +1,12 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX allergen: <http://knowrob.org/kg/Allergen.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?product WHERE {
+  ?ingredient rdf:type in:organic.
+  ?product in:has_ingredient ?ingredient.
+} 

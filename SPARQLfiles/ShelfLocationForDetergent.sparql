@@ -1,0 +1,13 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX loc: <http://knowrob.org/kg/ProductToShelf.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?shelf WHERE {
+  ?product rdf:type tax:detergent.
+  ?product owl:sameAs ?prod.
+  ?prod loc:stored_in ?shelf.
+} 
