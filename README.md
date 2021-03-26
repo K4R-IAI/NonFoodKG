@@ -51,6 +51,7 @@ Customers or store workers often search for product locations. We also created a
 
 # Disclaimer
 
-This NonFoodKG is made available under the Open Data Commons Attribution License: http://opendatacommons.org/licenses/by/1.0/
+This NonFoodKG is made available under the <a href="http://opendatacommons.org/licenses/by/1.0/">Open Data Commons Attribution License</a>.
+
 
 This knowledge graph has been created by the <a href="https://ai.uni-bremen.de/">Institute for Artificial Intelligence</a> at the University of Bremen. Please contact <a href="https://ai.uni-bremen.de/team/michaela_k%C3%BCmpel">Michaela Kümpel</a> for further info or collaboration: michaela(dot)kuempel(at)uni-bremen(dot)de
