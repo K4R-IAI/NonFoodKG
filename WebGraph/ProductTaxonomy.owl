@@ -16,7 +16,7 @@
     <owl:Ontology rdf:about="http://knowrob.org/kg/ProductTaxonomy.owl">
 	<dct:contributor>Michaela Kümpel</dct:contributor>
         <sm:copyright>Copyright (c) 2021 Michaela Kümpel</sm:copyright>
-        <dct:license rdf:datatype="&xsd;anyURI">https://opendatacommons.org/licenses/by/1-0/</dct:license>
+        <dct:license rdf:datatype="xsd:anyURI">https://opendatacommons.org/licenses/by/1-0/</dct:license>
         <rdfs:comment>Non-food product classification based on merged online store sitemaps of different websites (https://www.aldi-nord.de/ and https://www.dm.de/).
 Product classes are linked to https://www.wikidata.org/ and http://www.productontology.org/.</rdfs:comment>
     </owl:Ontology>

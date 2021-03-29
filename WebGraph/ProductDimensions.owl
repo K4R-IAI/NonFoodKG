@@ -13,7 +13,7 @@
     <owl:Ontology rdf:about="http://knowrob.org/kg/ProductDimensions.owl">
 	<dct:contributor>Michaela Kümpel</dct:contributor>
         <sm:copyright>Copyright (c) 2021 Michaela Kümpel</sm:copyright>
-        <dct:license rdf:datatype="&xsd;anyURI">https://opendatacommons.org/licenses/by/1-0/</dct:license>
+        <dct:license rdf:datatype="xsd:anyURI">https://opendatacommons.org/licenses/by/1-0/</dct:license>
         <rdfs:comment>Most of the information in this ontology was extracted from the web, mainly from: https://www.codecheck.info</rdfs:comment>
         <rdfs:comment>The product dimensions ontology contains product dimension information like height/width/depth of a product or its packaging as well as weight (in g,kg)/ filling (in ml,l)/ amount(in amount of products per packaging) info, whichever is applicable.</rdfs:comment>
     </owl:Ontology>

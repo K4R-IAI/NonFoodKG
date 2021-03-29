@@ -15,7 +15,7 @@
     <owl:Ontology rdf:about="http://knowrob.org/kg/ProductInfo.owl">
 	<dct:contributor>Michaela Kümpel</dct:contributor>
         <sm:copyright>Copyright (c) 2021 Michaela Kümpel</sm:copyright>
-        <dct:license rdf:datatype="&xsd;anyURI">https://opendatacommons.org/licenses/by/1-0/</dct:license>
+        <dct:license rdf:datatype="xsd:anyURI">https://opendatacommons.org/licenses/by/1-0/</dct:license>
         <rdfs:comment>Most of the information in this ontology was extracted from: https://world.openfoodfacts.org/</rdfs:comment>
         <rdfs:comment>The product info ontology contains the product name and brand and holds nutritional information, if applicable.</rdfs:comment>
     </owl:Ontology>
