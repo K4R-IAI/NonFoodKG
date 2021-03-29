@@ -29,11 +29,6 @@
      -->
 
     
-
-
-    <!-- http://knowrob.org/kg/ProductDimensions.owl#net_weight -->
-
-    <owl:AnnotationProperty rdf:about="http://knowrob.org/kg/ProductDimensions.owl#net_weight"/>
     
 
 
@@ -9356,7 +9351,7 @@
         <rdf:type rdf:resource="http://knowrob.org/kg/ProductDimensions.owl#Product"/>
         <ProductDimensions:has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25001839</ProductDimensions:has_DAN>
         <ProductDimensions:has_EAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4015000961479</ProductDimensions:has_EAN>
-        <ProductDimensions:net_weight>60 gr</ProductDimensions:net_weight>
+        <ProductDimensions:has_weight>60 gr</ProductDimensions:has_weight>
     </owl:NamedIndividual>
     
 
