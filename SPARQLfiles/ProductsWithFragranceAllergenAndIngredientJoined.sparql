@@ -1,0 +1,16 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+PREFIX allergen: <http://knowrob.org/kg/allergen.owl#>
+PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?prod ?ingr ?class WHERE {
+  {  ?ingredient rdf:type allergen:Fragrance.
+  ?ingredient owl:sameAs ?ingr.}
+  UNION
+  { ?ingr rdf:type in:Fragrance.}
+  
+  ?prod in:has_ingredient ?ingr.} GROUP BY ?prod
+ 

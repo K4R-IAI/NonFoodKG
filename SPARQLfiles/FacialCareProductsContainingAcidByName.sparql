@@ -1,0 +1,17 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+PREFIX info: <http://knowrob.org/kg/ProductInfo.owl#>
+PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
+PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?prod ?name ?ingredient WHERE {
+  ?prod in:has_ingredient ?ingredient.
+  ?ingredient rdf:type in:Acid.
+  ?product owl:sameAs ?prod.
+  ?product rdf:type tax:facial_care.
+  ?product owl:sameAs ?prod2.
+  ?prod2 info:has_name ?name.
+} 
