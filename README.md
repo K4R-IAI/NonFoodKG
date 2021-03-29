@@ -55,3 +55,5 @@ This NonFoodKG is made available under the <a href="http://opendatacommons.org/l
 
 
 This knowledge graph has been created by the <a href="https://ai.uni-bremen.de/">Institute for Artificial Intelligence</a> at the University of Bremen. Please contact <a href="https://ai.uni-bremen.de/team/michaela_k%C3%BCmpel">Michaela Kümpel</a> for further info or collaboration: michaela(dot)kuempel(at)uni-bremen(dot)de
+
+<img src="UseCaseImg/ai_logo.png" width="200"/><img align=right src="UseCaseImg/university_new.png" width="200"/>
