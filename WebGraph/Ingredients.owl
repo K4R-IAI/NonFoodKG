@@ -287,9 +287,9 @@ Ingredient classes are linked to https://www.wikidata.org/ and http://www.produc
     
 
 
-    <!-- http://knowrob.org/kg/Ingredi_IngredientsAll.owl#from_certified_organic_agriculture -->
+    <!-- http://knowrob.org/kg/Ingredients.owl#from_certified_organic_agriculture -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredi_IngredientsAll.owl#from_certified_organic_agriculture">
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#from_certified_organic_agriculture">
         <rdf:type rdf:resource="http://knowrob.org/kg/Ingredients.owl#Ingredient"/>
     </owl:NamedIndividual>
     
@@ -10187,7 +10187,7 @@ Ingredient classes are linked to https://www.wikidata.org/ and http://www.produc
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Ingredients.owl#P4010355253613">
         <rdf:type rdf:resource="http://knowrob.org/kg/Ingredients.owl#Product"/>
-        <Ingredients:has_ingredient rdf:resource="http://knowrob.org/kg/Ingredi_IngredientsAll.owl#from_certified_organic_agriculture"/>
+        <Ingredients:has_ingredient rdf:resource="http://knowrob.org/kg/Ingredients.owl#from_certified_organic_agriculture"/>
         <Ingredients:has_ingredient rdf:resource="http://knowrob.org/kg/Ingredients.owl#alcohol"/>
         <Ingredients:has_ingredient rdf:resource="http://knowrob.org/kg/Ingredients.owl#alkohol"/>
         <Ingredients:has_ingredient rdf:resource="http://knowrob.org/kg/Ingredients.owl#aminosäureester"/>
