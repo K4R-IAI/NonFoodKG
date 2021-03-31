@@ -1,0 +1,14 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX lbl: <http://knowrob.org/kg/Label.owl#>
+
+
+SELECT ?product ?name WHERE {
+	?product lbl:has_label lbl:Dermatologisch_getestet.
+  	?product lbl:has_name ?name.
+    ?product owl:sameAs ?prod.
+  	?prod rdf:type tax:Deodorants.
+  } 

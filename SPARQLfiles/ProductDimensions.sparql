@@ -1,0 +1,15 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+PREFIX dim: <http://knowrob.org/kg/ProductDimensions.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+SELECT ?product ?width ?depth ?height ?weight WHERE {
+	?product dim:has_width ?width.
+	?product dim:has_depth ?depth.
+  	?product dim:has_height ?height.
+	{?product dim:has_weight ?weight}
+        UNION
+        {?product dim:has_liquid_filling ?weight}
+  } 
