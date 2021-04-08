@@ -6,6 +6,6 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 
 SELECT ?label WHERE {
-	?product lbl:has_EAN "4005120163181".
+	?product lbl:has_EAN ?_EAN.
 	?product lbl:has_label ?label.
   } 
