@@ -1,0 +1,16 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+PREFIX allergen: <http://knowrob.org/kg/allergen.owl#>
+PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?ingrtype ?ingredient WHERE {
+	?product in:has_EAN ?_EAN.
+	?product in:has_ingredient ?ingredient.
+    {   ?ingredient owl:sameAs ?ingr. 
+    ?ingr rdf:type ?ingrtype.}
+  UNION 
+    {?ingredient rdf:type ?ingrtype.}
+  FILTER (?ingrtype != owl:NamedIndividual && ?ingrtype!= in:Ingredient)
+  } 
