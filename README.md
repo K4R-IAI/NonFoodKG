@@ -23,8 +23,8 @@ base file: <a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/ma
 
 # Motivation
 
-Retail stores are competing with online stores. They are aiming at digitization of shopping experiences. We believe that one main advantage of online stores is its connection to web information. Consumer needs can be unique but also change fast. It would be very time-consuming to manually model consumer preferences in a database. The Semantic Web already offers much information, mainly for food products (e.g. https://world.openfoodfacts.org/ ). Unfortunately, we could not find much information about non-food products like allergens contained in cosmetics. Therefore we decided to create this non-food knowledge graph to model cosumer preferences. For future applications we also created ontologies with further product information.
-We have just started working on this knowledge graph and are continuously adding more ontologies.
+Retail stores are competing with online stores. They are aiming at digitization of the shopping experiences. We believe that one main advantage of online stores is its connection to Web information. Consumer needs can be unique but also change fast. It would be very time-consuming to manually model consumer preferences in a database. The Semantic Web already offers much information, mainly for food products (e.g. https://world.openfoodfacts.org/ ). Unfortunately, it lacks information about non-food products like allergens contained in cosmetics. Therefore we created this non-food knowledge graph. 
+To further enhance the knowledge graph information and in order to being able to apply the included knowledge in example applications, we also integrate location information from a perception-based system, leading to a unique embodiment of knowledge in various consumer and robot applications.
 
 # Querying the knowledge graph
 
@@ -37,20 +37,47 @@ You can also query the dataset here: <a href="https://api.krr.triply.cc/datasets
 
 # Use Cases
 
-<h2>Highlighting consumer preferences</h2>
-
-Customers have different preferences. Searching for products that meet a given preference can be exhausting. We created an AR application to ease this shopping task.
-Based on the product taxonomy, location information in the product location ontology and ingredients information in the ingredients and allergen ontology, we created a consumer preference demo in AR:
-
-<img src="UseCaseImg/HoloPreference.jpg" width="400"/>
-
-In this demo we used the query for organic products (among others),that can also be found in the predefined queries above.
-
-<h2>Routing to product destination</h2>
-
-Customers or store workers often search for product locations. We also created an AR demo based on the predefined query for product class locations:
-
-<img src="UseCaseImg/Routing.png" width="200"/>
+<table style="width:100%">
+  <tr>
+    <th><h2>Highlighting consumer preferences</h2></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>
+Customers have different preferences. Searching for products that meet a given preference like cosmetics that do not contain alcohol can be exhausting. We created an AR application to ease this shopping task.
+Based on the product taxonomy, location information in the product location ontology and ingredients information in the ingredients and allergen ontology, we created a consumer preference demo in AR.
+      In this demo we used the query for organic products (among others),that can also be found in the predefined queries above.
+</td>
+  <td>
+<img src="UseCaseImg/HoloPreference.jpg" width=100%/>
+  </td>
+  </tr>
+  <tr>
+    <th><h2>Routing to product destination</h2></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>
+Customers or store workers often search for product locations. We also created an AR demo based on the predefined query for product class locations in order to route a customer to a product destination.
+    </td>
+    <td>
+<img src="UseCaseImg/Routing.png" width=50%/>
+    </td>
+  </tr>
+  <tr>
+    <th><h2>Highlighting product information</h2></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>
+Customers might be interested in product information. We created an AR app for a Smartphone to highlight interesting product information like awarded labels or ingredients. Additionally, products can be added to a shopping cart.
+    </td>
+    <td>
+<img src="UseCaseImg/DenkMitRecog.jpg" width=50%/>
+      <img src="UseCaseImg/BaleaBodyFotRecog.jpg" width=50%/>
+    </td>
+  </tr>
+  </table>
 
 # Disclaimer
 
