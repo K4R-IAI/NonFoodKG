@@ -37,44 +37,41 @@ You can also query the dataset here: <a href="https://api.krr.triply.cc/datasets
 
 # Use Cases
 
-<table style="width:100%">
+<table style="table-layout: fixed;width:100%;">
   <tr>
-    <th><h2>Highlighting consumer preferences</h2></th>
-    <th></th>
+    <th colspan="2"><h2>Highlighting consumer preferences</h2></th>
   </tr>
   <tr>
-    <td>
+    <td style="width:50%;">
 Customers have different preferences. Searching for products that meet a given preference like cosmetics that do not contain alcohol can be exhausting. We created an AR application to ease this shopping task.
 Based on the product taxonomy, location information in the product location ontology and ingredients information in the ingredients and allergen ontology, we created a consumer preference demo in AR.
       In this demo we used the query for organic products (among others),that can also be found in the predefined queries above.
 </td>
-  <td>
-<img src="UseCaseImg/HoloPreference.jpg" width=100%/>
+  <td style="width:50%;">
+<img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/HoloPreference.jpg" width=100%/>
   </td>
   </tr>
   <tr>
-    <th><h2>Routing to product destination</h2></th>
-    <th></th>
+    <th colspan="2"><h2>Routing to product destination</h2></th>
   </tr>
   <tr>
-    <td>
+    <td style="width:50%;">
 Customers or store workers often search for product locations. We also created an AR demo based on the predefined query for product class locations in order to route a customer to a product destination.
     </td>
-    <td>
-<img src="UseCaseImg/Routing.png" width=50%/>
+    <td style="width:50%;">
+<img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/Routing.png" width=50%/>
     </td>
   </tr>
   <tr>
-    <th><h2>Highlighting product information</h2></th>
-    <th></th>
+    <th colspan="2"><h2>Highlighting product information</h2></th>
   </tr>
   <tr>
-    <td>
+    <td style="width:50%;">
 Customers might be interested in product information. We created an AR app for a Smartphone to highlight interesting product information like awarded labels or ingredients. Additionally, products can be added to a shopping cart.
     </td>
-    <td>
-<img src="UseCaseImg/DenkMitRecog.jpg" width=50%/>
-      <img src="UseCaseImg/BaleaBodyFotRecog.jpg" width=50%/>
+    <td style="width:50%;">
+<img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/DenkMitRecog.jpg" width="200"/>
+      <img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/BaleaBodyFotRecog.jpg" width="200"/>
     </td>
   </tr>
   </table>
