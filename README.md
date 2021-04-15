@@ -70,8 +70,8 @@ Customers or store workers often search for product locations. We also created a
 Customers might be interested in product information. We created an AR app for a Smartphone to highlight interesting product information like awarded labels or ingredients. Additionally, products can be added to a shopping cart.
     </td>
     <td style="width:50%;">
-<img src="UseCaseImg/DenkMitRecog.jpg" alt="recognized detergent"/>
-      <img src="UseCaseImg/BaleaBodyFotRecog.jpg" alt="recognized bodylotion"/>
+<img src="UseCaseImg/DenkMitRecogsm.jpg" alt="recognized detergent"/>
+      <img src="UseCaseImg/BaleaBodyFotRecogsm.jpg" alt="recognized bodylotion"/>
     </td>
   </tr>
   </table>
