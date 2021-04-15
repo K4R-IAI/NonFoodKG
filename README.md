@@ -48,7 +48,7 @@ Based on the product taxonomy, location information in the product location onto
       In this demo we used the query for organic products (among others),that can also be found in the predefined queries above.
 </td>
   <td style="width:50%;">
-<img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/HoloPreference.jpg" alt="highlighting" width=100%/>
+<img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/HoloPreference.jpg" alt="highlighting"/>
   </td>
   </tr>
   <tr>
@@ -59,7 +59,7 @@ Based on the product taxonomy, location information in the product location onto
 Customers or store workers often search for product locations. We also created an AR demo based on the predefined query for product class locations in order to route a customer to a product destination.
     </td>
     <td style="width:50%;">
-<img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/Routing.png" alt="Routing image" width=50%/>
+<img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/Routing.png" alt="Routing image"/>
     </td>
   </tr>
   <tr>
@@ -70,8 +70,8 @@ Customers or store workers often search for product locations. We also created a
 Customers might be interested in product information. We created an AR app for a Smartphone to highlight interesting product information like awarded labels or ingredients. Additionally, products can be added to a shopping cart.
     </td>
     <td style="width:50%;">
-<img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/DenkMitRecog.jpg" alt="recognized detergent" width=50%/>
-      <img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/BaleaBodyFotRecog.jpg" alt="recognized bodylotion" width=50%/>
+<img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/DenkMitRecog.jpg" alt="recognized detergent"/>
+      <img src="https://github.com/K4R-IAI/NonFoodKG/blob/master/UseCaseImg/BaleaBodyFotRecog.jpg" alt="recognized bodylotion"/>
     </td>
   </tr>
   </table>
