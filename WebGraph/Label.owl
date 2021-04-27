@@ -278,6 +278,7 @@ Certifies that products contain natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://knowrob.org/kg/Label.owl#Bio-Blatt">
         <rdf:type rdf:resource="http://knowrob.org/kg/Label.owl#EcoLabel"/>
         <rdf:type rdf:resource="http://knowrob.org/kg/Label.owl#OrganicLabel"/>
+        <owl:sameAs rdf:resource="http://knowrob.org/kg/Label.owl#EU-Bio_Siegel"/>
         <rdfs:comment>Label for organic products.</rdfs:comment>
         <rdfs:label>&quot;Bio-Blatt&quot;@de</rdfs:label>
     </owl:NamedIndividual>
