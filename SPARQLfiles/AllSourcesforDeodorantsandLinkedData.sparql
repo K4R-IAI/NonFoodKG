@@ -1,0 +1,14 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
+  ?sub rdf:type tax:Deodorants.
+  ?sub tax:source ?source.
+  tax:Deodorants tax:source ?classsource.
+  tax:Deodorants owl:sameAs ?sameclass.
+  ?sameclass tax:source ?sameclasssource.
+} 
