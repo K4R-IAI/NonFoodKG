@@ -1,8 +1,9 @@
 #+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
 
 #+ summary: Retrieves all ingredients that are also classified as allergens for a given EAN
-#+ tags: ingredients
-#+ tags: ByEAN
+#+ tags: 
+#+ - ingredients
+#+ - ByEAN
 
 PREFIX allergen: <http://knowrob.org/kg/allergen.owl#>
 PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
