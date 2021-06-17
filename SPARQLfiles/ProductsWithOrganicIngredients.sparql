@@ -1,5 +1,8 @@
 #+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
 
+#+ summary: Retrieves all products with organic label
+#+ tag: label
+
 PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX allergen: <http://knowrob.org/kg/Allergen.owl#>
