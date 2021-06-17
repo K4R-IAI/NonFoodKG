@@ -1,7 +1,8 @@
 #+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
 
 #+ summary: Retrieves all products with fragrance as ingredient
-#+ tags: - ingredients
+#+ tags: 
+#+ - ingredients
 
 PREFIX allergen: <http://knowrob.org/kg/allergen.owl#>
 PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
