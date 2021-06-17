@@ -1,7 +1,7 @@
 #+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
 
 #+ summary: Retrieves all product classes for a given EAN
-#+ tag: ByEAN
+#+ tags: ByEAN
 
 PREFIX lbl: <http://knowrob.org/kg/Label.owl#>
 PREFIX info: <http://knowrob.org/kg/ProductInfo.owl#>
