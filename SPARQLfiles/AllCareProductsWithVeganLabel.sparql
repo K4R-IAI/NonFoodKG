@@ -1,6 +1,7 @@
 #+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
 
 #+ summary: Retrieves all body care products with vegan label
+#+ tag: label
 
 PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
