@@ -1,5 +1,8 @@
 #+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
 
+#+ summary: Retrieves shelf location for detergent
+#+ tag: location
+
 PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX loc: <http://knowrob.org/kg/ProductToShelf.owl#>
