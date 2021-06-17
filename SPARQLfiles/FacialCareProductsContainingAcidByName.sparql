@@ -1,5 +1,8 @@
 #+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
 
+#+ summary: Retrieves all facial care products containing acidic ingredients
+#+ tag: ingredients
+
 PREFIX info: <http://knowrob.org/kg/ProductInfo.owl#>
 PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
 PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
