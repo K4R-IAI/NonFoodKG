@@ -1,6 +1,6 @@
 #+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
 
-#+ tag: label
+#+ tags: label
 #+ summary: Retrieves all dermatologically tested Deodorants
 
 PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
