@@ -17,7 +17,3 @@ SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
   tax:Deodorants owl:sameAs ?sameclass.
   ?sameclass tax:source ?sameclasssource.
 } 
-
-INSERT DATA { GRAPH log: {<AllSourcesforDeodorantsandLinkedData.sparql> <Result> ?sub,
-                          <AllSourcesforDeodorantsandLinkedData.sparql> <DataSource> ?classsource,
-                          <AllSourcesforDeodorantsandLinkedData.sparql> <DataSource> ?sameclasssource}}
