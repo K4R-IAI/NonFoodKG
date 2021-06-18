@@ -12,7 +12,8 @@ PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
 PREFIX log: <http://knowrob.org/kg/Logging.owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-FROM log:
+CONSTRUCT { log:grlApi log:called log:AllSourcesforDeodorantsandLinkedData }
+WHERE{                       
 SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
   ?sub rdf:type tax:Deodorants.
   ?sub tax:source ?source.
@@ -20,3 +21,4 @@ SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
   tax:Deodorants owl:sameAs ?sameclass.
   ?sameclass tax:source ?sameclasssource.
 } 
+  }
