@@ -7,6 +7,7 @@
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
+PREFIX log: <http://knowrob.org/kg/Logging.owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
@@ -16,3 +17,7 @@ SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
   tax:Deodorants owl:sameAs ?sameclass.
   ?sameclass tax:source ?sameclasssource.
 } 
+
+INSERT DATA { GRAPH log: {"AllSourcesforDeodorantsandLinkedData.sparql" log:Result ?sub,
+                          "AllSourcesforDeodorantsandLinkedData.sparql" log:DataSource ?classsource,
+                          "AllSourcesforDeodorantsandLinkedData.sparql" log:DataSource ?sameclasssource}}
