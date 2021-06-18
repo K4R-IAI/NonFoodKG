@@ -4,11 +4,15 @@
 #+ tags: 
 #+ - sources
 
+#+ method: POST
+
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
+PREFIX log: <http://knowrob.org/kg/Logging.owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
+FROM log:
 SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
   ?sub rdf:type tax:Deodorants.
   ?sub tax:source ?source.
