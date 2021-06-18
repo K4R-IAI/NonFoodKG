@@ -18,6 +18,6 @@ SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
   ?sameclass tax:source ?sameclasssource.
 } 
 
-INSERT DATA { GRAPH log: {"AllSourcesforDeodorantsandLinkedData.sparql" log:Result ?sub,
-                          "AllSourcesforDeodorantsandLinkedData.sparql" log:DataSource ?classsource,
-                          "AllSourcesforDeodorantsandLinkedData.sparql" log:DataSource ?sameclasssource}}
+INSERT DATA { GRAPH log: {<AllSourcesforDeodorantsandLinkedData.sparql> <Result> ?sub,
+                          <AllSourcesforDeodorantsandLinkedData.sparql> <DataSource> ?classsource,
+                          <AllSourcesforDeodorantsandLinkedData.sparql> <DataSource> ?sameclasssource}}
