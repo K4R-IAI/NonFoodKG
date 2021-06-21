@@ -1,0 +1,15 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql
+
+#+ summary: Logging Test
+#+ tags: 
+#+ - sources
+
+#+ method: POST
+
+
+PREFIX log: <http://knowrob.org/kg/Logging.owl#>
+
+        
+insert data { GRAPH log:
+                  {<http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/> log:called <AllSourcesforDeodorantsandLinkedData>.}
+  }  
