@@ -23,5 +23,5 @@ insert data { GRAPH log:
                tax:Deodorants owl:sameAs ?sameclass.
                ?sameclass tax:source ?sameclasssource.
                }
-        } 
+        
   
