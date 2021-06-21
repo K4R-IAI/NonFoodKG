@@ -12,13 +12,24 @@ PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
 PREFIX log: <http://knowrob.org/kg/Logging.owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-CONSTRUCT { log:grlApi log:called log:AllSourcesforDeodorantsandLinkedData }
-WHERE{                       
-SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
-  ?sub rdf:type tax:Deodorants.
-  ?sub tax:source ?source.
-  tax:Deodorants tax:source ?classsource.
-  tax:Deodorants owl:sameAs ?sameclass.
-  ?sameclass tax:source ?sameclasssource.
-} 
+CONSTRUCT { GRAPH log:
+                  {?querysrc log:called ?queryname.
+                  ?queryname log:hasresult ?sub;
+                             log:hasresult ?sameclass.
+                  ?sub log:hassource ?source;
+                       log:hassource ?classsource.
+                  ?sameclass log:hassource ?sameclasssource.}
+WHERE{     
+  BIND(<http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/> AS ?querysrc)
+  BIND("AllSourcesforDeodorantsandLinkedData" AS ?queryname)
+  }
+        {
+        SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
+               ?sub rdf:type tax:Deodorants.
+               ?sub tax:source ?source.
+               tax:Deodorants tax:source ?classsource.
+               tax:Deodorants owl:sameAs ?sameclass.
+               ?sameclass tax:source ?sameclasssource.
+               }
+        } 
   }
