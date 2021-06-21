@@ -13,10 +13,7 @@ PREFIX log: <http://knowrob.org/kg/Logging.owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 insert data { GRAPH log:
-                  {?querysrc log:called ?queryname.}
-WHERE{     
-  BIND(<http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/> AS ?querysrc)
-  BIND("AllSourcesforDeodorantsandLinkedData" AS ?queryname)
+                  {<http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/> log:called "AllSourcesforDeodorantsandLinkedData".}
   };
              
         SELECT ?sub ?source ?classsource ?sameclass ?sameclasssource WHERE {
