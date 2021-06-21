@@ -19,8 +19,8 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                tax:Deodorants tax:source ?classsource.
                tax:Deodorants owl:sameAs ?sameclass.
                ?sameclass tax:source ?sameclasssource.
-               };
+               }
         
 insert data { GRAPH log:
                   {<http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/> log:called <AllSourcesforDeodorantsandLinkedData>.}
-  };  
+  }  
