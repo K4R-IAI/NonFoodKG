@@ -1,0 +1,27 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql
+
+#+ summary: Retrieves all ingredients that are also classified as allergens for a given EAN
+#+ tags: 
+#+ - source
+
+PREFIX DUL: <http://www.loa-cnr.it/ontologies/DUL.owl#>
+PREFIX lbl: <http://knowrob.org/kg/Label.owl#>
+PREFIX allergen: <http://knowrob.org/kg/allergen.owl#>
+PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?product ?psrc ?ingredient ?ingrtype ?insrc ?inwebsite WHERE {
+	?product in:has_EAN '3574661199634'.
+    ?product rdf:type ?pclass.
+    ?pclass in:source ?psrc.
+	?product in:has_ingredient ?ingredient.
+    {   ?ingredient owl:sameAs ?ingr. 
+    ?ingr rdf:type ?ingrtype.
+    ?ingrtype lbl:source ?insrc.
+  ?insrc DUL:isRealizedBy ?inwebsite. }
+  UNION 
+    {?ingredient rdf:type ?ingrtype.
+  ?ingrtype in:source ?insrc}
+  FILTER (?ingrtype != owl:NamedIndividual && ?ingrtype!= in:Ingredient)
+  } 
