@@ -1,0 +1,21 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql
+
+#+ summary: Retrieves all label and sources for a given EAN
+#+ tags: 
+#+ - source
+
+PREFIX lbl: <http://knowrob.org/kg/Label.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX DUL: <http://www.loa-cnr.it/ontologies/DUL.owl#>
+
+
+SELECT ?product ?productsource ?label ?lblwebsite WHERE {
+  	?product lbl:has_EAN ?_EAN.
+    ?product rdf:type ?pclass.
+    ?pclass lbl:source ?productsource.
+	  ?product lbl:has_label ?label.
+  	?label rdf:type ?lblclass.
+    ?lblclass lbl:source ?lblsource.
+    ?lblsource DUL:isRealizedBy ?lblwebsite.
+  } 
