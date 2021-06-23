@@ -12,7 +12,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 SELECT ?product ?psrc ?ingredient ?ingrtype ?insrc ?inwebsite WHERE {
-	?product in:has_EAN '3574661199634'.
+	?product in:has_EAN ?_EAN.
     ?product rdf:type ?pclass.
     ?pclass in:source ?psrc.
 	?product in:has_ingredient ?ingredient.
