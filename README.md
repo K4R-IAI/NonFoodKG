@@ -53,8 +53,9 @@ The knowledge graph is publicly available here and on <a href="https://triply.cc
 It can be queried easily: <b><a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">Try out</a> some predefined queries</b> with the <a href="https://github.com/CLARIAH/grlc">grlc</a> api,the git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries. 
 
 <br>
-You can also query the dataset here: version 1.0: <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">NonFoodKG via triply SPARQL api</a>
-version 1.1: <a href="https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql">TrustNonFoodKG via triply SPARQL api</a>
+You can also query the dataset here: 
+<h4>version 1.0:</h4> <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">NonFoodKG via triply SPARQL api</a>
+<h4>version 1.1:</h4> <a href="https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql">TrustNonFoodKG via triply SPARQL api</a>
 
 # Use Cases
 
