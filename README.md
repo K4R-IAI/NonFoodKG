@@ -7,8 +7,8 @@ Non-FoodKG is a non-food knowledge graph interlinking different ontologies desig
 
 Please check out version 1 of the ontologies here:
 
-<b>Version</b> 1.0 is the first version of NonFoodKG.<br>
-<b>Version 1.1</b> has some minor fixes and integrates a content trust feature based on the <a href="http://trdf.sourceforge.net/trustvocab.owl">tRDF</a> trust vocabulary in combination with a classification of data sources as <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl">DUL information objects</a>
+<h4>Version</h4> 1.0 is the first version of NonFoodKG.<br>
+<h4>Version 1.1</h4> has some minor fixes and integrates a content trust feature based on the <a href="http://trdf.sourceforge.net/trustvocab.owl">tRDF</a> trust vocabulary in combination with a classification of data sources as <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl">DUL information objects</a>
 <table> 
   <tr>
     <td><b>version 1.0</b></td><td><b>version 1.1</b></td> </tr>
@@ -50,7 +50,7 @@ To further enhance the knowledge graph information and in order to being able to
 
 The knowledge graph is publicly available here and on <a href="https://triply.cc/">triply</a>, many thanks to the <a href="https://krr.cs.vu.nl/">knowledge representation and reasoning group</a> at the Vrije Universiteit Amsterdam.
 
-It can be queried easily: <b><a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/"><b>Try out</b></a> some predefined queries</b> with <a href="https://github.com/CLARIAH/grlc">grlc</a>,the git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries. 
+It can be queried easily: <h4><a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">Try out</a> some predefined queries</b> with <h4> the<a href="https://github.com/CLARIAH/grlc">grlc</a> api</h4>,the git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries. 
 
 <br>
 You can also query the dataset here: version 1.0: <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">NonFoodKG via triply SPARQL api</a>
@@ -60,7 +60,7 @@ version 1.1: <a href="https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/
 
 <table style="table-layout: fixed;width:100%;">
   <tr>
-    <th colspan="2"><b>Highlighting consumer preferences</b></th>
+    <th colspan="2"><h4>Highlighting consumer preferences</h4></th>
   </tr>
   <tr>
     <td style="width:50%;">
@@ -73,7 +73,7 @@ Based on the product taxonomy, location information in the product location onto
   </td>
   </tr>
   <tr>
-    <th colspan="2"><b>Routing to product destination</b></th>
+    <th colspan="2"><h4>Routing to product destination</h4></th>
   </tr>
   <tr>
     <td style="width:50%;">
@@ -84,7 +84,7 @@ Customers or store workers often search for product locations. We also created a
     </td>
   </tr>
   <tr>
-    <th colspan="2"><b>Highlighting product information</b></th>
+    <th colspan="2"><h4>Highlighting product information</h4></th>
   </tr>
   <tr>
     <td style="width:50%;">
