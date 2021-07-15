@@ -1,5 +1,5 @@
 theme: jekyll-theme-leap-day
 
 github:
-  Tutorials_url: https://github.com/K4R-IAI/NonFoodKG/blob/master/_site/Tutorials.html
+  Tutorials_url: https://github.com/K4R-IAI/NonFoodKG/blob/master/_site/Tutorials.md
   UnityTut_url: https://github.com/michaelakuempel/Unity-REST-KG
