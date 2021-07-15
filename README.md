@@ -60,7 +60,7 @@ version 1.1: <a href="https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/
 
 <table style="table-layout: fixed;width:100%;">
   <tr>
-    <th colspan="2"><h2>Highlighting consumer preferences</h2></th>
+    <th colspan="2"><b>Highlighting consumer preferences</b></th>
   </tr>
   <tr>
     <td style="width:50%;">
@@ -73,7 +73,7 @@ Based on the product taxonomy, location information in the product location onto
   </td>
   </tr>
   <tr>
-    <th colspan="2"><h2>Routing to product destination</h2></th>
+    <th colspan="2"><b>Routing to product destination</b></th>
   </tr>
   <tr>
     <td style="width:50%;">
@@ -84,7 +84,7 @@ Customers or store workers often search for product locations. We also created a
     </td>
   </tr>
   <tr>
-    <th colspan="2"><h2>Highlighting product information</h2></th>
+    <th colspan="2"><b>Highlighting product information</b></th>
   </tr>
   <tr>
     <td style="width:50%;">
