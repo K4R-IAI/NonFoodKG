@@ -11,7 +11,7 @@ Please check out version 1 of the ontologies here:
 <b>Version 1.1</b> has some minor fixes and integrates a content trust feature based on the <a href="http://trdf.sourceforge.net/trustvocab.owl">tRDF</a> trust vocabulary in combination with a classification of data sources as <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl">DUL information objects</a>
 <table> 
   <tr>
-    <td>version 1.0</td><td>version 1.1</td> </tr>
+    <td>**version 1.0**</td><td>**version 1.1**</td> </tr>
 <tr>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductTaxonomy.owl">Product Taxonomy</a></td>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductTaxonomy.owl">Product Taxonomy</a></td>
@@ -50,7 +50,7 @@ To further enhance the knowledge graph information and in order to being able to
 
 The knowledge graph is publicly available here and on <a href="https://triply.cc/">triply</a>, many thanks to the <a href="https://krr.cs.vu.nl/">knowledge representation and reasoning group</a> at the Vrije Universiteit Amsterdam.
 
-<h2>It can be queried easily: <a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/"><b>Try out</b></a> some predefined queries</h2> With <a href="https://github.com/CLARIAH/grlc">grlc</a>,the git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries. 
+It can be queried easily: <b><a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/"><b>Try out</b></a> some predefined queries</b> with <a href="https://github.com/CLARIAH/grlc">grlc</a>,the git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries. 
 
 <br>
 You can also query the dataset here: version 1.0: <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">NonFoodKG via triply SPARQL api</a>
