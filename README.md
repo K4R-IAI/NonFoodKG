@@ -11,7 +11,7 @@ Please check out version 1 of the ontologies here:
 <b>Version 1.1</b> has some minor fixes and integrates a content trust feature based on the <a href="http://trdf.sourceforge.net/trustvocab.owl">tRDF</a> trust vocabulary in combination with a classification of data sources as <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl">DUL information objects</a>
 <table> 
   <tr>
-    <td>**version 1.0**</td><td>**version 1.1**</td> </tr>
+    <td><b>version 1.0</b></td><td><b>version 1.1</b></td> </tr>
 <tr>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductTaxonomy.owl">Product Taxonomy</a></td>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductTaxonomy.owl">Product Taxonomy</a></td>
