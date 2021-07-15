@@ -50,7 +50,7 @@ To further enhance the knowledge graph information and in order to being able to
 
 The knowledge graph is publicly available here and on <a href="https://triply.cc/">triply</a>, many thanks to the <a href="https://krr.cs.vu.nl/">knowledge representation and reasoning group</a> at the Vrije Universiteit Amsterdam.
 
-It can be queried easily: <b><a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">Try out</a> some predefined queries</b> with <h4> the<a href="https://github.com/CLARIAH/grlc">grlc</a> api</h4>,the git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries. 
+It can be queried easily: <b><a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">Try out</a> some predefined queries</b> with the <a href="https://github.com/CLARIAH/grlc">grlc</a> api,the git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries. 
 
 <br>
 You can also query the dataset here: version 1.0: <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">NonFoodKG via triply SPARQL api</a>
