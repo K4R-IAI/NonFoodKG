@@ -7,11 +7,11 @@ Non-FoodKG is a non-food knowledge graph interlinking different ontologies desig
 
 Please check out version 1 of the ontologies here:
 
-<h3>Version</h3> 1.0 is the first version of NonFoodKG.<br>
+<h3>Version 1.0</h3> is the first version of NonFoodKG.<br>
 <h3>Version 1.1</h3> has some minor fixes and integrates a content trust feature based on the <a href="http://trdf.sourceforge.net/trustvocab.owl">tRDF</a> trust vocabulary in combination with a classification of data sources as <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl">DUL information objects</a>
 <table> 
   <tr>
-    <td><b>version 1.0</b></td><td><b>version 1.1</b></td> </tr>
+    <td><b>Version 1.0</b></td><td><b>Version 1.1</b></td> </tr>
 <tr>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductTaxonomy.owl">Product Taxonomy</a></td>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductTaxonomy.owl">Product Taxonomy</a></td>
@@ -54,8 +54,8 @@ It can be queried easily: <b><a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQ
 
 <br>
 You can also query the dataset here: 
-<h3>version 1.0:</h3> <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">NonFoodKG via triply SPARQL api</a>
-<h3>version 1.1:</h3> <a href="https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql">TrustNonFoodKG via triply SPARQL api</a>
+<h3>Version 1.0</h3>: <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">NonFoodKG via triply SPARQL api</a>
+<h3>Version 1.1</h3>: <a href="https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql">TrustNonFoodKG via triply SPARQL api</a>
 
 # Use Cases
 
