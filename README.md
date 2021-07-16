@@ -41,6 +41,7 @@ Please check out version 1 of the ontologies here:
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductToShelf.owl">Product Location Ontology</a></td>
   </tr>
   </table>
+  
 # Motivation
 
 Retail stores are competing with online stores. They are aiming at digitization of the shopping experiences. We believe that one main advantage of online stores is its connection to Web information. Consumer needs can be unique but also change fast. It would be very time-consuming to manually model consumer preferences in a database. The Semantic Web already offers much information, mainly for food products (e.g. https://world.openfoodfacts.org/ ). Unfortunately, it lacks information about non-food products like allergens contained in cosmetics. Therefore we created this non-food knowledge graph. 
