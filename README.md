@@ -61,7 +61,7 @@ You can also query the dataset here:
 
 <table style="table-layout: fixed;width:100%;">
   <tr>
-    <th colspan="2"><h4>Highlighting consumer preferences</h4></th>
+    <th colspan="2"><h3>Highlighting consumer preferences</h3></th>
   </tr>
   <tr>
     <td style="width:50%;">
@@ -74,7 +74,7 @@ Based on the product taxonomy, location information in the product location onto
   </td>
   </tr>
   <tr>
-    <th colspan="2"><h4>Routing to product destination</h4></th>
+    <th colspan="2"><h3>Routing to product destination</h3></th>
   </tr>
   <tr>
     <td style="width:50%;">
@@ -85,7 +85,7 @@ Customers or store workers often search for product locations. We also created a
     </td>
   </tr>
   <tr>
-    <th colspan="2"><h4>Highlighting product information</h4></th>
+    <th colspan="2"><h3>Highlighting product information</h3></th>
   </tr>
   <tr>
     <td style="width:50%;">
