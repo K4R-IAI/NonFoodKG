@@ -8,7 +8,7 @@ Non-FoodKG is a non-food knowledge graph interlinking different ontologies desig
 Please check out version 1 of the ontologies here:
 
 <h3>Version 1.0</h3> is the first version of NonFoodKG.<br>
-<h3>Version 1.1</h3> has some minor fixes and integrates a content trust feature based on the <a href="http://trdf.sourceforge.net/trustvocab.owl">tRDF</a> trust vocabulary in combination with a classification of data sources as <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl">DUL information objects</a>
+<h3>Version 1.1</h3> has some minor fixes and integrates a content trust feature based on the <a href="http://trdf.sourceforge.net/trustvocab.owl">tRDF</a> trust vocabulary in combination with a classification of data sources as <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl">DUL information objects</a><br>
 <table> 
   <tr>
     <td><b>Version 1.0</b></td><td><b>Version 1.1</b></td> </tr>
