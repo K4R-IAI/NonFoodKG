@@ -1,0 +1,26 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/ProductCatalog/services/FoodToNonFood/sparql
+
+#+ summary: Retrieves all recipes and recommended meals that can be prepared by two given EAN numbers
+#+ tags: 
+#+ - recipe
+#+ - food
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix food: <http://purl.org/heals/food/>
+prefix ingredient: <http://purl.org/heals/ingredient/>
+
+SELECT DISTINCT ?ingredients ?products ?ingredient ?recipes ?meal
+WHERE{
+    {?ingredients gr:hasEAN_UCC-13 ?_EAN1}
+    UNION
+    {?ingredients gr:hasEAN_UCC-13 ?_EAN2}
+    
+    ?ingredients rdf:type ?products.
+    ?products owl:sameAs ?ingredient.
+    FILTER (STRSTARTS(STR(?ingredient),str(ingredient:))).
+    ?recipes food:hasIngredient ?ingredient.
+    ?recipes food:isRecommendedForMeal ?meal.
+}
