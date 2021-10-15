@@ -129,12 +129,12 @@ Customers often search for product locations. We implemented a robot shopping as
     <th colspan="2"><h3>Highlighting product information</h3></th>
   </tr>
   <tr>
-    <td style="width:50%;">
+    <td style="width:30%;">
 Customers might be interested in product information. We created an AR app for a Smartphone to highlight interesting product information like awarded labels or ingredients. Additionally, products can be added to a shopping cart.
     </td>
-    <td style="width:50%;">
-<img src="UseCaseImg/DenkMitRecogsm.jpg" width="200" alt="recognized detergent"/>
-      <img src="UseCaseImg/BaleaBodyFotRecogsm.jpg" width="200" alt="recognized bodylotion"/>
+    <td style="width:70%;">
+<img src="UseCaseImg/DenkMitRecogsm.jpg" width="100" alt="recognized detergent"/>
+      <img src="UseCaseImg/BaleaBodyFotRecogsm.jpg" width="100" alt="recognized bodylotion"/>
     </td>
   </tr>
   </table>
