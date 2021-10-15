@@ -110,7 +110,7 @@ Based on the product taxonomy, location information in the product location onto
     <td style="width:50%;">
 Customers or store workers often search for product locations. We also created an AR demo based on the predefined query for product class locations in order to route a customer to a product destination.
     </td>
-    <td style="width:50%;">
+    <td style="width:60%;">
 <img src="UseCaseImg/Routing.png" width="200" alt="Routing image"/>
     </td>
   </tr>
@@ -118,7 +118,7 @@ Customers or store workers often search for product locations. We also created a
     <th colspan="2"><h3>A robot shopping assistant</h3></th>
   </tr>
   <tr>
-    <td style="width:50%;">
+    <td style="width:40%;">
 Customers often search for product locations. We implemented a robot shopping assistant that routes a customer to a product destination by answering complex queries.
     </td>
     <td style="width:50%;">
