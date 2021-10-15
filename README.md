@@ -1,7 +1,10 @@
 
 # NonFoodKG - A non-food product knowledge graph
 
-Non-FoodKG is a non-food knowledge graph interlinking different ontologies designed for retail, household and robotic applications. It is based on a merged product taxonomy reflecting product classification in grocery stores and drugstores that is linked to a product location ontology created from a robot belief state while performing stocktaking in a retail store. The <b>product location ontology</b> therefore stores inventory data like stock and price of products as well as their positions relative to shelves (instead of coordinates). We use the <a href="http://knowrob.org/">KnowRob knowledge processing system</a> for creation of the location ontology. The <b>product taxonomy</b> classifies products that were recognized during stocktaking. It is linked to an <b>ingredients classification</b> based on string matching, which is connected to an <b>allergen classification</b>. The product taxonomy is also linked to further product information like name and place of production in <b>product information</b>,<b> product label</b> or <b>product dimensions</b>, i.e. dimensions of product packaging as well as product weight/ filling information. 
+Non-FoodKG is a non-food knowledge graph interlinking different ontologies designed for retail, household and robotic applications. It is based on a merged product taxonomy reflecting the product classification in grocery stores and drugstores that is linked to a product location ontology created from a robot belief state while performing stocktaking in a retail store. The <b>product location ontology</b> therefore stores inventory data like stock and price of products as well as their positions relative to shelves (instead of coordinates). We use the <a href="http://knowrob.org/">KnowRob knowledge processing system</a> for creation of the location ontology. In KnowRob, a robot can access specific position information of the perceived objects. The <b>product taxonomy</b> classifies products that were recognized during stocktaking. It is linked to an <b>ingredients classification</b> based on string matching, which is connected to an <b>allergen classification</b>. The product taxonomy is also linked to further product information like name and place of production in <b>product information</b>,<b> product label</b> or <b>product dimensions</b>, i.e. dimensions of product packaging as well as product weight/ filling information. 
+All this can be used for shopping applications on mobile phones or smart glasses, for example.
+
+Version 1.2 additionally links NonFoodKG to <a href="https://foodkg.github.io/">FoodKG</a> and kitchen objects and products from the KnowRob product taxonomy. With this additional knowledge, robot shopping assistants can integrate NonFoodKG information and applications in the food domain can be implemented. Additionally, a nutrition ontology and a brand information ontology was created and linked to NonFoodKG.
 
 # Ontologies
 
@@ -9,42 +12,61 @@ Please check out version 1 of the ontologies here:
 
 <h3>Version 1.0</h3> is the first version of NonFoodKG.<br>
 <h3>Version 1.1</h3> has some minor fixes and integrates a content trust feature based on the <a href="http://trdf.sourceforge.net/trustvocab.owl">tRDF</a> trust vocabulary in combination with a classification of data sources as <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl">DUL information objects</a><br>
+<h3>Version 1.2</h3> links NonFoodKG to FoodKG and integrates the KnowRob product taxonomy. New ontologies like nutrition ontology and brand info ontology are also linked to NonFoodKG.<br>
+
 <table> 
   <tr>
-    <td><b>Version 1.0</b></td><td><b>Version 1.1</b></td> </tr>
+    <td><b>Version 1.0</b></td><td><b>Version 1.1</b></td><td><b>Version 1.2</b></td> </tr>
 <tr>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductTaxonomy.owl">Product Taxonomy</a></td>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductTaxonomy.owl">Product Taxonomy</a></td>
+  <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/product-taxonomy.owl">Product Taxonomy</a></td>
   </tr>
 <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/Ingredients.owl">Ingredients Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/Ingredients.owl">Ingredients Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/ingredients.owl">Ingredients Ontology</a></td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/Allergen.owl">Allergen Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/Allergen.owl">Allergen Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/allergen.owl">Allergen Ontology</a></td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductInfo.owl">Product Information (nutrition) Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductInfo.owl">Product Information (nutrition) Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/nutrition.owl">Product nutrition Ontology</a></td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/Label.owl">Product Label Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/Label.owl">Product Label Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/label.owl">Product Label Ontology</a></td>
 </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductDimensions.owl">Product Dimensions Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductDimensions.owl">Product Dimensions Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/dimensions.owl">Product Dimensions Ontology</a></td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductToShelf.owl">Product Location Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductToShelf.owl">Product Location Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/location.owl">Product Location Ontology</a></td>
+  </tr>
+    <tr>
+<td></td>
+<td></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/brandinfo.owl">Product Brand Ontology</a></td>
+  </tr>
+      <tr>
+<td></td>
+<td></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/brandinfo.owl">FoodKG</a></td>
   </tr>
   </table>
   
 # Motivation
 
-Retail stores are competing with online stores. They are aiming at digitization of the shopping experiences. We believe that one main advantage of online stores is its connection to Web information. Consumer needs can be unique but also change fast. It would be very time-consuming to manually model consumer preferences in a database. The Semantic Web already offers much information, mainly for food products (e.g. https://world.openfoodfacts.org/ ). Unfortunately, it lacks information about non-food products like allergens contained in cosmetics. Therefore we created this non-food knowledge graph. 
+Retail stores are competing with online stores. They are aiming at digitization of the shopping experience. We believe that one main advantage of online stores is its connection to Web information. Consumer needs can be unique but also change fast. It would be very time-consuming to manually model consumer preferences in a database. The Semantic Web already offers much information, mainly for food products (e.g. https://world.openfoodfacts.org/ ). Unfortunately, it lacks information about non-food products like allergens contained in cosmetics. Therefore we created this non-food knowledge graph. 
 To further enhance the knowledge graph information and in order to being able to apply the included knowledge in example applications, we also integrate location information from a perception-based system, leading to a unique embodiment of knowledge in various consumer and robot applications.
 
 # Querying the knowledge graph
@@ -54,6 +76,8 @@ The knowledge graph is publicly available here and on <a href="https://triply.cc
 <h3>Predefined queries</h3> For all versions of NonFoodKG via the <a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">NonFoodKG grlc api</a>. grlc is a git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries <a href="https://github.com/CLARIAH/grlc">(grlc on github)</a>
 <h3>Version 1.0</h3> <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">NonFoodKG via triply SPARQL api</a>
 <h3>Version 1.1</h3> <a href="https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql">TrustNonFoodKG via triply SPARQL api</a>
+<h3>Version 1.2</h3> <a href="https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/FoodToNonFood/sparql">FoodToNonFoodKG via triply SPARQL api</a>
+
 
 # Use Cases
 
@@ -80,6 +104,17 @@ Customers or store workers often search for product locations. We also created a
     </td>
     <td style="width:50%;">
 <img src="UseCaseImg/Routing.png" alt="Routing image"/>
+    </td>
+  </tr>
+   <tr>
+    <th colspan="2"><h3>A robot shopping assistant</h3></th>
+  </tr>
+  <tr>
+    <td style="width:50%;">
+Customers often search for product locations. We implemented a robot shopping assistant that routes a customer to a product destination by answering complex queries.
+    </td>
+    <td style="width:50%;">
+<img src="UseCaseImg/PepperDemo.png" alt="Robot Assistant image"/>
     </td>
   </tr>
   <tr>
