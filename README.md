@@ -79,7 +79,7 @@ To further enhance the knowledge graph information and in order to being able to
 The knowledge graph is publicly available here and on <a href="https://triply.cc/">triply</a> (links see below), many thanks to the <a href="https://krr.cs.vu.nl/">knowledge representation and reasoning group</a> at the Vrije Universiteit Amsterdam.
 
 <h3>Predefined queries</h3> 
-<a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/"><img src="UseCaseImg/grlc_logo_01.png" alt="grlc image"/></a>
+<a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/"><img src="UseCaseImg/grlc_logo_01.png" width="250" alt="grlc image"/></a>
 For all versions of NonFoodKG via the <a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">NonFoodKG grlc api</a>. grlc is a git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries <a href="https://github.com/CLARIAH/grlc">(grlc on github)</a>
 <h3>Version 1.0</h3> <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">NonFoodKG via triply SPARQL api</a>
 <h3>Version 1.1</h3> <a href="https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql">TrustNonFoodKG via triply SPARQL api</a>
@@ -110,7 +110,7 @@ Based on the product taxonomy, location information in the product location onto
 Customers or store workers often search for product locations. We also created an AR demo based on the predefined query for product class locations in order to route a customer to a product destination.
     </td>
     <td style="width:50%;">
-<img src="UseCaseImg/Routing.png" alt="Routing image"/>
+<img src="UseCaseImg/Routing.png" width="250" alt="Routing image"/>
     </td>
   </tr>
    <tr>
@@ -132,8 +132,8 @@ Customers often search for product locations. We implemented a robot shopping as
 Customers might be interested in product information. We created an AR app for a Smartphone to highlight interesting product information like awarded labels or ingredients. Additionally, products can be added to a shopping cart.
     </td>
     <td style="width:50%;">
-<img src="UseCaseImg/DenkMitRecogsm.jpg" alt="recognized detergent"/>
-      <img src="UseCaseImg/BaleaBodyFotRecogsm.jpg" alt="recognized bodylotion"/>
+<img src="UseCaseImg/DenkMitRecogsm.jpg" width="250" alt="recognized detergent"/>
+      <img src="UseCaseImg/BaleaBodyFotRecogsm.jpg" width="250" alt="recognized bodylotion"/>
     </td>
   </tr>
   </table>
