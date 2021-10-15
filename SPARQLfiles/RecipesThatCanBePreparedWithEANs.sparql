@@ -4,6 +4,7 @@
 #+ tags: 
 #+ - recipe
 #+ - food
+#+ - ByEAN
 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
