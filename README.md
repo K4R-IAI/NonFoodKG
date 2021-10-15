@@ -111,7 +111,7 @@ Based on the product taxonomy, location information in the product location onto
 Customers or store workers often search for product locations. We also created an AR demo based on the predefined query for product class locations in order to route a customer to a product destination.
     </td>
     <td style="width:50%;">
-<img src="UseCaseImg/Routing.png" width="250" alt="Routing image"/>
+<img src="UseCaseImg/Routing.png" width="200" alt="Routing image"/>
     </td>
   </tr>
    <tr>
@@ -133,8 +133,8 @@ Customers often search for product locations. We implemented a robot shopping as
 Customers might be interested in product information. We created an AR app for a Smartphone to highlight interesting product information like awarded labels or ingredients. Additionally, products can be added to a shopping cart.
     </td>
     <td style="width:50%;">
-<img src="UseCaseImg/DenkMitRecogsm.jpg" width="250" alt="recognized detergent"/>
-      <img src="UseCaseImg/BaleaBodyFotRecogsm.jpg" width="250" alt="recognized bodylotion"/>
+<img src="UseCaseImg/DenkMitRecogsm.jpg" width="200" alt="recognized detergent"/>
+      <img src="UseCaseImg/BaleaBodyFotRecogsm.jpg" width="200" alt="recognized bodylotion"/>
     </td>
   </tr>
   </table>
