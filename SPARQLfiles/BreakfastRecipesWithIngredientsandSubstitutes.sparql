@@ -1,0 +1,19 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/ProductCatalog/services/FoodToNonFood/sparql
+
+#+ summary: Retrieves all breakfast recipes with ingridients and substitutes
+#+ tags: 
+#+ - recipe
+#+ - food
+#+ - ingredient
+
+PREFIX individual: <http://purl.org/heals/ingredient/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix food: <http://purl.org/heals/food/>
+
+
+SELECT ?recipe ?ingredients ?ingredient WHERE {
+  ?recipe food:isRecommendedForMeal food:Breakfast.
+  ?recipe food:hasIngredient ?ingredients .
+  ?ingredients food:substitutesFor ?ingredient.
+} 
