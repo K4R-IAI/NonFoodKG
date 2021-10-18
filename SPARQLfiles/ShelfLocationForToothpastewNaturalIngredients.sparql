@@ -1,0 +1,24 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/ProductCatalog/services/FoodToNonFood/sparql
+
+#+ summary: Retrieves location for toothpaste containing only natural ingredients
+#+ tags: 
+#+ - location
+#+ - ingredients
+
+PREFIX loc: <http://knowrob.org/kg/location.owl#>
+PREFIX in: <http://knowrob.org/kg/ingredients.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX tax: <http://knowrob.org/kb/product-taxonomy.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?shelf ?shelf_floor ?product WHERE {
+  ?prod in:has_ingredient ?ingredient.
+  ?ingredient rdf:type ?inclass.
+  FILTER(?inclass = in:Plant_extract)
+  ?prod owl:sameAs ?product.
+  ?product rdf:type tax:toothpaste.
+  ?product owl:sameAs ?instance.
+  ?instance loc:stored_in ?shelf.  
+  ?instance loc:stored_on ?shelf_floor.
+} GROUP BY ?product
