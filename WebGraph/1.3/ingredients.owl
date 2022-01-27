@@ -494,26 +494,26 @@ As long as you:
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Alpha-Isomethyl_Ionone -->
+    <!-- http://purl.org/NonFoodKG/allergen#Alpha-Isomethyl_Ionone -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Alpha-Isomethyl_Ionone">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Alpha-Isomethyl_Ionone">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#alpha_isomethyl_ionone"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#alphaisomethyl_ionone"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Amyl_cinnamal -->
+    <!-- http://purl.org/NonFoodKG/allergen#Amyl_cinnamal -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Amyl_cinnamal">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Amyl_cinnamal">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#amyl_cinnamal"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Anionische_Tenside -->
+    <!-- http://purl.org/NonFoodKG/allergen#Anionische_Tenside -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Anionische_Tenside">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Anionische_Tenside">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#anionic_surfactants"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#anionische_tenside"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#anionische_tenside_"/>
@@ -522,99 +522,99 @@ As long as you:
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Anise_alcohol -->
+    <!-- http://purl.org/NonFoodKG/allergen#Anise_alcohol -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Anise_alcohol">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Anise_alcohol">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#anise_alcohol"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Benzyl_alcohol -->
+    <!-- http://purl.org/NonFoodKG/allergen#Benzyl_alcohol -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Benzyl_alcohol">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Benzyl_alcohol">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#benzyl_alcohol"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#benzylalkohol"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Benzyl_benzoate -->
+    <!-- http://purl.org/NonFoodKG/allergen#Benzyl_benzoate -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Benzyl_benzoate">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Benzyl_benzoate">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#benzyl_benzoate"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#benzylbenzoat"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Benzyl_cinnamate -->
+    <!-- http://purl.org/NonFoodKG/allergen#Benzyl_cinnamate -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Benzyl_cinnamate">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Benzyl_cinnamate">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#benzyl_cinnamate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Benzyl_salicylate -->
+    <!-- http://purl.org/NonFoodKG/allergen#Benzyl_salicylate -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Benzyl_salicylate">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Benzyl_salicylate">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#benzyl_salicylate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Butylparaben -->
+    <!-- http://purl.org/NonFoodKG/allergen#Butylparaben -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Butylparaben">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Butylparaben">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#butylparaben"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Butylphenyl_Methylpropional -->
+    <!-- http://purl.org/NonFoodKG/allergen#Butylphenyl_Methylpropional -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Butylphenyl_Methylpropional">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Butylphenyl_Methylpropional">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#butylphenyl_methylpropional"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Caffeine -->
+    <!-- http://purl.org/NonFoodKG/allergen#Caffeine -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Caffeine">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Caffeine">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#caffeine"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Cera_Microcristallina -->
+    <!-- http://purl.org/NonFoodKG/allergen#Cera_Microcristallina -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Cera_Microcristallina">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Cera_Microcristallina">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#cera_microcristallina"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Cinnamyl_alcohol -->
+    <!-- http://purl.org/NonFoodKG/allergen#Cinnamyl_alcohol -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Cinnamyl_alcohol">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Cinnamyl_alcohol">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#cinnamyl_alcohol"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Citral -->
+    <!-- http://purl.org/NonFoodKG/allergen#Citral -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Citral">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Citral">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#citral"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Citric_Acid -->
+    <!-- http://purl.org/NonFoodKG/allergen#Citric_Acid -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Citric_Acid">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Citric_Acid">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#citric_acid"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#citronensäure"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#citronensäure_und_wasser"/>
@@ -624,114 +624,114 @@ As long as you:
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Citronellol -->
+    <!-- http://purl.org/NonFoodKG/allergen#Citronellol -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Citronellol">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Citronellol">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#citronellol"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Coumarin -->
+    <!-- http://purl.org/NonFoodKG/allergen#Coumarin -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Coumarin">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Coumarin">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#coumarin"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Diazolidinyl_urea -->
+    <!-- http://purl.org/NonFoodKG/allergen#Diazolidinyl_urea -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Diazolidinyl_urea">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Diazolidinyl_urea">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#diazolidinyl_urea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Disinfectant -->
+    <!-- http://purl.org/NonFoodKG/allergen#Disinfectant -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Disinfectant">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Disinfectant">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#Disinfectant"/>
         <owl:sameAs rdf:resource="http://www.productontology.org/id/Disinfectant"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Dye -->
+    <!-- http://purl.org/NonFoodKG/allergen#Dye -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Dye">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Dye">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#Bleach"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Ethylhexyl_Stearate -->
+    <!-- http://purl.org/NonFoodKG/allergen#Ethylhexyl_Stearate -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Ethylhexyl_Stearate">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Ethylhexyl_Stearate">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#ethylhexyl_stearate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Ethylparaben -->
+    <!-- http://purl.org/NonFoodKG/allergen#Ethylparaben -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Ethylparaben">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Ethylparaben">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#ethylparaben"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Eugenol -->
+    <!-- http://purl.org/NonFoodKG/allergen#Eugenol -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Eugenol">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Eugenol">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#eugenol"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Evernia_Prunastri_Extract -->
+    <!-- http://purl.org/NonFoodKG/allergen#Evernia_Prunastri_Extract -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Evernia_Prunastri_Extract">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Evernia_Prunastri_Extract">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#evernia_prunastri_extract"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Farnesol -->
+    <!-- http://purl.org/NonFoodKG/allergen#Farnesol -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Farnesol">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Farnesol">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#farnesol"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Fragrance -->
+    <!-- http://purl.org/NonFoodKG/allergen#Fragrance -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Fragrance">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Fragrance">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#Fragrance"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Geraniol -->
+    <!-- http://purl.org/NonFoodKG/allergen#Geraniol -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Geraniol">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Geraniol">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#geraniol"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Glutaral -->
+    <!-- http://purl.org/NonFoodKG/allergen#Glutaral -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Glutaral">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Glutaral">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#glutaral"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Glycerin -->
+    <!-- http://purl.org/NonFoodKG/allergen#Glycerin -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Glycerin">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Glycerin">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#glycerides"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#glycerin"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#glycerin_caprylic"/>
@@ -741,131 +741,131 @@ As long as you:
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Hexyl_cinnamal -->
+    <!-- http://purl.org/NonFoodKG/allergen#Hexyl_cinnamal -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Hexyl_cinnamal">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Hexyl_cinnamal">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#hexyl_cinnamal"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#hexyl_cinnamal_and_linalool"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Hydrogenated_Castor_Oil -->
+    <!-- http://purl.org/NonFoodKG/allergen#Hydrogenated_Castor_Oil -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Hydrogenated_Castor_Oil">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Hydrogenated_Castor_Oil">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#hydrogenated_castor_oil"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Hydroxycitronellal -->
+    <!-- http://purl.org/NonFoodKG/allergen#Hydroxycitronellal -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Hydroxycitronellal">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Hydroxycitronellal">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#hydroxycitronellal"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Hydroxyisohexyl_3-cyclohexene_carboxaldehyde -->
+    <!-- http://purl.org/NonFoodKG/allergen#Hydroxyisohexyl_3-cyclohexene_carboxaldehyde -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Hydroxyisohexyl_3-cyclohexene_carboxaldehyde">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Hydroxyisohexyl_3-cyclohexene_carboxaldehyde">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#hydroxyisohexyl_"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Imidazolidinyl_urea -->
+    <!-- http://purl.org/NonFoodKG/allergen#Imidazolidinyl_urea -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Imidazolidinyl_urea">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Imidazolidinyl_urea">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#imidazolidinyl_urea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Isoeugenol -->
+    <!-- http://purl.org/NonFoodKG/allergen#Isoeugenol -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Isoeugenol">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Isoeugenol">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#isoeugenol"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Isopropyl_Palmitate -->
+    <!-- http://purl.org/NonFoodKG/allergen#Isopropyl_Palmitate -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Isopropyl_Palmitate">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Isopropyl_Palmitate">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#isopropyl_palmitate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Limonene -->
+    <!-- http://purl.org/NonFoodKG/allergen#Limonene -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Limonene">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Limonene">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#limonen"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#limonene"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Linalool -->
+    <!-- http://purl.org/NonFoodKG/allergen#Linalool -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Linalool">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Linalool">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#linalool"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Magnesium_Sulfate -->
+    <!-- http://purl.org/NonFoodKG/allergen#Magnesium_Sulfate -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Magnesium_Sulfate">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Magnesium_Sulfate">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#magnesium_sulfate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Maltodextrin -->
+    <!-- http://purl.org/NonFoodKG/allergen#Maltodextrin -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Maltodextrin">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Maltodextrin">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#maltodextrin"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Methylisothiazolinone -->
+    <!-- http://purl.org/NonFoodKG/allergen#Methylisothiazolinone -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Methylisothiazolinone">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Methylisothiazolinone">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#methylisothiazolinone"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Methylparaben -->
+    <!-- http://purl.org/NonFoodKG/allergen#Methylparaben -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Methylparaben">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Methylparaben">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#methylparaben"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Microcrystalline_Wax -->
+    <!-- http://purl.org/NonFoodKG/allergen#Microcrystalline_Wax -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Microcrystalline_Wax">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Microcrystalline_Wax">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#microcrystalline_wax"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Natriumhypochlorid -->
+    <!-- http://purl.org/NonFoodKG/allergen#Natriumhypochlorid -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Natriumhypochlorid">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Natriumhypochlorid">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#natriumchlorid"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Nichtionische_Tenside -->
+    <!-- http://purl.org/NonFoodKG/allergen#Nichtionische_Tenside -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Nichtionische_Tenside">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Nichtionische_Tenside">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#ionic_surfactants"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#nichtionische_tenside"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#nichtionische_tenside_"/>
@@ -873,9 +873,9 @@ As long as you:
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Paraffinum_Liquidum -->
+    <!-- http://purl.org/NonFoodKG/allergen#Paraffinum_Liquidum -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Paraffinum_Liquidum">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Paraffinum_Liquidum">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#dickflüssiges_paraffin"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#dünnflüssiges_paraffin"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#hartparaffin"/>
@@ -885,118 +885,118 @@ As long as you:
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Parfum -->
+    <!-- http://purl.org/NonFoodKG/allergen#Parfum -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Parfum">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Parfum">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#parfum"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#parfüm"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Petrolatum -->
+    <!-- http://purl.org/NonFoodKG/allergen#Petrolatum -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Petrolatum">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Petrolatum">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#petrolatum"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Phenoxyethanol -->
+    <!-- http://purl.org/NonFoodKG/allergen#Phenoxyethanol -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Phenoxyethanol">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Phenoxyethanol">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#phenoxethanol"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#phenoxyethanol"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Preservative -->
+    <!-- http://purl.org/NonFoodKG/allergen#Preservative -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Preservative">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Preservative">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#Preservative"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Propylparaben -->
+    <!-- http://purl.org/NonFoodKG/allergen#Propylparaben -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Propylparaben">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Propylparaben">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#propylparaben"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Salicylic_acid -->
+    <!-- http://purl.org/NonFoodKG/allergen#Salicylic_acid -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Salicylic_acid">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Salicylic_acid">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#salicylic_acid"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Sodium_Chloride -->
+    <!-- http://purl.org/NonFoodKG/allergen#Sodium_Chloride -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Sodium_Chloride">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Sodium_Chloride">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#sodium_chloride"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Sodium_Lauryl_Sulfate -->
+    <!-- http://purl.org/NonFoodKG/allergen#Sodium_Lauryl_Sulfate -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Sodium_Lauryl_Sulfate">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Sodium_Lauryl_Sulfate">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#sodium_laureth_sulfate"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#sodium_lauryl_sulfate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Sodium_salicylate -->
+    <!-- http://purl.org/NonFoodKG/allergen#Sodium_salicylate -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Sodium_salicylate">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Sodium_salicylate">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#sodium_salicylate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Subtilisin -->
+    <!-- http://purl.org/NonFoodKG/allergen#Subtilisin -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Subtilisin">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Subtilisin">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#subtilisin"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Talc -->
+    <!-- http://purl.org/NonFoodKG/allergen#Talc -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Talc">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Talc">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#talc"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Vaseline -->
+    <!-- http://purl.org/NonFoodKG/allergen#Vaseline -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Vaseline">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Vaseline">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#gelbes_vaselin"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#weißes_vaselin"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#Xanthan_Gum -->
+    <!-- http://purl.org/NonFoodKG/allergen#Xanthan_Gum -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#Xanthan_Gum">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#Xanthan_Gum">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#xanthan"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#xanthan_gum"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://knowrob.org/kg/allergen.owl#parfum -->
+    <!-- http://purl.org/NonFoodKG/allergen#parfum -->
 
-    <owl:NamedIndividual rdf:about="http://knowrob.org/kg/allergen.owl#parfum">
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#parfum">
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#duftstoffe"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#duftstoffe_"/>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/ingredients#parfum"/>
