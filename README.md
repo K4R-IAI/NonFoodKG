@@ -70,13 +70,13 @@ Please check out version 1 of the ontologies here:
 <td></td>
 <td></td>
 <td><a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake.rdf">FoodKG upper ontology</a></td>
-<td></td>
+<td><a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake.rdf">FoodKG upper ontology</a></td>
   </tr>
         <tr>
 <td></td>
 <td></td>
 <td><a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake_Individuals.rdf">FoodKG ingredients for recipes</a></td>
-<td></td>
+<td><a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake_Individuals.rdf">FoodKG ingredients for recipes</a></td>
   </tr>
   </table>
   
