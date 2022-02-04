@@ -1,0 +1,25 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+#+ summary: Retrieves shelf location for the cheapest deodorant that are have no hormonal effective ingredients
+#+ tags: 
+#+ - location
+#+ - price
+#+ - ingredients
+
+PREFIX loc: <http://purl.org/NonFoodKG/location#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
+PREFIX in: <http://purl.org/NonFoodKG/ingredients#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?shelf ?shelf_floor ?price WHERE {
+   ?prod in:has_ingredient ?ingredient.
+   ?ingredient rdf:type ?inclass.
+   FILTER(?inclass != in:hormonal_effective)
+  ?prod owl:sameAs ?product.
+  ?product rdf:type tax:deodorant.
+  ?product owl:sameAs ?instance.
+  ?instance loc:has_price ?price.
+  ?instance loc:stored_in ?shelf.
+  ?instance loc:stored_on ?shelf_floor.
+} ORDER BY ?price

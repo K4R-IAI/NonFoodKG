@@ -1,0 +1,28 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+#+ summary: Retrieves shelf location for juice from "das gesunde plus" without Sweetener
+#+ tags: 
+#+ - location
+#+ - brand
+#+ - ingredients
+
+PREFIX brand: <http://purl.org/NonFoodKG/brandinfo#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX loc: <http://purl.org/NonFoodKG/location#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
+PREFIX in: <http://purl.org/NonFoodKG/ingredients#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?shelf ?shelf_floor ?brand WHERE {
+   ?prod in:has_ingredient ?ingredient.
+   ?ingredient rdf:type ?inclass.
+   FILTER(?inclass != in:Sweetener)
+  ?prod owl:sameAs ?product.
+  ?product rdf:type tax:juice.
+  ?product owl:sameAs ?ob.
+  ?ob gr:hasBrand brand:das_gesunde_plus.
+  ?product owl:sameAs ?instance.
+  ?instance loc:stored_in ?shelf.
+  ?instance loc:stored_on ?shelf_floor.
+} GROUP BY ?shelf

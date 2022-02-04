@@ -1,0 +1,27 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+#+ summary: Retrieves shelf location for cheapest shampoo without emulsifier
+#+ tags: 
+#+ - location
+#+ - ingredient
+#+ - price
+
+PREFIX in: <http://purl.org/NonFoodKG/ingredients#>
+PREFIX loc: <http://purl.org/NonFoodKG/location#>
+PREFIX brand: <http://purl.org/NonFoodKG/brandinfo#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?shelf ?shelf_floor WHERE {
+ ?prod in:has_ingredient ?ingredient.
+ ?ingredient rdf:type ?inclass.
+ FILTER(?inclass != in:Emulsifier) 
+  ?prod owl:sameAs ?product.
+  ?product rdf:type tax:shampoo .
+  ?product owl:sameAs ?instance.
+  ?instance loc:has_price ?price.
+  ?instance loc:stored_in ?shelf.
+  ?instance loc:stored_on ?shelf_floor.
+} ORDER BY ?price

@@ -1,0 +1,26 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+#+ summary: Retrieves shelf location for toothpaste from "signal" that is lactosefree
+#+ tags: 
+#+ - location
+#+ - brand
+#+ - label
+
+PREFIX brand: <http://purl.org/NonFoodKG/brandinfo#>
+PREFIX lbl: <http://purl.org/NonFoodKG/label#>
+PREFIX loc: <http://purl.org/NonFoodKG/location#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ select ?shelf ?shelf_floor ?brand where {
+ ?product rdf:type tax:toothpaste.
+  ?sub owl:sameAs ?product.
+  ?sub lbl:has_label lbl:lactosefree.
+  ?product owl:sameAs ?ob.
+  ?ob gr:hasBrand brand:signal.
+ ?product owl:sameAs ?instance.
+  ?instance loc:stored_in ?shelf.    
+ ?instance loc:stored_on ?shelf_floor.
+ } GROUP BY ?shelf
