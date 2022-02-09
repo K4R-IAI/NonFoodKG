@@ -3,7 +3,7 @@
 #+ summary: Retrieves shelf location for cheapest juice without sweetener
 #+ tags: 
 #+ - location
-#+ - ingredient
+#+ - ingredients
 #+ - price
 
 PREFIX in: <http://purl.org/NonFoodKG/ingredients#>
