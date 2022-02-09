@@ -4,7 +4,7 @@
 #+ tags: 
 #+ - location
 #+ - brand
-#+ - ingredient
+#+ - ingredients
 
 PREFIX in: <http://purl.org/NonFoodKG/ingredients#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
