@@ -3,7 +3,7 @@
 #+ summary: Retrieves shelf location for bodylotion that is dermatologically tested, without fragrance
 #+ tags: 
 #+ - location
-#+ - ingredient
+#+ - ingredients
 #+ - label
 
 PREFIX brand: <http://purl.org/NonFoodKG/brandinfo#>
