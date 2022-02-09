@@ -3,7 +3,7 @@
 #+ summary: Retrieves shelf location for cheapest shampoo without emulsifier
 #+ tags: 
 #+ - location
-#+ - ingredient
+#+ - ingredients
 #+ - price
 
 PREFIX in: <http://purl.org/NonFoodKG/ingredients#>
