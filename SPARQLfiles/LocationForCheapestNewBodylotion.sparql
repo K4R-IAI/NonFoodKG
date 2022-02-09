@@ -1,0 +1,21 @@
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+
+#+ summary: Retrieves shelf location for cheapest new bodylotion
+#+ tags: 
+#+ - location
+#+ - flag
+#+ - price
+
+PREFIX loc: <http://purl.org/NonFoodKG/location#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?shelf ?shelf_floor ?class WHERE {
+  ?product rdf:type tax:bodylotion.
+  ?product owl:sameAs ?instance.
+  ?instance loc:has_price ?price.
+  ?instance loc:has_flag "NEU".
+  ?instance loc:stored_in ?shelf.
+  ?instance loc:stored_on ?shelf_floor.
+} ORDER BY ?price
