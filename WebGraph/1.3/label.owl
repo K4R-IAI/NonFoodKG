@@ -12,6 +12,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:trust="http://purl.org/NonFoodKG/trust#"
      xmlns:sesame="http://www.openrdf.org/schema/sesame#"
@@ -52,13 +53,17 @@ As long as you:
 
     <!-- http://purl.org/NonFoodKG/label#has_DAN -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/label#has_DAN"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/label#has_DAN">
+        <rdfs:domain rdf:resource="http://purl.org/NonFoodKG/label#Product"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/NonFoodKG/label#has_label -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/label#has_label"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/label#has_label">
+        <rdfs:range rdf:resource="http://purl.org/NonFoodKG/label#Label"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -102,6 +107,12 @@ As long as you:
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
     <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/copyright -->
 
     <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/copyright"/>
@@ -124,8 +135,6 @@ As long as you:
     <owl:ObjectProperty rdf:about="http://purl.org/NonFoodKG/label#has_label">
         <owl:inverseOf rdf:resource="http://purl.org/NonFoodKG/label#label_of"/>
         <rdfs:domain rdf:resource="http://purl.org/NonFoodKG/label#Product"/>
-        <rdfs:range rdf:resource="http://purl.org/NonFoodKG/label#Label"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/label#codecheck_website"/>
     </owl:ObjectProperty>
     
 
@@ -152,9 +161,7 @@ As long as you:
 
     <!-- http://purl.org/NonFoodKG/label#has_DAN -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/NonFoodKG/label#has_DAN">
-        <rdfs:domain rdf:resource="http://purl.org/NonFoodKG/label#Product"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/NonFoodKG/label#has_DAN"/>
     
 
 
@@ -351,6 +358,7 @@ Certifies natural ingredients.</rdfs:comment>
         <rdfs:comment>Label for organic products.</rdfs:comment>
         <rdfs:label>&quot;Alnatura&quot;@de</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.alnatura.de/de-de/"/>
+        <foaf:depiction rdf:resource="https://label-online.de/fileadmin/user_upload/labelsurvey/_processed_/e/b/csm_Alnatura_Logo_940b9c4054.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -364,6 +372,7 @@ Certifies natural ingredients.</rdfs:comment>
 Certifies that products contain natural ingredients.</rdfs:comment>
         <rdfs:label>&quot;Zertifizierte Naturkosmetik&quot;@de</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://kontrollierte-naturkosmetik.de/bdih.htm"/>
+        <foaf:depiction rdf:resource="https://www.ecorganicweb.com/wp-content/uploads/2017/05/natrue-logo-grey.png"/>
     </owl:NamedIndividual>
     
 
@@ -376,6 +385,7 @@ Certifies that products contain natural ingredients.</rdfs:comment>
         <owl:sameAs rdf:resource="http://purl.org/NonFoodKG/label#EU-Bio_Siegel"/>
         <rdfs:comment>Label for organic products.</rdfs:comment>
         <rdfs:label>&quot;Bio-Blatt&quot;@de</rdfs:label>
+        <foaf:depiction rdf:resource="https://truevego.de/wp-content/uploads/2015/03/bio-1080x675.png"/>
     </owl:NamedIndividual>
     
 
@@ -387,6 +397,7 @@ Certifies that products contain natural ingredients.</rdfs:comment>
         <rdfs:comment>Label for groceries that hold Bio Suisse standards.</rdfs:comment>
         <rdfs:label>&quot;Bio natur plus&quot;@de</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wwf.ch/de/lebensmittel-label-ratgeber/bio-natur-plus-manor"/>
+        <foaf:depiction rdf:resource="https://www.wwf.ch/sites/default/files/styles/guide_item_image/public/images/labels/images/bnp_rgb_64212.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -399,6 +410,7 @@ Certifies that products contain natural ingredients.</rdfs:comment>
         <rdfs:comment>Label for environmentally and animal friendly organic products.</rdfs:comment>
         <rdfs:label>&quot;Naturaplan&quot;@de</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.coop.ch/de/unternehmen/naturaplan.html"/>
+        <foaf:depiction rdf:resource="https://test.frc.ch/images/test/labels/zoom/naturaplan-coop_001.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -415,6 +427,7 @@ Certifies that products contain natural ingredients.</rdfs:comment>
         <rdfs:label>&quot;Blauer Engel&quot;@de</rdfs:label>
         <rdfs:label>&quot;Blue Angel&quot;@en</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q882616"/>
+        <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Blauer-Engel-1st-Logo_JuryUmweltzeichen_MenschUmwelt.svg/440px-Blauer-Engel-1st-Logo_JuryUmweltzeichen_MenschUmwelt.svg.png"/>
     </owl:NamedIndividual>
     
 
@@ -428,6 +441,7 @@ Certifies that products contain natural ingredients.</rdfs:comment>
         <rdfs:label>&quot;Der grüne Punkt&quot;@de</rdfs:label>
         <rdfs:label>&quot;Green dot&quot;@en</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q975485"/>
+        <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Green_dot_logo.svg/440px-Green_dot_logo.svg.png"/>
     </owl:NamedIndividual>
     
 
@@ -439,6 +453,7 @@ Certifies that products contain natural ingredients.</rdfs:comment>
         <rdfs:comment>Label certifies product tests by dermatologists.</rdfs:comment>
         <rdfs:label>&quot;Dermatologically tested&quot;@en</rdfs:label>
         <rdfs:label>&quot;Dermatologisch getestet&quot;@de</rdfs:label>
+        <foaf:depiction rdf:resource="https://1.bp.blogspot.com/-Xph80F-3gxA/Xy_3xgcgp7I/AAAAAAAAFNk/jfhXXFa61mIEOCSg4UPctTIPm4soas56ACLcBGAsYHQ/s500/dermatologically.png"/>
     </owl:NamedIndividual>
     
 
@@ -451,6 +466,7 @@ Certifies that products contain natural ingredients.</rdfs:comment>
         <rdfs:label>&quot;EU Bio-Siegel&quot;@de</rdfs:label>
         <rdfs:label>&quot;EU organic label&quot;@en</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q11680670"/>
+        <foaf:depiction rdf:resource="https://www.umweltbundesamt.de/sites/default/files/medien/530/bilder/eu-und-bio-siegel_cms-uba_0.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -467,6 +483,7 @@ Certifies that products contain natural ingredients.</rdfs:comment>
         <rdfs:label>&quot;EU Ecolabel&quot;@de</rdfs:label>
         <rdfs:label>&quot;EU Ecolabel&quot;@en</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://eu-ecolabel.de/en/"/>
+        <foaf:depiction rdf:resource="https://www.umweltbundesamt.de/sites/default/files/medien/530/bilder/eco-label_h700_uba-web_0.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -482,6 +499,7 @@ Products that bear this label are made using a mixture of materials from FSC-cer
         <rdfs:label>&quot;FSC Mix&quot;@de</rdfs:label>
         <rdfs:label>&quot;FSC Mix&quot;@en</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fsc.org/en/fsc-labels"/>
+        <foaf:depiction rdf:resource="https://www.fsc-deutschland.de/inc/clients/clnt.de.fsc.org/md/gd/GD_500x280-70_cropped_auto_1573641013_image.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -510,6 +528,7 @@ Products that bear this label are made using a mixture of materials from FSC-cer
         <rdfs:label>&quot;FSC recycled&quot;@de</rdfs:label>
         <rdfs:label>&quot;FSC recycled&quot;@en</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://fsc.org/en/fsc-labels"/>
+        <foaf:depiction rdf:resource="https://www.fsc-deutschland.de/inc/clients/clnt.de.fsc.org/md/gd/GD_500x280-70_cropped_auto_1573640935_image.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -520,6 +539,7 @@ Products that bear this label are made using a mixture of materials from FSC-cer
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#EcoLabel"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#FoodLabel"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#TextileLabel"/>
+        <foaf:depiction rdf:resource="https://www.aldi-nord.de/content/dam/aldi/germany/produkte/siegel-und-guetezeichen/fairtrade_400x226.png/jcr:content/renditions/opt.900w.png.res/1503243288482/opt.900w.png"/>
     </owl:NamedIndividual>
     
 
@@ -542,6 +562,7 @@ It certifies no synthetic ingredients but organic ingredients.</rdfs:comment>
         <rdfs:label>&quot;Natrue&quot;@de</rdfs:label>
         <rdfs:label>&quot;Natrue&quot;@en</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.natrue.org/"/>
+        <foaf:depiction rdf:resource="https://www.ecorganicweb.com/wp-content/uploads/2017/05/natrue-logo-grey.png"/>
     </owl:NamedIndividual>
     
 
@@ -554,6 +575,7 @@ It certifies no synthetic ingredients but organic ingredients.</rdfs:comment>
 It certifies only organic ingredients.</rdfs:comment>
         <rdfs:label>&quot;Natrue bio&quot;@de</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.natrue.org/"/>
+        <foaf:depiction rdf:resource="https://www.ecorganicweb.com/wp-content/uploads/2017/05/natrue-logo-grey.png"/>
     </owl:NamedIndividual>
     
 
@@ -564,6 +586,7 @@ It certifies only organic ingredients.</rdfs:comment>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#EcoLabel"/>
         <rdfs:comment>Label certifies organic products that hold the EU oeko standard: https://en.wikipedia.org/wiki/EU-Eco-regulation</rdfs:comment>
         <rdfs:label>&quot;Natur aktiv&quot;@de</rdfs:label>
+        <foaf:depiction rdf:resource="https://2.bp.blogspot.com/-NZVQN2yHiYg/WLSoEZ0ykkI/AAAAAAAABvk/ks3p4w8Yxnos8HkTT6nCqo5qMP2WDmpCACLcB/s1600/aktiv.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -576,6 +599,7 @@ It certifies only organic ingredients.</rdfs:comment>
 It certifies resource friendly, ecologically friendly products.</rdfs:comment>
         <rdfs:label>&quot;Naturkind&quot;@de</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://naturkind.de/"/>
+        <foaf:depiction rdf:resource="https://label-online.de/fileadmin/_processed_/a/e/csm_Naturkind_Logo_4c_bearbeitet_auf_rgb_a2ea89f2f7.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -587,6 +611,7 @@ It certifies resource friendly, ecologically friendly products.</rdfs:comment>
         <rdfs:comment>A label assigned to products that were testet and compared to other products from the same product category. It includes a product rating.</rdfs:comment>
         <rdfs:label>&quot;Ökotest&quot;@de</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.oekotest.de/"/>
+        <foaf:depiction rdf:resource="https://bilder.t-online.de/b/83/06/93/38/id_83069338/tid_da/das-logo-von-oeko-test-die-zeitschrift-oeko-test-kaempft-vor-dem-bgh-um-ihren-markenschutz-.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -6908,6 +6933,7 @@ It certifies resource friendly, ecologically friendly products.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#Pro_Planet">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#FoodLabel"/>
+        <foaf:depiction rdf:resource="https://www.pro-planet.info/fileadmin/Pro_Planet_Label/ProPlanet.png"/>
     </owl:NamedIndividual>
     
 
@@ -6925,6 +6951,7 @@ It certifies resource friendly, ecologically friendly products.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#Rainforest_Alliance">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#EcoLabel"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#FoodLabel"/>
+        <foaf:depiction rdf:resource="https://api.ssct-admin.de/assets/ssct/9/logo.png"/>
     </owl:NamedIndividual>
     
 
@@ -6937,6 +6964,7 @@ It certifies resource friendly, ecologically friendly products.</rdfs:comment>
         <rdfs:comment>Label for textile products.
 It certifies testing for harmful substances.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.oeko-tex.com/en/our-standards/standard-100-by-oeko-tex"/>
+        <foaf:depiction rdf:resource="http://4.bp.blogspot.com/-fiYqxAoLxEo/UQn1gwwnSGI/AAAAAAAAAC4/sSYCcSTsguY/s1600/Oeko-Tex%2BStandard%2B100%2BLogo.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -6948,6 +6976,7 @@ It certifies testing for harmful substances.</rdfs:comment>
         <rdfs:comment>This label can be assigned to any product. 
 It certifies product use, quality and sometimes ecological product aspects.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.test.de/"/>
+        <foaf:depiction rdf:resource="https://www1.wdr.de/radio/wdr5/sendungen/zeitzeichen/warentest-102~_v-gseapremiumxl.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -6959,6 +6988,7 @@ It certifies product use, quality and sometimes ecological product aspects.</rdf
         <rdfs:comment>If assigned without &quot;vegan&quot; class, it certifies vegetarian products, with additional &quot;vegan&quot; class it certifies vegan products.
 It certifies no animal ingredients and no animal testing. It also certifies no genetic testing.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.v-label.eu/"/>
+        <foaf:depiction rdf:resource="https://www.v-label.eu/wp-content/uploads/2017/02/vegan.png"/>
     </owl:NamedIndividual>
     
 
@@ -6971,6 +7001,7 @@ It certifies no animal ingredients and no animal testing. It also certifies no g
         <rdfs:comment>A label mainly for groceries, cosmetics and textile products. 
 It certifies no animal ingredients and no testing on animals.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.vegansociety.com/"/>
+        <foaf:depiction rdf:resource="https://cdn.shopify.com/s/files/1/1611/7771/files/vegan-logo_grande.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -6983,6 +7014,7 @@ It certifies no animal ingredients and no testing on animals.</rdfs:comment>
 Certifies use of natural ingredients.</rdfs:comment>
         <rdfs:label>&quot;alverde Naturkosmetik&quot;@de</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.dm.de/marken/alverde-naturkosmetik"/>
+        <foaf:depiction rdf:resource="https://media.dm-static.com/image/upload/q_auto,f_auto/content/rootpage-dm-shop-de-de/resource/blob/72156/0eafd01e30aad0b930ef2511dc822854/alverde-naturkosmetik-logo-data.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -7029,6 +7061,7 @@ Certifies use of natural ingredients.</rdfs:comment>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#Label"/>
         <rdfs:comment>A label for toothcare products.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.fdiworlddental.org/"/>
+        <foaf:depiction rdf:resource="https://cache.pressmailing.net/content/615aae8e-f63c-4d30-b910-c8c047c998d7/image-x?attachment=false.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -7039,6 +7072,7 @@ Certifies use of natural ingredients.</rdfs:comment>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#FoodLabel"/>
         <rdfs:label>&quot;glutenfree&quot;@en</rdfs:label>
         <rdfs:label>&quot;glutenfrei&quot;@de</rdfs:label>
+        <foaf:depiction rdf:resource="https://www.denns-biomarkt.at/fileadmin/denns-biomarkt.de/04_Wissenswertes/02_Wissensdatenbank/03_Ernaehrung/Glutenfreie_Produkte/Glutenfrei_Vorschaubild.png"/>
     </owl:NamedIndividual>
     
 
@@ -7095,6 +7129,7 @@ Certifies use of natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#novascore-1">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#NovaScore"/>
         <rdfs:seeAlso rdf:resource="https://world.openfoodfacts.org/nova"/>
+        <foaf:depiction rdf:resource="https://www.dietsensor.com/2016/dev/wp-content/uploads/2018/11/nova.png"/>
     </owl:NamedIndividual>
     
 
@@ -7104,6 +7139,7 @@ Certifies use of natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#novascore-2">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#NovaScore"/>
         <rdfs:seeAlso rdf:resource="https://world.openfoodfacts.org/nova"/>
+        <foaf:depiction rdf:resource="https://www.dietsensor.com/2016/dev/wp-content/uploads/2018/11/nova.png"/>
     </owl:NamedIndividual>
     
 
@@ -7113,6 +7149,7 @@ Certifies use of natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#novascore-3">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#NovaScore"/>
         <rdfs:seeAlso rdf:resource="https://world.openfoodfacts.org/nova"/>
+        <foaf:depiction rdf:resource="https://www.dietsensor.com/2016/dev/wp-content/uploads/2018/11/nova.png"/>
     </owl:NamedIndividual>
     
 
@@ -7122,6 +7159,7 @@ Certifies use of natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#novascore-4">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#NovaScore"/>
         <rdfs:seeAlso rdf:resource="https://world.openfoodfacts.org/nova"/>
+        <foaf:depiction rdf:resource="https://www.dietsensor.com/2016/dev/wp-content/uploads/2018/11/nova.png"/>
     </owl:NamedIndividual>
     
 
@@ -7131,6 +7169,7 @@ Certifies use of natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#nutriscore-a">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#NutriScore"/>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q46577569"/>
+        <foaf:depiction rdf:resource="https://bielany.leclerc.pl/wp-content/uploads/sites/42/2020/06/nutri-score.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -7140,6 +7179,7 @@ Certifies use of natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#nutriscore-b">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#NutriScore"/>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q46577569"/>
+        <foaf:depiction rdf:resource="https://www.vital.de/sites/default/files/styles/facebook/public/media/2019/08/Nutri_Score-16827.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -7149,6 +7189,7 @@ Certifies use of natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#nutriscore-c">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#NutriScore"/>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q46577569"/>
+        <foaf:depiction rdf:resource="https://www.foodaktuell.ch/wp-content/uploads/2021/05/Nutri-Score-300x233.jpeg"/>
     </owl:NamedIndividual>
     
 
@@ -7158,6 +7199,7 @@ Certifies use of natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#nutriscore-d">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#NutriScore"/>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q46577569"/>
+        <foaf:depiction rdf:resource="https://www.foodaktuell.ch/wp-content/uploads/2021/05/Nutri-Score-300x233.jpeg"/>
     </owl:NamedIndividual>
     
 
@@ -7167,6 +7209,7 @@ Certifies use of natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/label#nutriscore-e">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#NutriScore"/>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q46577569"/>
+        <foaf:depiction rdf:resource="https://www.foodaktuell.ch/wp-content/uploads/2021/05/Nutri-Score-300x233.jpeg"/>
     </owl:NamedIndividual>
     
 
@@ -7204,6 +7247,7 @@ Certifies use of natural ingredients.</rdfs:comment>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/label#FoodLabel"/>
         <rdfs:label>&quot;vegetarian&quot;@en</rdfs:label>
         <rdfs:label>&quot;vegetarisch&quot;@de</rdfs:label>
+        <foaf:depiction rdf:resource="https://www.kindpng.com/picc/m/35-350615_vegetarian-icon-symbol-logo-vector-transparent-circle-hd.png"/>
     </owl:NamedIndividual>
     
 
@@ -10057,7 +10101,17 @@ Certifies use of natural ingredients.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://purl.org/goodrelations/v1#Individual"/>
     
 
-   
+
+    <!-- http://purl.org/goodrelations/v1#hasEAN_UCC-13 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/goodrelations/v1#hasEAN_UCC-13"/>
+    
+
+
+    <!-- http://purl.org/goodrelations/v1#name -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/goodrelations/v1#name"/>
+    
 
 
     <!-- https://www.wikidata.org/entity/Q722218 -->
@@ -10080,10 +10134,14 @@ Certifies use of natural ingredients.</rdfs:comment>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/label#Product">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/label#knowrob"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NonFoodKG/label#has_label">
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/label#codecheck_website"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/label#vegan">
+        <foaf:depiction rdf:resource="https://www.kindpng.com/picc/m/160-1609028_transparent-vegan-logo-png-emblem-png-download.png"/>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q7918273"/>
-        <rdfs:label>&quot;vegan&quot;@en</rdfs:label>
         <rdfs:label>&quot;vegan&quot;@de</rdfs:label>
+        <rdfs:label>&quot;vegan&quot;@en</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
