@@ -2123,6 +2123,7 @@ Additionally, the classification provided by companies to ECHA in REACH registra
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#acute_toxicity">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/allergen#HazardClassification"/>
         <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q51843956"/>
+        <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/GHS-pictogram-skull.svg/440px-GHS-pictogram-skull.svg.png"/>
     </owl:NamedIndividual>
     
 
@@ -2141,6 +2142,7 @@ Additionally, the classification provided by companies to ECHA in REACH registra
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#corrosive">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/allergen#HazardClassification"/>
         <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q51843949"/>
+        <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/GHS-pictogram-acid.svg/440px-GHS-pictogram-acid.svg.png"/>
     </owl:NamedIndividual>
     
 
@@ -2160,6 +2162,7 @@ Additionally, the classification provided by companies to ECHA in REACH registra
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#flammable">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/allergen#HazardClassification"/>
+        <foaf:depiction rdf:resource="https://www.keysigns.co.uk/images/flammable-warning-safety-signs-p1612-54774_zoom.jpg"/>
     </owl:NamedIndividual>
     
 
@@ -2177,6 +2180,7 @@ Additionally, the classification provided by companies to ECHA in REACH registra
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#hazardous_to_the_environment">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/allergen#HazardClassification"/>
         <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q51843973"/>
+        <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/GHS-pictogram-pollu.svg/440px-GHS-pictogram-pollu.svg.png"/>
     </owl:NamedIndividual>
     
 
@@ -2186,6 +2190,7 @@ Additionally, the classification provided by companies to ECHA in REACH registra
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#health_hazard">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/allergen#HazardClassification"/>
         <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q51843962"/>
+        <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/GHS-pictogram-silhouette.svg/440px-GHS-pictogram-silhouette.svg.png"/>
     </owl:NamedIndividual>
     
 
@@ -2213,6 +2218,7 @@ Additionally, the classification provided by companies to ECHA in REACH registra
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#oxidising">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/allergen#HazardClassification"/>
         <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q187689"/>
+        <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Hazard_O.svg/440px-Hazard_O.svg.png"/>
     </owl:NamedIndividual>
     
 
@@ -2248,6 +2254,7 @@ Additionally, the classification provided by companies to ECHA in REACH registra
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/allergen#serious_health_hazard">
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/allergen#HazardClassification"/>
         <owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q51843964"/>
+        <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/GHS-pictogram-silhouette.svg/440px-GHS-pictogram-silhouette.svg.png"/>
     </owl:NamedIndividual>
     
 
@@ -3315,8 +3322,8 @@ Additionally, the classification provided by companies to ECHA in REACH registra
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/allergen#Preservative">
         <rdfs:label xml:lang="de">&quot;Konservierungsmittel&quot;</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/allergen#FDA_cosmetics_website"/>
         <rdfs:label xml:lang="en">&quot;Preservative&quot;</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/allergen#FDA_cosmetics_website"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/allergen#Tenside">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/allergen#StringMatching"/>
