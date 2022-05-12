@@ -17,68 +17,74 @@ Please check out version 1 of the ontologies here:
 
 <table> 
   <tr>
-    <td><b>Version 1.0</b></td><td><b>Version 1.1</b></td><td><b>Version 1.2</b></td><td><b>Version 1.3</b></td> </tr>
+    <td><b>Version 1.0</b></td><td><b>Version 1.1</b></td><td><b>Version 1.2</b></td><td><b>Version 1.3</b></td><td><b>Version 2.0</b></td> </tr>
 <tr>
-  <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductTaxonomy.owl">Product Taxonomy</a></td>
-  <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductTaxonomy.owl">Product Taxonomy</a></td>
-  <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/product-taxonomy.owl">Product Taxonomy</a></td>
-  <td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.3/product-taxonomy.owl">Product Taxonomy</a></td>
+  <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/ProductTaxonomy.owl">Product Taxonomy</a></td>
+  <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductTaxonomy.owl">Product Taxonomy</a></td>
+  <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/product-taxonomy.owl">Product Taxonomy</a></td>
+  <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/product-taxonomy.owl">Product Taxonomy</a></td>
+  <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/product-taxonomy.owl">Product Taxonomy</a>
+  <a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/linkFoodOn.owl">link to FoodOn</a></td>
   </tr>
 <tr>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/Ingredients.owl">Ingredients Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/Ingredients.owl">Ingredients Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/ingredients.owl">Ingredients Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.3/ingredients.owl">Ingredients Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/Ingredients.owl">Ingredients Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/Ingredients.owl">Ingredients Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/ingredients.owl">Ingredients Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/ingredients.owl">Ingredients Ontology</a></td>
+<td>coming soon</td>
   </tr>
   <tr>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/Allergen.owl">Allergen Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/Allergen.owl">Allergen Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/allergen.owl">Allergen Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.3/allergen.owl">Allergen Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/Allergen.owl">Allergen Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/Allergen.owl">Allergen Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/allergen.owl">Allergen Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/allergen.owl">Allergen Ontology</a></td>
+<td>coming soon</td>
   </tr>
   <tr>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductInfo.owl">Product Information (nutrition) Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductInfo.owl">Product Information (nutrition) Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/nutrition.owl">Product nutrition Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.3/nutrition.owl">Product nutrition Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/ProductInfo.owl">Product Information (nutrition) Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductInfo.owl">Product Information (nutrition) Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/nutrition.owl">Product nutrition Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/nutrition.owl">Product nutrition Ontology</a></td>
+    <td>coming soon</td>
   </tr>
   <tr>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/Label.owl">Product Label Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/Label.owl">Product Label Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/label.owl">Product Label Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.3/label.owl">Product Label Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/Label.owl">Product Label Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/Label.owl">Product Label Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/label.owl">Product Label Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/label.owl">Product Label Ontology</a></td>
+    <td>coming soon</td>
 </tr>
   <tr>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductDimensions.owl">Product Dimensions Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductDimensions.owl">Product Dimensions Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/dimensions.owl">Product Dimensions Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.3/dimensions.owl">Product Dimensions Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/ProductDimensions.owl">Product Dimensions Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductDimensions.owl">Product Dimensions Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/dimensions.owl">Product Dimensions Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/dimensions.owl">Product Dimensions Ontology</a></td>
+    <td>coming soon</td>
   </tr>
   <tr>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.0/ProductToShelf.owl">Product Location Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.1/ProductToShelf.owl">Product Location Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/location.owl">Product Location Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.3/location.owl">Product Location Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/ProductToShelf.owl">Product Location Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductToShelf.owl">Product Location Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/location.owl">Product Location Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/location.owl">Product Location Ontology</a></td>
+    <td>coming soon</td>
   </tr>
     <tr>
 <td></td>
 <td></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.2/brandinfo.owl">Product Brand Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/AllIn-NonFoodKG/master/WebGraph/1.3/brandinfo.owl">Product Brand Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/brandinfo.owl">Product Brand Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/brandinfo.owl">Product Brand Ontology</a></td>
+      <td>coming soon</td>
   </tr>
-      <tr>
+    <tr>
 <td></td>
 <td></td>
-<td><a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake.rdf">FoodKG upper ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake.rdf">FoodKG upper ontology</a></td>
-  </tr>
-        <tr>
 <td></td>
 <td></td>
-<td><a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake_Individuals.rdf">FoodKG ingredients for recipes</a></td>
-<td><a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake_Individuals.rdf">FoodKG ingredients for recipes</a></td>
+      <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/user-profile.owl">user profile</a></td>
   </tr>
   </table>
+  
+  For applications like recipe recommendations in the first versions you will additionally need the FoodKG files (<a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake.rdf">FoodKG upper ontology</a> and <a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake_Individuals.rdf">FoodKG ingredients for recipes</a>).
   
 # Motivation
 
@@ -90,7 +96,7 @@ To further enhance the knowledge graph information and in order to being able to
 The knowledge graph is publicly available here and on <a href="https://triply.cc/">triply</a> (links see below), many thanks to the <a href="https://krr.cs.vu.nl/">knowledge representation and reasoning group</a> at the Vrije Universiteit Amsterdam.
 
 <h3>Predefined queries</h3> 
-<a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/"><img src="UseCaseImg/grlc_logo_01.png" width="250" alt="grlc image"/></a>
+<a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/"><img src="UseCaseImg/grlc_logo_01.png" width="150" alt="grlc image"/></a>
 
 We created some predefined queries for everyone to test all versions of NonFoodKG via the <a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">NonFoodKG grlc api</a>. grlc is a git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries <a href="https://github.com/CLARIAH/grlc">(grlc on github)</a>
 <h3>Version 1.0</h3> <a href="https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql">NonFoodKG via triply SPARQL api</a>
