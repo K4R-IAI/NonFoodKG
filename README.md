@@ -23,8 +23,8 @@ Please check out version 1 of the ontologies here:
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductTaxonomy.owl">Product Taxonomy</a></td>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/product-taxonomy.owl">Product Taxonomy</a></td>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/product-taxonomy.owl">Product Taxonomy</a></td>
-  <td><table><tr><td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/product-taxonomy.owl">Product Taxonomy</a></td></tr>
-  <tr><td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/linkFoodOn.owl">link to FoodOn</a><hr></td></tr></table></td>
+  <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/product-taxonomy.owl">Product Taxonomy</a><br><hr>
+  <a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/linkFoodOn.owl">link to FoodOn</a></td>
   </tr>
 <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/Ingredients.owl">Ingredients Ontology</a></td>
