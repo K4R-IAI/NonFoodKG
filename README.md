@@ -13,7 +13,8 @@ Please check out version 1 of the ontologies here:
 <h3>Version 1.0</h3> is the first version of NonFoodKG.<br>
 <h3>Version 1.1</h3> has some minor fixes and integrates a content trust feature based on the <a href="http://trdf.sourceforge.net/trustvocab.owl">tRDF</a> trust vocabulary in combination with a classification of data sources as <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl">DUL information objects</a><br>
 <h3>Version 1.2</h3> links NonFoodKG to FoodKG and integrates the KnowRob product taxonomy. New ontologies like nutrition ontology and brand info ontology are also linked to NonFoodKG.<br>
-<h3>Version 1.3</h3> changes namespaces in all files from knowrob/kg/ to the permanent URL namespace purl.org/NonFoodKG/.<br>
+<h3>Version 1.3</h3> changes namespaces in all files from knowrob/kg/ to the permanent URL namespace purl.org/NonFoodKG/.<br><hr>
+<h3>Version 2.0</h3> integrates the food product taxonomy from FoodOn (foodon.org/), seperates food ingredients in recipes from non-food ingredients in non-food products, integrates an extensive food product nutrition ontology that uses FoodOn classification and FDC data (https://fdc.nal.usda.gov/fdc-app.html#/) and adds a user profile ontology to be sued in various applications.<br>
 
 <table> 
   <tr>
