@@ -18,7 +18,7 @@ Please check out version 1 of the ontologies here:
 
 <table> 
   <tr>
-    <td style="width:15%;"><b>Version 1.0</b></td tyle="width:15%;"><td><b>Version 1.1</b></td><td tyle="width:15%;"><b>Version 1.2</b></td><td style="width:20%;"><b>Version 1.3</b></td><td style="width:20%;"><b>Version 2.0</b></td> </tr>
+    <td style="width:15%;"><b>Version 1.0</b></td style="width:15%;"><td><b>Version 1.1</b></td><td style="width:15%;"><b>Version 1.2</b></td><td style="width:20%;"><b>Version 1.3</b></td><td style="width:20%;"><b>Version 2.0</b></td> </tr>
 <tr>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/ProductTaxonomy.owl">Product Taxonomy</a></td>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductTaxonomy.owl">Product Taxonomy</a></td>
