@@ -31,14 +31,14 @@ Please check out version 1 of the ontologies here:
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/Ingredients.owl">Ingredients Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/ingredients.owl">Ingredients Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/ingredients.owl">Ingredients Ontology</a></td>
-<td>coming soon</td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/nonfoodingredients.owl">non-food Ingredients Ontology</a></td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/Allergen.owl">Allergen Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/Allergen.owl">Allergen Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/allergen.owl">Allergen Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/allergen.owl">Allergen Ontology</a></td>
-<td>coming soon</td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/allergen.owl">Allergen Ontology</a></td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/ProductInfo.owl">Product Information (nutrition) Ontology</a></td>
