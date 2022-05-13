@@ -23,7 +23,7 @@ Please check out version 1 of the ontologies here:
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductTaxonomy.owl">Product Taxonomy</a></td>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/product-taxonomy.owl">Product Taxonomy</a></td>
   <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/product-taxonomy.owl">Product Taxonomy</a></td>
-  <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/product-taxonomy.owl">Product Taxonomy</a><br><hr>
+  <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/product-taxonomy.owl">Product Taxonomy</a><hr>
   <a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/linkFoodOn.owl">link to FoodOn</a></td>
   </tr>
 <tr>
@@ -45,7 +45,8 @@ Please check out version 1 of the ontologies here:
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductInfo.owl">Product Information (nutrition) Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/nutrition.owl">Product nutrition Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/nutrition.owl">Product nutrition Ontology</a></td>
-    <td>coming soon</td>
+    <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/nutrition.owl">nutrition Ontology</a><hr>
+    nutrition to food</td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/Label.owl">Product Label Ontology</a></td>
