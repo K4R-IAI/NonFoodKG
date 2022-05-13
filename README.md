@@ -32,7 +32,7 @@ Please check out version 1 of the ontologies here:
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/Ingredients.owl">Ingredients Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/ingredients.owl">Ingredients Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/ingredients.owl">Ingredients Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/nonfoodingredients.owl">non-food Ingredients Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/nonfood-ingredients.owl">non-food Ingredients Ontology</a></td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/Allergen.owl">Allergen Ontology</a></td>
@@ -54,28 +54,28 @@ Please check out version 1 of the ontologies here:
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/Label.owl">Product Label Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/label.owl">Product Label Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/label.owl">Product Label Ontology</a></td>
-    <td>coming soon</td>
+    <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/label.owl">Product Label Ontology</a></td>
 </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/ProductDimensions.owl">Product Dimensions Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductDimensions.owl">Product Dimensions Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/dimensions.owl">Product Dimensions Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/dimensions.owl">Product Dimensions Ontology</a></td>
-    <td>coming soon</td>
+    <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/dimensions.owl">Product Dimensions Ontology</a></td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/ProductToShelf.owl">Product Location Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductToShelf.owl">Product Location Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/location.owl">Product Location Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/location.owl">Product Location Ontology</a></td>
-    <td>coming soon</td>
+    <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/location.owl">Product Location Ontology</a></td>
   </tr>
     <tr>
 <td></td>
 <td></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/brandinfo.owl">Product Brand Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/brandinfo.owl">Product Brand Ontology</a></td>
-      <td>coming soon</td>
+      <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/brandinfo.owl">Product Brand Ontology</a></td>
   </tr>
     <tr>
 <td></td>
