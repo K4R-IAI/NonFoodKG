@@ -1,9 +1,11 @@
 
 # NonFoodKG - A non-food product knowledge graph
 
-Non-FoodKG is a non-food knowledge graph interlinking different ontologies designed for retail, household and robotic applications. It is based on a merged product taxonomy reflecting the product classification in grocery stores and drugstores that is linked to a product location ontology created from a robot belief state while performing stocktaking in a retail store as depicted in the following picture.<br> 
+Non-FoodKG is a non-food knowledge graph interlinking different ontologies designed for retail, household and robotic applications. It is based on a merged product taxonomy reflecting the product classification in grocery stores and drugstores that is linked to a product location ontology created from a robot belief state while performing stocktaking in a retail store as depicted in the following picture:<br> 
 <img src="UseCaseImg/semDTCompose2.jpg" width="600" alt="semantic Digital Twin"/><br>
 <small>Kümpel, M., Mueller, C.A., Beetz, M. (2021). <a href="https://link.springer.com/chapter/10.1007/978-3-030-88662-2_7"><i>Semantic Digital Twins for Retail Logistics</i></a>. In: Freitag, M., Kotzab, H., Megow, N. (eds) <b>Dynamics in Logistics</b>. Springer, Cham.</small><br>
+
+
 The <b>product location ontology</b> therefore stores inventory data like stock and price of products as well as their positions relative to shelves (instead of coordinates). We use the <a href="http://knowrob.org/">KnowRob knowledge processing system</a> for creation of the location ontology. In KnowRob, a robot can access specific position information of the perceived objects. The <b>product taxonomy</b> classifies products that were recognized during stocktaking. It is linked to an <b>ingredients classification</b> based on string matching, which is connected to an <b>allergen classification</b>. The product taxonomy is also linked to further product information like name and place of production in <b>product information</b>,<b> product label</b> or <b>product dimensions</b>, i.e. dimensions of product packaging as well as product weight/ filling information. 
 All this can be used for shopping applications on mobile phones or smart glasses, for example.
 
