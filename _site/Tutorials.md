@@ -4,6 +4,6 @@ layout: default
 
 ## Welcome to the Tutorials page
 
-_yay_
+_coming soon_
 
 [back](./)
