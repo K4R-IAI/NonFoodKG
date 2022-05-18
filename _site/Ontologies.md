@@ -2,7 +2,9 @@
 layout: default
 ---
 
-## Ontologies [back](./)
+[back](./)
+
+## Ontologies 
 
 Please check out the ontologies here:
 
