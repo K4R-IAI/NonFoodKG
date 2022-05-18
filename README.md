@@ -84,6 +84,13 @@ Please check out version 1 of the ontologies here:
 <td></td>
       <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/user-profile.owl">user profile</a></td>
   </tr>
+      <tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+      <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/quantity.owl">quantity classification</a></td>
+  </tr>
   </table>
   
   For applications like recipe recommendations in the first versions you will additionally need the FoodKG files (<a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake.rdf">FoodKG upper ontology</a> and <a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake_Individuals.rdf">FoodKG ingredients for recipes</a>).
