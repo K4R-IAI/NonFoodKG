@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/NonFoodKG/quantity#"
+     xml:base="http://purl.org/NonFoodKG/quantity"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Spec="https://www.omg.org/techprocess/ab/SpecificationMetadata/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:term="http://purl.org/dc/terms/"
+     xmlns:trust="http://purl.org/NonFoodKG/trust#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.org/NonFoodKG/quantity">
+        <owl:versionIRI rdf:resource="http://purl.org/NonFoodKG/quantity/1.0"/>
+        <term:contributor>Michaela Kümpel</term:contributor>
+        <term:license>https://opendatacommons.org/licenses/by/1-0/</term:license>
+        <rdfs:comment>A quantity skeleton that can be used for various applications. Re-using the qudt scheme (http://qudt.org/).</rdfs:comment>
+        <Spec:copyright>Copyright (c) 2021 Michaela Kümpel
+
+This work is licensed under Open Data Commons Attribution License (ODC-BY 1.0 license).
+
+You are free:
+
+    To share: To copy, distribute and use the database.
+    To create: To produce works from the database.
+    To adapt: To modify, transform and build upon the database.
+
+As long as you:
+
+    Attribute: Attribute the work to the original authors. You must attribute any public use of the database, or works produced from the database. For any use or redistribution of the database, or works produced from it, you must make clear to others the license of the database and keep intact any notices on the original database.</Spec:copyright>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NonFoodKG/trust#source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/trust#source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/copyright -->
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/copyright"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NonFoodKG/quantity#Milliliter -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/quantity#Milliliter">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/quantity#Teaspoon -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/quantity#Teaspoon">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/quantity#pinch -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/quantity#pinch">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#CountingUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#CountingUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#ResourceUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#LengthUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#LengthUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#SpaceAndTimeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#MassUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#MassUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#MechanicsUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#MechanicsUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#MechanicsUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#PhysicalUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#PhysicalUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#PhysicalUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#ScienceAndEngineeringUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#ResourceUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#ResourceUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#ScienceAndEngineeringUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#ScienceAndEngineeringUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#ResourceUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#SpaceAndTimeUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#SpaceAndTimeUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#MechanicsUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#VolumeUnit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt#VolumeUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#SpaceAndTimeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Quantity -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Quantity"/>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#Centimeter -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#Centimeter">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#LengthUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#DryGallonUS -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#DryGallonUS">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#Foot -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#Foot">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#LengthUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#GallonUS -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#GallonUS">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#Gram -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#Gram">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#Inch -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#Inch">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#LengthUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#Kilogram -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#Kilogram">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#Kilometer -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#Kilometer">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#LengthUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#LiquidCupUS -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#LiquidCupUS">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#LiquidOunceUS -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#LiquidOunceUS">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#Liter -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#Liter">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#Meter -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#Meter">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#LengthUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#MileInternational -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#MileInternational">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#LengthUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#Millimeter -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#Millimeter">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#LengthUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#NauticalMile -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#NauticalMile">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#LengthUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#OunceMass -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#OunceMass">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/unit#Tablespoon -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit#Tablespoon">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.baall.de/ontologies/QUDT-metrology.owl#Percent100 -->
+
+    <owl:Class rdf:about="http://www.baall.de/ontologies/QUDT-metrology.owl#Percent100">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#CountingUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.baall.de/ontologies/QUDT-metrology.owl#Piece -->
+
+    <owl:Class rdf:about="http://www.baall.de/ontologies/QUDT-metrology.owl#Piece">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#CountingUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.baall.de/ontologies/QUDT-metrology.owl#PoundInternational -->
+
+    <owl:Class rdf:about="http://www.baall.de/ontologies/QUDT-metrology.owl#PoundInternational">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.baall.de/ontologies/QUDT-small.owl#KilogramPerLiter -->
+
+    <owl:Class rdf:about="http://www.baall.de/ontologies/QUDT-small.owl#KilogramPerLiter">
+        <rdfs:subClassOf rdf:resource="http://www.baall.de/ontologies/QUDT-small.owl#MassPerVolumeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.baall.de/ontologies/QUDT-small.owl#MassPerVolumeUnit -->
+
+    <owl:Class rdf:about="http://www.baall.de/ontologies/QUDT-small.owl#MassPerVolumeUnit">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#MechanicsUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.baall.de/ontologies/QUDT-small.owl#Number -->
+
+    <owl:Class rdf:about="http://www.baall.de/ontologies/QUDT-small.owl#Number">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#CountingUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.baall.de/ontologies/QUDT-small.owl#Percent -->
+
+    <owl:Class rdf:about="http://www.baall.de/ontologies/QUDT-small.owl#Percent">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#CountingUnit"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
