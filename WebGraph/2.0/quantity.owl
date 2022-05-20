@@ -107,9 +107,9 @@ As long as you:
     
 
 
-    <!-- http://qudt.org/schema/qudt#quantityValue -->
+    <!-- http://qudt.org/schema/qudt#value -->
 
-    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt#quantityValue">
+    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt#value">
         <rdfs:comment>The value of some observable quantity</rdfs:comment>
     </owl:DatatypeProperty>
     
