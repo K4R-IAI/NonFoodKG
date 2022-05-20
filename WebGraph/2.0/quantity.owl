@@ -90,9 +90,9 @@ As long as you:
     
 
 
-    <!-- http://qudt.org/schema/qudt#has_quantity_kind -->
+    <!-- http://qudt.org/schema/qudt#hasQuantity -->
 
-    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt#has_quantity_kind"/>
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt#hasQuantity"/>
     
 
 
@@ -107,9 +107,11 @@ As long as you:
     
 
 
-    <!-- http://qudt.org/schema/qudt#unit -->
+    <!-- http://qudt.org/schema/qudt#quantityValue -->
 
-    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt#unit"/>
+    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt#quantityValue">
+        <rdfs:comment>The value of some observable quantity</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
