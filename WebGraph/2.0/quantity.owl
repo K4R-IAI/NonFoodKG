@@ -107,9 +107,9 @@ As long as you:
     
 
 
-    <!-- http://qudt.org/schema/qudt#value -->
+    <!-- http://qudt.org/schema/qudt#valueQuantity -->
 
-    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt#value">
+    <owl:DatatypeProperty rdf:about="http://qudt.org/schema/qudt#valueQuantity">
         <rdfs:comment>The value of some observable quantity</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -123,6 +123,14 @@ As long as you:
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/NonFoodKG/quantity#Miligram -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/quantity#Miligram">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
+    </owl:Class>
     
 
 
