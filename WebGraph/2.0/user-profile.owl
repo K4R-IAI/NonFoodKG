@@ -63,12 +63,6 @@ As long as you:
     
 
 
-    <!-- http://purl.org/NonFoodKG/user-profile#fdc_Id -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/user-profile#fdc_Id"/>
-    
-
-
     <!-- http://purl.org/NonFoodKG/user-profile#unit -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/user-profile#unit"/>
@@ -182,7 +176,7 @@ As long as you:
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/user-profile#age19to25">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/user-profile#age_group"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ewachsene 19 bis unter 25 Jahre</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erwachsene 19 bis unter 25 Jahre</rdfs:label>
     </owl:Class>
     
 
@@ -191,7 +185,7 @@ As long as you:
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/user-profile#age25to51">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/user-profile#age_group"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ewachsene 25 bis unter 51 Jahre</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erwachsene 25 bis unter 51 Jahre</rdfs:label>
     </owl:Class>
     
 
@@ -200,7 +194,7 @@ As long as you:
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/user-profile#age51to65">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/user-profile#age_group"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ewachsene 51 bis unter 65 Jahre</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erwachsene 51 bis unter 65 Jahre</rdfs:label>
     </owl:Class>
     
 
