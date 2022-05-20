@@ -76,6 +76,13 @@ Please check out the ontologies here:
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/brandinfo.owl">Product Brand Ontology</a></td>
       <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/brandinfo.owl">Product Brand Ontology</a></td>
   </tr>
+      <tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+      <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/packaging.owl">packaging & recycling</a></td>
+  </tr>
     <tr>
 <td></td>
 <td></td>
