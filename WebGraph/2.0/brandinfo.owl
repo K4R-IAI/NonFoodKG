@@ -247,11 +247,11 @@ As long as you:
     <!-- http://purl.org/goodrelations/v1#Brand -->
 
     <owl:Class rdf:about="http://purl.org/goodrelations/v1#Brand">
-        <rdfs:comment xml:lang="de">Brand of a product.
+        <rdfs:comment xml:lang="en">Brand of a product.
 Brands can have sub-brands through the relation has_subbrand.
 Some brands belong to a certain business entity and are only sold in their stores.</rdfs:comment>
-        <rdfs:label xml:lang="en">&quot;Brand&quot;</rdfs:label>
-        <rdfs:label xml:lang="de">&quot;Marke&quot;</rdfs:label>
+        <rdfs:label xml:lang="en">Brand</rdfs:label>
+        <rdfs:label xml:lang="de">Marke</rdfs:label>
     </owl:Class>
     
 
@@ -259,7 +259,7 @@ Some brands belong to a certain business entity and are only sold in their store
     <!-- http://purl.org/goodrelations/v1#BusinessEntity -->
 
     <owl:Class rdf:about="http://purl.org/goodrelations/v1#BusinessEntity">
-        <rdfs:comment xml:lang="de">A business entity is a store chain like dm or rewe.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A business entity is a store chain like dm or rewe.</rdfs:comment>
     </owl:Class>
     
 
