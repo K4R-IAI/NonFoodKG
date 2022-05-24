@@ -100,7 +100,7 @@ Please check out the ontologies here:
   </tr>
   </table>
   
-  For applications like recipe recommendations in version 1.3 you will additionally need the FoodKG files (<a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake.rdf">FoodKG upper ontology</a> and <a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake_Individuals.rdf">FoodKG ingredients for recipes</a>).
+  For applications like recipe recommendations in version 1.3 you will additionally need the FoodKG files (<a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake.rdf">FoodKG upper ontology</a> and <a href="https://raw.githubusercontent.com/foodkg/foodkg.github.io/master/ontologies/WhatToMake_Individuals.rdf">FoodKG ingredients for recipes</a>).<br>
   In version 2.1 we will have our own recipe files.
 
   <b>[main](./)</b>
