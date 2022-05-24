@@ -1783,6 +1783,14 @@ As long as you:
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001046 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001046">
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FOODON_00001056 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001056">
@@ -1895,6 +1903,14 @@ As long as you:
     
 
 
+    <!-- http://purl.org/NonFoodKG/product-taxonomy#Cookies -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#Cookies">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/NonFoodKG/product-taxonomy#Household -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#Household">
@@ -1903,6 +1919,14 @@ As long as you:
         <rdfs:comment>Household products, from batteries over toilet paper to light bulbs.</rdfs:comment>
         <rdfs:label xml:lang="de">Haushalt</rdfs:label>
         <rdfs:label xml:lang="en">Household</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/product-taxonomy#Traubenzucker -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#Traubenzucker">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#sweetener"/>
     </owl:Class>
     
 
@@ -2041,6 +2065,14 @@ As long as you:
     
 
 
+    <!-- http://purl.org/NonFoodKG/product-taxonomy#bread -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#bread">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001002"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/NonFoodKG/product-taxonomy#brown_sugar -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#brown_sugar">
@@ -2110,6 +2142,14 @@ As long as you:
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#convenience_food">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/product-taxonomy#corn -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#corn">
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/shop.owl#Vegetable"/>
     </owl:Class>
     
 
@@ -2500,6 +2540,14 @@ As long as you:
     
 
 
+    <!-- http://purl.org/NonFoodKG/product-taxonomy#pasta -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#pasta">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001056"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/NonFoodKG/product-taxonomy#pen -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#pen">
@@ -2615,6 +2663,15 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#sugar">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#sweetener"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/product-taxonomy#sunflower_oil -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#sunflower_oil">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#vegetable_oil"/>
+        <rdfs:label xml:lang="de">Sonnenblumenöl</rdfs:label>
     </owl:Class>
     
 
@@ -2888,6 +2945,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P08067308 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P08067308">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001046"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">08067308</gr:hasEAN_UCC-13>
         <rdfs:comment>Starkist, chunk light tuna</rdfs:comment>
     </owl:NamedIndividual>
@@ -2907,6 +2965,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P29008124 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P29008124">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#olive_oil"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29008124</gr:hasEAN_UCC-13>
         <rdfs:comment>Olivenöl nativ extra - Casa Morando</rdfs:comment>
     </owl:NamedIndividual>
@@ -2925,6 +2984,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P3083680019323 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P3083680019323">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#corn"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3083680019323</gr:hasEAN_UCC-13>
         <rdfs:comment>Goldmais Mexiko Mix</rdfs:comment>
     </owl:NamedIndividual>
@@ -2934,6 +2994,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P3083680073608 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P3083680073608">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#corn"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3083680073608</gr:hasEAN_UCC-13>
         <rdfs:comment>Bonduelle Goldmais mittlere Dose 300 g</rdfs:comment>
     </owl:NamedIndividual>
@@ -2970,6 +3031,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P3850102320073 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P3850102320073">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#bonbon"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3850102320073</gr:hasEAN_UCC-13>
         <rdfs:comment>Kras - Napolitanke</rdfs:comment>
     </owl:NamedIndividual>
@@ -2988,6 +3050,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4000406002321 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4000406002321">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#flour"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4000406002321</gr:hasEAN_UCC-13>
         <rdfs:comment>Aurora Pizzamehl</rdfs:comment>
     </owl:NamedIndividual>
@@ -3024,6 +3087,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4000540100419 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4000540100419">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#olive_oil"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4000540100419</gr:hasEAN_UCC-13>
         <rdfs:comment>Livio Natives Olivenöl Extra aus Griechenland</rdfs:comment>
     </owl:NamedIndividual>
@@ -3069,6 +3133,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4002221004115 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4002221004115">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#spice"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4002221004115</gr:hasEAN_UCC-13>
         <rdfs:comment>Meßmer Glühwein-Gewürz kräftig würzig</rdfs:comment>
     </owl:NamedIndividual>
@@ -3078,6 +3143,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4002674043952 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4002674043952">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#spice"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4002674043952</gr:hasEAN_UCC-13>
         <rdfs:comment>Ostmann Oregano gerebelt</rdfs:comment>
     </owl:NamedIndividual>
@@ -3087,6 +3153,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4002674121063 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4002674121063">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#spice"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4002674121063</gr:hasEAN_UCC-13>
         <rdfs:comment>Osmann Anis</rdfs:comment>
     </owl:NamedIndividual>
@@ -3114,6 +3181,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4005500087151 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4005500087151">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#sunflower_oil"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4005500087151</gr:hasEAN_UCC-13>
         <rdfs:comment>Thomy Sonnenblumenöl</rdfs:comment>
     </owl:NamedIndividual>
@@ -3123,6 +3191,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4008258528020 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4008258528020">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#corn"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4008258528020</gr:hasEAN_UCC-13>
         <rdfs:comment>Seeberger Popcorn-Mais</rdfs:comment>
     </owl:NamedIndividual>
@@ -3142,6 +3211,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4008549045021 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4008549045021">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#flour"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4008549045021</gr:hasEAN_UCC-13>
         <rdfs:comment>Diamant Weizenmehl Extra Type 405</rdfs:comment>
     </owl:NamedIndividual>
@@ -3151,6 +3221,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4008671033002 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4008671033002">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#white_sugar"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4008671033002</gr:hasEAN_UCC-13>
         <rdfs:comment>Sweet Family - Feiner Zucker</rdfs:comment>
     </owl:NamedIndividual>
@@ -3160,6 +3231,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4009418106911 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4009418106911">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#white_sugar"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4009418106911</gr:hasEAN_UCC-13>
         <rdfs:comment>Tip Raffinade Zucker feine Körnung</rdfs:comment>
     </owl:NamedIndividual>
@@ -3169,6 +3241,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4013752027405 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4013752027405">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#bread"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4013752027405</gr:hasEAN_UCC-13>
         <rdfs:comment>Brandt Vollkorn Zwieback</rdfs:comment>
     </owl:NamedIndividual>
@@ -3178,6 +3251,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4015000307468 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4015000307468">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dishwashing"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4015000307468</gr:hasEAN_UCC-13>
         <rdfs:comment>Somat Tabs</rdfs:comment>
     </owl:NamedIndividual>
@@ -3225,6 +3299,8 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4025500206680 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4025500206680">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4025500206680</gr:hasEAN_UCC-13>
         <rdfs:comment>Müller Milchreis Lemon Cheesecake</rdfs:comment>
     </owl:NamedIndividual>
@@ -3234,6 +3310,8 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P40255613 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P40255613">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40255613</gr:hasEAN_UCC-13>
         <rdfs:comment>Müller Milch Reis Erdbeere</rdfs:comment>
     </owl:NamedIndividual>
@@ -3243,6 +3321,8 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P40255675 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P40255675">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40255675</gr:hasEAN_UCC-13>
         <rdfs:comment>MilchReis Zimt - Müller</rdfs:comment>
     </owl:NamedIndividual>
@@ -3252,6 +3332,8 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P40255682 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P40255682">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40255682</gr:hasEAN_UCC-13>
         <rdfs:comment>Milch Reis original/Apple</rdfs:comment>
     </owl:NamedIndividual>
@@ -3270,6 +3352,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P40279770 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P40279770">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#spice"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40279770</gr:hasEAN_UCC-13>
         <rdfs:comment>Fuchs Oregano gerebel</rdfs:comment>
     </owl:NamedIndividual>
@@ -3344,6 +3427,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4311596438419 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4311596438419">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4311596438419</gr:hasEAN_UCC-13>
         <rdfs:comment>G&amp;G Choco Drink</rdfs:comment>
     </owl:NamedIndividual>
@@ -3380,6 +3464,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4388844101029 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4388844101029">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#Traubenzucker"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4388844101029</gr:hasEAN_UCC-13>
         <rdfs:comment>Rewe (Beste Wahl) Trauben Zucker</rdfs:comment>
     </owl:NamedIndividual>
@@ -3389,6 +3474,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P4388844103351 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P4388844103351">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#Cookies"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4388844103351</gr:hasEAN_UCC-13>
         <rdfs:comment>Gebäck Mischung - Rewe</rdfs:comment>
     </owl:NamedIndividual>
@@ -3439,6 +3525,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P7300400126229 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P7300400126229">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#bread"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7300400126229</gr:hasEAN_UCC-13>
         <rdfs:comment>Wasa Delicate Crisp Rosemary &amp; Sea Salt</rdfs:comment>
     </owl:NamedIndividual>
@@ -3457,6 +3544,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P8000010005141 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P8000010005141">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#olive_oil"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8000010005141</gr:hasEAN_UCC-13>
         <rdfs:comment>BERTOLLI Olivenöl Originale</rdfs:comment>
     </owl:NamedIndividual>
@@ -3466,6 +3554,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P8002470008298 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P8002470008298">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#olive_oil"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8002470008298</gr:hasEAN_UCC-13>
         <rdfs:comment>Carapelli Il Nobile Natives Olivenöl</rdfs:comment>
     </owl:NamedIndividual>
@@ -3475,6 +3564,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P8076800105988 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P8076800105988">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#pasta"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8076800105988</gr:hasEAN_UCC-13>
         <rdfs:comment>Barilla - Fusilli n. 98</rdfs:comment>
     </owl:NamedIndividual>
@@ -3484,6 +3574,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P8076808150072 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P8076808150072">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#pasta"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8076808150072</gr:hasEAN_UCC-13>
         <rdfs:comment>Barilla Spaghettoni 500g Nudeln</rdfs:comment>
     </owl:NamedIndividual>
@@ -3493,7 +3584,7 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#P8076809521628 -->
 
     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai-kitchen.owl#P8076809521628">
-        <rdf:type rdf:resource="http://knowrob.org/kb/iai-kitchen.owl#BeckersBesterKlarerApfelsaft"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#pasta"/>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8076809521628</gr:hasEAN_UCC-13>
         <rdfs:comment>Piccolini - Barilla</rdfs:comment>
     </owl:NamedIndividual>
@@ -18539,8 +18630,8 @@ As long as you:
     <rdf:Description rdf:about="http://knowrob.org/kb/iai-kitchen.owl#MeerSalz">
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q282694"/>
         <rdfs:label xml:lang="en">sea salt</rdfs:label>
-        <rdfs:label xml:lang="de">Meersalz</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
+        <rdfs:label xml:lang="de">Meersalz</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
@@ -18574,14 +18665,11 @@ As long as you:
         <rdfs:label xml:lang="en">fruit</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://knowrob.org/kb/shop.owl#Vegetable">
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11004"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Vegetable"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11004"/>
         <rdfs:label xml:lang="en">vegetable</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
         <rdfs:label xml:lang="de">Gemüse</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001046">
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001105">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
@@ -18622,9 +18710,9 @@ As long as you:
         <rdfs:label xml:lang="de">alkoholhaltiges Getränk</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baby_food">
-        <rdfs:label xml:lang="de">Babynahrung</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Baby_food"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <rdfs:label xml:lang="de">Babynahrung</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q797971"/>
         <rdfs:label xml:lang="en">baby food</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
@@ -18632,8 +18720,8 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#beer">
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q44"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Beer"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">Beer</rdfs:label>
         <rdfs:label xml:lang="de">Bier</rdfs:label>
     </rdf:Description>
@@ -18674,8 +18762,8 @@ As long as you:
         <rdfs:label xml:lang="de">Brauner Zucker</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#butter">
-        <rdfs:label xml:lang="en">butter</rdfs:label>
         <oboInOwl:hasDbXref rdf:resource="http://purl.org/heals/ingredient/Butter"/>
+        <rdfs:label xml:lang="en">butter</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
         <rdfs:label xml:lang="de">Butter</rdfs:label>
     </rdf:Description>
@@ -18696,8 +18784,8 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#care_product">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="en">personal hygiene</rdfs:label>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class contains all body care products with classes for different body parts (e.g. eye_care) as well as specific applications (e.g. sunscreen) and certain product specifications (like men_product).</rdfs:comment>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class contains all body care products with classes for different body parts (e.g. eye_care) as well as specific applications (e.g. sunscreen) and certain product specifications (like men_product).</rdfs:comment>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q9292190"/>
         <rdfs:label xml:lang="de">Körperpflege</rdfs:label>
     </rdf:Description>
@@ -18720,8 +18808,8 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#conditioner">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="en">Conditioner</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Hair_conditioner"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1056607"/>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Hair_conditioner"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="de">Spülung</rdfs:label>
     </rdf:Description>
@@ -18745,13 +18833,13 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Milchprodukt</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Dairy_product"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q185217"/>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Dairy_product"/>
         <rdfs:label xml:lang="en">dairy product</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#deodorant">
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q309035"/>
         <rdfs:label xml:lang="de">Deodorant</rdfs:label>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q309035"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Deodorant"/>
         <rdfs:label xml:lang="en">Deodorant@en</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
@@ -18762,8 +18850,8 @@ As long as you:
         <rdfs:label xml:lang="de">Reiningungsmittel</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q334637"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="en">detergent</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#diet">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
@@ -18783,8 +18871,8 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#egg">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.org/heals/ingredient/ChickenEgg"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Ei</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="en">egg</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q93189"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Egg"/>
@@ -18794,27 +18882,27 @@ As long as you:
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Energy_drink"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Energy Drink</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q215754"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#first_aid">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">First Aid</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Erste Hilfe</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q133981"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#flour">
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Flour"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Mehl</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q36465"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">Flour</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#food">
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2095"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Food"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2095"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="en">Food</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
@@ -18822,8 +18910,8 @@ As long as you:
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#glue">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q500548"/>
         <rdfs:label xml:lang="en">Adhesive</rdfs:label>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q500548"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Adhesive"/>
         <rdfs:label xml:lang="de">Klebstoff</rdfs:label>
@@ -18831,8 +18919,8 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#hair_care">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q72856168"/>
-        <rdfs:label xml:lang="en">hair care</rdfs:label>
         <rdfs:label xml:lang="de">Haarpflege</rdfs:label>
+        <rdfs:label xml:lang="en">hair care</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#hair_removal">
@@ -18872,8 +18960,8 @@ As long as you:
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q8492"/>
         <rdfs:label xml:lang="de">Saft</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Juice"/>
         <rdfs:label xml:lang="en">Juice</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Juice"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#laundry_detergent">
         <rdfs:label xml:lang="de">Waschmittel</rdfs:label>
@@ -18909,8 +18997,8 @@ As long as you:
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#massage">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
-        <rdfs:label xml:lang="de">Massage</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <rdfs:label xml:lang="de">Massage</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Massage"/>
         <rdfs:label xml:lang="en">Massage</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q179415"/>
@@ -18924,8 +19012,8 @@ As long as you:
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#medication">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Arzneimittel</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q12140"/>
         <rdfs:label xml:lang="en">Medication</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Medication"/>
@@ -18934,14 +19022,14 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Non-alcoholic_drink"/>
         <rdfs:label xml:lang="en">Non-alcoholic beverage</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2647467"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Alkoholfreies Getränk</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#nut">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
-        <rdfs:label xml:lang="en">nut</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11009"/>
+        <rdfs:label xml:lang="en">nut</rdfs:label>
         <rdfs:label xml:lang="de">Nuss</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#oil">
@@ -18979,20 +19067,20 @@ As long as you:
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Perfume"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q131746"/>
         <rdfs:label xml:lang="en">Parfum</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Perfume</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#pen">
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q165447"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Pen"/>
         <rdfs:label xml:lang="en">pen</rdfs:label>
         <rdfs:label xml:lang="de">Schreibstift</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#photo">
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Photography"/>
         <rdfs:label xml:lang="de">Fotografie</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Photography"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11633"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
@@ -19009,9 +19097,9 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#plant">
         <rdfs:label xml:lang="en">Plant</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Plant"/>
         <rdfs:label xml:lang="de">Pflanze</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q756"/>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Plant"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#salt">
@@ -19026,8 +19114,8 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#sauce">
         <rdfs:label xml:lang="de">Sauce</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q178359"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Sauce"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
         <rdfs:label xml:lang="en">sauce</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#seeds">
@@ -19039,16 +19127,16 @@ As long as you:
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#shampoo">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
-        <rdfs:label xml:lang="en">Shampoo</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q180204"/>
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Shampoo"/>
+        <rdfs:label xml:lang="en">Shampoo</rdfs:label>
         <rdfs:label xml:lang="de">Shampoo</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Shampoo"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#shower_gel">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1267611"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Shower_gel"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1267611"/>
         <rdfs:label xml:lang="en">Shower gel</rdfs:label>
         <rdfs:label xml:lang="de">Duschgel</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
@@ -19074,14 +19162,14 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q42527"/>
         <rdfs:label xml:lang="en">Spice</rdfs:label>
-        <rdfs:label xml:lang="de">Gewürz</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <rdfs:label xml:lang="de">Gewürz</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#sugar">
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Sugar"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11002"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11002"/>
         <rdfs:label xml:lang="en">sugar</rdfs:label>
         <rdfs:label xml:lang="de">Zucker</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
@@ -19095,8 +19183,8 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#tampons">
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q976338"/>
         <rdfs:label xml:lang="de">Tampons</rdfs:label>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q976338"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Tampon"/>
         <rdfs:label xml:lang="en">Tampons</rdfs:label>
@@ -19129,8 +19217,8 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#to-go">
         <rdfs:label xml:lang="de">To-go Lebensmittel</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
-        <rdfs:label xml:lang="en">To-go food</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q154383"/>
+        <rdfs:label xml:lang="en">To-go food</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#toothbrush">
@@ -19172,8 +19260,8 @@ As long as you:
         <rdfs:label xml:lang="en">Water</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#well-being">
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Well-being"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q7981051"/>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Well-being"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">Well-being</rdfs:label>
@@ -19190,8 +19278,8 @@ As long as you:
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Wine"/>
         <rdfs:label xml:lang="de">Wein</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
-        <rdfs:label xml:lang="en">Wine</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q282"/>
+        <rdfs:label xml:lang="en">Wine</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#school/work">
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/School"/>
