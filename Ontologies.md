@@ -31,7 +31,7 @@ Please check out the ontologies here:
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/Ingredients.owl">Ingredients Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/ingredients.owl">Ingredients Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/ingredients.owl">Ingredients Ontology</a></td>
-<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/nonfood-ingredients.owl">non-food Ingredients Ontology</a></td>
+<td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/nonfood-ingredient.owl">non-food Ingredients Ontology</a></td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/Allergen.owl">Allergen Ontology</a></td>
@@ -60,7 +60,7 @@ Please check out the ontologies here:
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductDimensions.owl">Product Dimensions Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/dimensions.owl">Product Dimensions Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/dimensions.owl">Product Dimensions Ontology</a></td>
-    <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/dimensions.owl">Product Dimensions Ontology</a></td>
+    <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/dimension.owl">Product Dimensions Ontology</a></td>
   </tr>
   <tr>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.0/ProductToShelf.owl">Product Location Ontology</a></td>
