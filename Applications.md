@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-[back](./)
+<b>[main](./)</b>
 
 ## Applications
 
@@ -56,4 +56,4 @@ Customers might be interested in product information. We created an AR app for a
   </table>
 
 
-[back](./)
+<b>[main](./)</b>
