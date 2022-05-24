@@ -14,6 +14,7 @@ Please check out the ontologies here:
 <h3>Version 1.3</h3> changes namespaces in all files from knowrob/kg/ to the permanent URL namespace purl.org/NonFoodKG/.<br><hr>
 <h3>Version 2.0</h3> integrates the food product taxonomy from FoodOn (foodon.org/), seperates food ingredients in recipes (coming soon) from non-food ingredients in non-food products, integrates an extensive food product nutrition ontology that uses FoodOn classification and FDC data (https://fdc.nal.usda.gov/fdc-app.html#/) and adds a user profile ontology to be used in various applications.<br>
 
+<hr>
 
 <table> 
   <tr>
