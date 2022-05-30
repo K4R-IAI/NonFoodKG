@@ -24,7 +24,7 @@ To further enhance the knowledge graph information and in order to being able to
 The knowledge graph is publicly available here and on <a href="https://triply.cc/">triply</a> (links see below), many thanks to the <a href="https://krr.cs.vu.nl/">knowledge representation and reasoning group</a> at the Vrije Universiteit Amsterdam.
 
 <h3><a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">Predefined queries</a></h3> 
-<img src="UseCaseImg/grlc_logo_01.png" width="150" alt="grlc image"/>
+<img src="UseCaseImg/grlc_logo_01.png" width="50" alt="grlc image"/>
 
 We created some predefined queries for everyone to test all versions of NonFoodKG via the <a href="http://grlc.io/api/K4R-IAI/NonFoodKG/SPARQLfiles/">NonFoodKG grlc api</a>. grlc is a git repository linked data API constructor that automatically builds Web APIs using shared SPARQL queries <a href="https://github.com/CLARIAH/grlc">(grlc on github)</a>
 <h3>Version 2.0</h3> <a href="https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql">NonFoodKG via triply SPARQL api</a>
