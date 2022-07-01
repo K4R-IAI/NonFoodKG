@@ -330,6 +330,17 @@ As long as you:
     
 
 
+    <!-- http://purl.org/NonFoodKG/nutrition#alkaloid -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#alkaloid">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#plant_secondary_metabolite"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q70702"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22315"/>
+        <rdfs:label xml:lang="en">Alkaloid</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/NonFoodKG/nutrition#aluminium -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#aluminium">
@@ -416,6 +427,18 @@ As long as you:
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22977"/>
         <rdfs:label xml:lang="de">Cadmium</rdfs:label>
         <rdfs:label xml:lang="en">Cadmium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#caffeine -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#caffeine">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#alkaloid"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q60235"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27732"/>
+        <rdfs:label xml:lang="en">Caffeine</rdfs:label>
+        <rdfs:label xml:lang="de">Koffein</rdfs:label>
     </owl:Class>
     
 
