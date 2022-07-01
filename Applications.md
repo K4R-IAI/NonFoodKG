@@ -5,6 +5,10 @@ layout: default
 
 ## Applications
 
+Please also check out our web applications on this website: <a href="http://nonfoodkg.informatik.uni-bremen.de/">NonFoodKG web apps</a>
+
+These are some example applications that use NonFoodKG information:
+
 <table style="table-layout: fixed;width:100%;">
   <tr>
     <th colspan="2"><h3>Highlighting consumer preferences</h3></th>
