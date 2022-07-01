@@ -62,6 +62,12 @@ As long as you:
     
 
 
+    <!-- http://purl.org/NonFoodKG/trust#wikientry -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/trust#wikientry"/>
+    
+
+
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
@@ -312,42 +318,6 @@ As long as you:
     
 
 
-    <!-- http://purl.org/NonFoodKG/nutrition#Phosphorus -->
-
-    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#Phosphorus">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28659"/>
-        <rdfs:label xml:lang="de">Phosphor</rdfs:label>
-        <rdfs:label xml:lang="en">Phosphorus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/NonFoodKG/nutrition#Plant_secondary_metabolite -->
-
-    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#Plant_secondary_metabolite">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000013"/>
-        <rdfs:label xml:lang="en">Plant Secondary Metabolite</rdfs:label>
-        <rdfs:label xml:lang="de">Sekundäre Pflanzenstoffe</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/NonFoodKG/nutrition#Polyunsaturated_fatty_acids -->
-
-    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#Polyunsaturated_fatty_acids">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#fatty_acids"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26208"/>
-        <rdfs:label xml:lang="de">Mehrfach ungesättigte Fettsäuren</rdfs:label>
-        <rdfs:label xml:lang="en">Polyunsaturated Fatty Acids</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/NonFoodKG/nutrition#Potassium -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#Potassium">
@@ -360,34 +330,12 @@ As long as you:
     
 
 
-    <!-- http://purl.org/NonFoodKG/nutrition#Protein -->
-
-    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#Protein">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
-        <rdfs:label xml:lang="de">Protein</rdfs:label>
-        <rdfs:label xml:lang="en">Protein</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/NonFoodKG/nutrition#alkaloid -->
-
-    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#alkaloid">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#Plant_secondary_metabolite"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22315"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkaloid</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/NonFoodKG/nutrition#aluminium -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#aluminium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q663"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28984"/>
         <rdfs:label xml:lang="de">Aluminium</rdfs:label>
         <rdfs:label xml:lang="en">Aluminium</rdfs:label>
@@ -400,6 +348,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#antimony">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1099"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30513"/>
         <rdfs:label xml:lang="de">Antimon</rdfs:label>
         <rdfs:label xml:lang="en">Antimony</rdfs:label>
@@ -412,6 +361,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#arsenic">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q871"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27563"/>
         <rdfs:label xml:lang="de">Arsen</rdfs:label>
         <rdfs:label xml:lang="en">Arsenic</rdfs:label>
@@ -425,6 +375,7 @@ As long as you:
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000090"/>
+        <rdfs:label xml:lang="en">Ash</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ash</rdfs:label>
     </owl:Class>
     
@@ -435,6 +386,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#barium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1112"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32595"/>
         <rdfs:label xml:lang="de">Barium</rdfs:label>
         <rdfs:label xml:lang="en">Barium</rdfs:label>
@@ -447,6 +399,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#boron">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q618"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27560"/>
         <rdfs:label xml:lang="de">Bor</rdfs:label>
         <rdfs:label xml:lang="en">Boron</rdfs:label>
@@ -459,21 +412,10 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#cadmium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1091"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22977"/>
         <rdfs:label xml:lang="de">Cadmium</rdfs:label>
         <rdfs:label xml:lang="en">Cadmium</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/NonFoodKG/nutrition#caffeine -->
-
-    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#caffeine">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#alkaloid"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27732"/>
-        <rdfs:label xml:lang="en">Caffeine</rdfs:label>
-        <rdfs:label xml:lang="de">Koffein</rdfs:label>
     </owl:Class>
     
 
@@ -483,6 +425,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#calcium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q706"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22984"/>
         <rdfs:label xml:lang="de">Calcium</rdfs:label>
         <rdfs:label xml:lang="en">Calcium</rdfs:label>
@@ -495,6 +438,8 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#carbohydrates">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11358"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q11358</trust:wikientry>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16646"/>
         <rdfs:label xml:lang="en">Carbohydrate</rdfs:label>
         <rdfs:label xml:lang="de">Kohlenhydrate</rdfs:label>
@@ -507,6 +452,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#chloride">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q108200"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17996"/>
         <rdfs:label xml:lang="de">Chlorid</rdfs:label>
         <rdfs:label xml:lang="en">Chloride</rdfs:label>
@@ -519,6 +465,9 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#cholesterol">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#sterol"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q43656"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q43656</trust:wikientry>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15889"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16113"/>
         <rdfs:label xml:lang="de">Cholesterin</rdfs:label>
         <rdfs:label xml:lang="en">Cholesterol</rdfs:label>
@@ -531,6 +480,8 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#chromium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q725"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22977"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28073"/>
         <rdfs:label xml:lang="de">Chrom</rdfs:label>
         <rdfs:label xml:lang="en">Chromium</rdfs:label>
@@ -543,6 +494,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#cobalt">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q740"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27638"/>
         <rdfs:label xml:lang="en">Cobalt</rdfs:label>
         <rdfs:label xml:lang="de">Kobalt</rdfs:label>
@@ -555,6 +507,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#copper">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q753"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28694"/>
         <rdfs:label xml:lang="en">Copper</rdfs:label>
         <rdfs:label xml:lang="de">Kupfer</rdfs:label>
@@ -567,6 +520,8 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#dietary_fibre">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#carbohydrates"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q215210"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q215210</trust:wikientry>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000005"/>
         <rdfs:label xml:lang="de">Ballaststoffe</rdfs:label>
         <rdfs:label xml:lang="en">Dietary Fibre</rdfs:label>
@@ -579,8 +534,12 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#disaccharide">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#sugar"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q173600"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q173600</trust:wikientry>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36233"/>
+        <rdfs:label xml:lang="de">Disaccharide</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disaccharide</rdfs:label>
+        <rdfs:label xml:lang="en">Disaccharides</rdfs:label>
     </owl:Class>
     
 
@@ -590,6 +549,8 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#fatty_acids">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#lipid"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q61476"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q61476</trust:wikientry>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35366"/>
         <rdfs:label xml:lang="en">Fatty Acids</rdfs:label>
         <rdfs:label xml:lang="de">Fettsäuren</rdfs:label>
@@ -602,7 +563,9 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#fluoride">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q44793182"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17051"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28694"/>
         <rdfs:label xml:lang="de">Fluorid</rdfs:label>
         <rdfs:label xml:lang="en">Fluoride</rdfs:label>
     </owl:Class>
@@ -614,7 +577,10 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#fructose">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#monosaccharide"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q61738075"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28757"/>
+        <rdfs:label xml:lang="de">Fructose</rdfs:label>
+        <rdfs:label xml:lang="en">Fructose</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fructose</rdfs:label>
     </owl:Class>
     
@@ -625,7 +591,10 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#galactose">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#monosaccharide"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q66589593"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28260"/>
+        <rdfs:label xml:lang="de">Galactose</rdfs:label>
+        <rdfs:label xml:lang="en">Galactose</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galactose</rdfs:label>
     </owl:Class>
     
@@ -636,8 +605,11 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#glucose">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#monosaccharide"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q37525"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17234"/>
+        <rdfs:label xml:lang="en">Glucose</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose</rdfs:label>
+        <rdfs:label xml:lang="de">Glukose</rdfs:label>
     </owl:Class>
     
 
@@ -647,6 +619,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#iodine">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1103"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24859"/>
         <rdfs:label xml:lang="en">Iodine</rdfs:label>
         <rdfs:label xml:lang="de">Jod</rdfs:label>
@@ -659,6 +632,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#iron">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q677"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18248"/>
         <rdfs:label xml:lang="de">Eisen</rdfs:label>
         <rdfs:label xml:lang="en">Iron</rdfs:label>
@@ -671,7 +645,11 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#lactose">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#disaccharide"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q127900"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17716"/>
+        <rdfs:label xml:lang="en">Lactose</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lactose</rdfs:label>
+        <rdfs:label xml:lang="de">Laktose</rdfs:label>
     </owl:Class>
     
 
@@ -681,6 +659,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#lead">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q708"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25016"/>
         <rdfs:label xml:lang="de">Blei</rdfs:label>
         <rdfs:label xml:lang="en">Lead</rdfs:label>
@@ -693,6 +672,8 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#lipid">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11367"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q11367</trust:wikientry>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18059"/>
         <rdfs:label xml:lang="de">Gesamtfett</rdfs:label>
         <rdfs:label xml:lang="en">Lipid</rdfs:label>
@@ -705,6 +686,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#lithium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q568"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30145"/>
         <rdfs:label xml:lang="de">Lithium</rdfs:label>
         <rdfs:label xml:lang="en">Lithium</rdfs:label>
@@ -717,6 +699,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#macro_element">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#minerals"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q912107"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000011"/>
         <rdfs:label xml:lang="en">Macro Elements</rdfs:label>
         <rdfs:label xml:lang="de">Makro Elemente</rdfs:label>
@@ -729,6 +712,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#magnesium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q660"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25107"/>
         <rdfs:label xml:lang="de">Magnesium</rdfs:label>
         <rdfs:label xml:lang="en">Magnesium</rdfs:label>
@@ -741,7 +725,10 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#maltose">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#disaccharide"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q170002"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17306"/>
+        <rdfs:label xml:lang="de">Maltose</rdfs:label>
+        <rdfs:label xml:lang="en">Maltose</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maltose</rdfs:label>
     </owl:Class>
     
@@ -752,6 +739,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#manganese">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q731"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18291"/>
         <rdfs:label xml:lang="de">Mangan</rdfs:label>
         <rdfs:label xml:lang="en">Manganese</rdfs:label>
@@ -764,6 +752,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#minerals">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q7946"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_167164"/>
         <rdfs:label xml:lang="en">Minerals</rdfs:label>
         <rdfs:label xml:lang="de">Mineralstoffe</rdfs:label>
@@ -776,8 +765,11 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#monosaccharide">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#sugar"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q133516"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35381"/>
+        <rdfs:label xml:lang="de">Monosaccharide</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monosaccharide</rdfs:label>
+        <rdfs:label xml:lang="en">Monosaccharides</rdfs:label>
     </owl:Class>
     
 
@@ -787,6 +779,8 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#monounsaturated_fatty_acids">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#fatty_acids"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q61738980"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q61738980</trust:wikientry>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25413"/>
         <rdfs:label xml:lang="de">Einfach ungesättigte Fettsäuren</rdfs:label>
         <rdfs:label xml:lang="en">Monounsaturated Fatty Acids</rdfs:label>
@@ -799,6 +793,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#nickel">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q744"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28112"/>
         <rdfs:label xml:lang="de">Nickel</rdfs:label>
         <rdfs:label xml:lang="en">Nickel</rdfs:label>
@@ -811,6 +806,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#nitrogen">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q627"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25555"/>
         <rdfs:label xml:lang="en">Nitrogen</rdfs:label>
         <rdfs:label xml:lang="de">Stickstoff</rdfs:label>
@@ -825,8 +821,73 @@ As long as you:
         <unit_range xml:lang="de">Einheiten der Nährstoffe haben die Größen G: Gramm, MG: Milligramm, UG: Mikrogramm</unit_range>
         <unit_range xml:lang="en">Units of nutrient are measured in G: gram, MG: milligram and UG: microgram</unit_range>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2138622"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutritional Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#phosphorus -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#phosphorus">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q674"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28659"/>
+        <rdfs:label xml:lang="de">Phosphor</rdfs:label>
+        <rdfs:label xml:lang="en">Phosphorus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#plant_secondary_metabolite -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#plant_secondary_metabolite">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q906663"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000013"/>
+        <rdfs:label xml:lang="en">Plant Secondary Metabolite</rdfs:label>
+        <rdfs:label xml:lang="de">Sekundäre Pflanzenstoffe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#polyunsaturated_fatty_acids -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#polyunsaturated_fatty_acids">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#fatty_acids"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2005087"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26208"/>
+        <rdfs:label xml:lang="de">Mehrfach ungesättigte Fettsäuren</rdfs:label>
+        <rdfs:label xml:lang="en">Polyunsaturated Fatty Acids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#potassium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#potassium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q703"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26216"/>
+        <rdfs:label xml:lang="de">Kalium</rdfs:label>
+        <rdfs:label xml:lang="en">Potassium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#protein -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#protein">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q8054"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <rdfs:label xml:lang="de">Protein</rdfs:label>
+        <rdfs:label xml:lang="en">Protein</rdfs:label>
     </owl:Class>
     
 
@@ -836,7 +897,9 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#rubidium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q895"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33322"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33322."/>
         <rdfs:label xml:lang="de">Rubidium</rdfs:label>
         <rdfs:label xml:lang="en">Rubidium</rdfs:label>
     </owl:Class>
@@ -848,6 +911,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#salt">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q12370"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24866"/>
         <rdfs:label xml:lang="en">Salt</rdfs:label>
         <rdfs:label xml:lang="de">Salz</rdfs:label>
@@ -860,6 +924,8 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#saturated_fatty_acids">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#fatty_acids"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11789887"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q11789887</trust:wikientry>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26607"/>
         <rdfs:label xml:lang="de">Gesättigte Fettsäuren</rdfs:label>
         <rdfs:label xml:lang="en">Saturated Fatty Acids</rdfs:label>
@@ -872,6 +938,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#selenium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q876"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27568"/>
         <rdfs:label xml:lang="de">Selen</rdfs:label>
         <rdfs:label xml:lang="en">Selenium</rdfs:label>
@@ -884,6 +951,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#sodium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q658"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26708"/>
         <rdfs:label xml:lang="de">Natrium</rdfs:label>
         <rdfs:label xml:lang="en">Sodium</rdfs:label>
@@ -896,7 +964,11 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#starch">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#carbohydrates"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q41534"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q41534</trust:wikientry>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28017"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/heals/ingredient/Cornstarch"/>
+        <oboInOwl:hasDbXref>http://purl.org/heals/ingredient/Cornstarch</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Starch</rdfs:label>
         <rdfs:label xml:lang="de">Stärke</rdfs:label>
     </owl:Class>
@@ -908,7 +980,11 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#sterol">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#lipid"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q143623"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q143623</trust:wikientry>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15889"/>
+        <rdfs:label xml:lang="de">Sterol</rdfs:label>
+        <rdfs:label xml:lang="en">Sterol</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sterol</rdfs:label>
     </owl:Class>
     
@@ -919,6 +995,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#strontium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q938"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33324"/>
         <rdfs:label xml:lang="de">Strontium</rdfs:label>
         <rdfs:label xml:lang="en">Strontium</rdfs:label>
@@ -931,7 +1008,10 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#sucrose">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#disaccharide"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q4027534"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17992"/>
+        <rdfs:label xml:lang="de">Saccharose</rdfs:label>
+        <rdfs:label xml:lang="en">Sucrose</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sucrose</rdfs:label>
     </owl:Class>
     
@@ -942,7 +1022,9 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#sugar">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#carbohydrates"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11002"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000004"/>
+        <oboInOwl:hasDbXref>https://www.wikidata.org/entity/Q11002</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Sugar</rdfs:label>
         <rdfs:label xml:lang="de">Zucker</rdfs:label>
     </owl:Class>
@@ -954,6 +1036,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#sulfur">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q682"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26833"/>
         <rdfs:label xml:lang="de">Schwefel</rdfs:label>
         <rdfs:label xml:lang="en">Sulfur</rdfs:label>
@@ -966,6 +1049,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#tin">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1096"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27007"/>
         <rdfs:label xml:lang="en">Tin</rdfs:label>
         <rdfs:label xml:lang="de">Zinn</rdfs:label>
@@ -978,6 +1062,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#titanium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q716"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33341"/>
         <rdfs:label xml:lang="de">Titan</rdfs:label>
         <rdfs:label xml:lang="en">Titanium</rdfs:label>
@@ -990,6 +1075,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#trace_element">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#minerals"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q351792"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000012"/>
         <rdfs:label xml:lang="de">Spurenelemente</rdfs:label>
         <rdfs:label xml:lang="en">Trace Elements</rdfs:label>
@@ -1002,6 +1088,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#trans_fatty_acids">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#fatty_acids"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry>https://www.wikidata.org/entity/Q243465</trust:wikientry>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_166968"/>
         <rdfs:label xml:lang="en">Trans Fatty Acids</rdfs:label>
         <rdfs:label xml:lang="de">Trans-Fettsäuren</rdfs:label>
@@ -1014,6 +1101,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vanadium">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q722"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27698"/>
         <rdfs:label xml:lang="de">Vanadium</rdfs:label>
         <rdfs:label xml:lang="en">Vanadium</rdfs:label>
@@ -1026,6 +1114,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q34956"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000014"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin</rdfs:label>
     </owl:Class>
@@ -1037,6 +1126,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_A">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q18225"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_12777"/>
         <rdfs:label xml:lang="de">Vitamin A</rdfs:label>
         <rdfs:label xml:lang="en">Vitamin A</rdfs:label>
@@ -1049,6 +1139,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q183206"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_75769"/>
         <rdfs:label xml:lang="de">Vitamin B</rdfs:label>
         <rdfs:label xml:lang="en">Vitamin B</rdfs:label>
@@ -1061,6 +1152,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B1">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q83187"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26948"/>
         <rdfs:label xml:lang="de">Thiamin</rdfs:label>
         <rdfs:label xml:lang="en">Thiamin</rdfs:label>
@@ -1073,6 +1165,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B12">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q187706"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176843"/>
         <rdfs:label xml:lang="de">Vitamin B12</rdfs:label>
         <rdfs:label xml:lang="en">Vitamin B12</rdfs:label>
@@ -1085,6 +1178,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B2">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q130365"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176838"/>
         <rdfs:label xml:lang="de">Riboflavin</rdfs:label>
         <rdfs:label xml:lang="en">Riboflavin</rdfs:label>
@@ -1097,6 +1191,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B3">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q134658"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176839"/>
         <rdfs:label xml:lang="en">Niacin</rdfs:label>
     </owl:Class>
@@ -1108,6 +1203,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B5">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q179894"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176840"/>
         <rdfs:label xml:lang="en">Pantothenic acid</rdfs:label>
         <rdfs:label xml:lang="de">Pantothensäure</rdfs:label>
@@ -1120,6 +1216,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B6">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q205130"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27306"/>
         <rdfs:label xml:lang="de">Vitamin B6</rdfs:label>
         <rdfs:label xml:lang="en">Vitamin B6</rdfs:label>
@@ -1132,6 +1229,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B7">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q181354"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176841"/>
         <rdfs:label xml:lang="de">Biotin</rdfs:label>
         <rdfs:label xml:lang="en">Biotin</rdfs:label>
@@ -1144,6 +1242,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B9">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q127060"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176842"/>
         <rdfs:label xml:lang="en">Folate</rdfs:label>
         <rdfs:label xml:lang="de">Folsäure</rdfs:label>
@@ -1156,6 +1255,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q199678"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176783"/>
         <rdfs:label xml:lang="de">Vitamin C</rdfs:label>
         <rdfs:label xml:lang="en">Vitamin C</rdfs:label>
@@ -1168,6 +1268,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_D">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q175621"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27300"/>
         <rdfs:label xml:lang="de">Vitamin D</rdfs:label>
         <rdfs:label xml:lang="en">Vitamin D</rdfs:label>
@@ -1180,6 +1281,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_E">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q158348"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33234"/>
         <rdfs:label xml:lang="de">Vitamin E</rdfs:label>
         <rdfs:label xml:lang="en">Vitamin E</rdfs:label>
@@ -1192,6 +1294,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_K">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q182338"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28384"/>
         <rdfs:label xml:lang="de">Vitamin K</rdfs:label>
         <rdfs:label xml:lang="en">Vitamin K</rdfs:label>
@@ -1204,6 +1307,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#water">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q283"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15377"/>
         <rdfs:label xml:lang="de">Wasser</rdfs:label>
         <rdfs:label xml:lang="en">Water</rdfs:label>
@@ -1216,6 +1320,7 @@ As long as you:
     <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#zinc">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#foodon"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q758"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27363"/>
         <rdfs:label xml:lang="en">Zinc</rdfs:label>
         <rdfs:label xml:lang="de">Zink</rdfs:label>
@@ -1227,6 +1332,7 @@ As long as you:
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#Product">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#knowrob"/>
     </owl:Class>
     
 
@@ -6901,20 +7007,6 @@ As long as you:
         <gr:hasEAN_UCC-13>8888650407132</gr:hasEAN_UCC-13>
         <gr:name>Tiger Balm Nacken- und Schulter Balsam</gr:name>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#Product">
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/nutrition#knowrob"/>
-    </rdf:Description>
 </rdf:RDF>
 
 

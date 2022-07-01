@@ -1,0 +1,2829 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/NonFoodKG/food-nutrition#"
+     xml:base="http://purl.org/NonFoodKG/food-nutrition"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Spec="https://www.omg.org/techprocess/ab/SpecificationMetadata/"
+     xmlns:food="http://purl.org/heals/food/"
+     xmlns:oboI="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:term="http://purl.org/dc/terms/"
+     xmlns:user="http://purl.org/NonFoodKG/user-profile#"
+     xmlns:trust="http://purl.org/NonFoodKG/trust#"
+     xmlns:symptom-nutrition="http://purl.org/NonFoodKG/symptom-nutrition#">
+    <owl:Ontology rdf:about="http://purl.org/NonFoodKG/symptom-nutrition">
+        <owl:versionIRI rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition/1.0"/>
+        <term:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michaela Kümpel, Naser Azizi, Sorin Arion</term:contributor>
+        <term:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://opendatacommons.org/licenses/by/1-0/</term:license>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrition information from the FDC website (https://fdc.nal.usda.gov/), linked to FoodOn taxonomy (https://foodon.org/), symptom ontology (https://www.ebi.ac.uk/ols/ontologies/doid) and a user profile.</rdfs:comment>
+        <Spec:copyright rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright (c) 2021 Michaela Kümpel
+
+This work is licensed under Open Data Commons Attribution License (ODC-BY 1.0 license).
+                              
+You are free:
+
+    To share: To copy, distribute and use the database.
+    To create: To produce works from the database.
+    To adapt: To modify, transform and build upon the database.
+
+As long as you:
+
+    Attribute the work to the original authors. You must attribute any public use of the database, or works produced from the database. For any use or redistribution of the database, or works produced from it,
+    you must make clear to others the license of the database and keep intact any notices on the original database.</Spec:copyright>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#data_type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#data_type">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data type</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#datatype_description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#datatype_description">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">datatype description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#fdc_Id -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#fdc_Id">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fdc Id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#ndbNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#ndbNumber">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ndbNumber</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#publicationDate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#publicationDate">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publicationDate</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#unit -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#unit">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#unit_range -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#unit_range">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit range</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/trust#source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/trust#source"/>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/trust#wikientry -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/NonFoodKG/trust#wikientry"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label xml:lang="en">database cross reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- https://www.omg.org/techprocess/ab/SpecificationMetadata/copyright -->
+
+    <owl:AnnotationProperty rdf:about="https://www.omg.org/techprocess/ab/SpecificationMetadata/copyright"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment">
+        <rdfs:domain rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <rdfs:range rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">possible treatment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isRealizedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isRealizedBy">
+        <rdfs:domain rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Information_Entity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#alkaloid -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#alkaloid">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#plant_secondary_metabolite"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q70702"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22315"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkaloid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#aluminium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#aluminium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q663"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28984"/>
+        <rdfs:label xml:lang="de">Aluminium</rdfs:label>
+        <rdfs:label xml:lang="en">Aluminium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#antimony -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#antimony">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1099"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30513"/>
+        <rdfs:label xml:lang="de">Antimon</rdfs:label>
+        <rdfs:label xml:lang="en">Antimony</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#arsenic -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#arsenic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q871"/>
+        <rdfs:label xml:lang="de">Arsen</rdfs:label>
+        <rdfs:label xml:lang="en">Arsenic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#ash -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#ash">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/ENVO_02000090"/>
+        <rdfs:label xml:lang="en">Ash</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#barium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#barium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1112"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32595"/>
+        <rdfs:label xml:lang="de">Barium</rdfs:label>
+        <rdfs:label xml:lang="en">Barium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#boron -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#boron">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q618"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27560"/>
+        <rdfs:label xml:lang="de">Bor</rdfs:label>
+        <rdfs:label xml:lang="en">Boron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#cadmium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#cadmium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1091"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22977"/>
+        <rdfs:label xml:lang="de">Cadmium</rdfs:label>
+        <rdfs:label xml:lang="en">Cadmium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#caffeine -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#caffeine">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#alkaloid"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q60235"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27732"/>
+        <rdfs:label xml:lang="en">Caffeine</rdfs:label>
+        <rdfs:label xml:lang="de">Koffein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#calcium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#calcium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q706"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22984"/>
+        <rdfs:label xml:lang="de">Calcium</rdfs:label>
+        <rdfs:label xml:lang="en">Calcium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#carbohydrates -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#carbohydrates">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11358"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16646"/>
+        <rdfs:label xml:lang="en">Carbohydrate</rdfs:label>
+        <rdfs:label xml:lang="de">Kohlenhydrate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#chloride -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#chloride">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q108200"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17996"/>
+        <rdfs:label xml:lang="de">Chlorid</rdfs:label>
+        <rdfs:label xml:lang="en">Chloride</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#cholesterol -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#cholesterol">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#sterol"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q43656"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15889"/>
+        <rdfs:label xml:lang="de">Cholesterin</rdfs:label>
+        <rdfs:label xml:lang="en">Cholesterol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#chromium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#chromium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q725"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22977"/>
+        <rdfs:label xml:lang="de">Chrom</rdfs:label>
+        <rdfs:label xml:lang="en">Chromium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#cobalt -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#cobalt">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q740"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27638"/>
+        <rdfs:label xml:lang="en">Cobalt</rdfs:label>
+        <rdfs:label xml:lang="de">Kobalt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#copper -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#copper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q753"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28694"/>
+        <rdfs:label xml:lang="en">Copper</rdfs:label>
+        <rdfs:label xml:lang="de">Kupfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#dietary_fibre -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#dietary_fibre">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#carbohydrates"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q215210"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000005"/>
+        <rdfs:label xml:lang="de">Ballaststoffe</rdfs:label>
+        <rdfs:label xml:lang="en">Dietary Fibre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#disaccharide -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#disaccharide">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#sugar"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q173600"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36233"/>
+        <rdfs:label xml:lang="de">Disaccharide</rdfs:label>
+        <rdfs:label xml:lang="en">Disaccharides</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#fatty_acids -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#fatty_acids">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#lipid"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q61476"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35366"/>
+        <rdfs:label xml:lang="en">Fatty Acids</rdfs:label>
+        <rdfs:label xml:lang="de">Fettsäuren</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#fluoride -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#fluoride">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q44793182"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28694"/>
+        <rdfs:label xml:lang="de">Fluorid</rdfs:label>
+        <rdfs:label xml:lang="en">Fluoride</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#fructose -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#fructose">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#monosaccharide"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q61738075"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28757"/>
+        <rdfs:label xml:lang="de">Fructose</rdfs:label>
+        <rdfs:label xml:lang="en">Fructose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#galactose -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#galactose">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#monosaccharide"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q66589593"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28260"/>
+        <rdfs:label xml:lang="de">Galactose</rdfs:label>
+        <rdfs:label xml:lang="en">Galactose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#glucose -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#glucose">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#monosaccharide"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q37525"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17234"/>
+        <rdfs:label xml:lang="en">Glucose</rdfs:label>
+        <rdfs:label xml:lang="de">Glukose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#iodine -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#iodine">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1103"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24859"/>
+        <rdfs:label xml:lang="en">Iodine</rdfs:label>
+        <rdfs:label xml:lang="de">Jod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#iron -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#iron">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q677"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18248"/>
+        <rdfs:label xml:lang="de">Eisen</rdfs:label>
+        <rdfs:label xml:lang="en">Iron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#lactose -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#lactose">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#disaccharide"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q127900"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17716"/>
+        <rdfs:label xml:lang="en">Lactose</rdfs:label>
+        <rdfs:label xml:lang="de">Laktose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#lead -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#lead">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q708"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25016"/>
+        <rdfs:label xml:lang="de">Blei</rdfs:label>
+        <rdfs:label xml:lang="en">Lead</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#lipid -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#lipid">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11367"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18059"/>
+        <rdfs:label xml:lang="de">Gesamtfett</rdfs:label>
+        <rdfs:label xml:lang="en">Lipid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#lithium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#lithium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q568"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30145"/>
+        <rdfs:label xml:lang="de">Lithium</rdfs:label>
+        <rdfs:label xml:lang="en">Lithium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#macro_element -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#macro_element">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#minerals"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q912107"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000011"/>
+        <rdfs:label xml:lang="en">Macro Elements</rdfs:label>
+        <rdfs:label xml:lang="de">Makro Elemente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#magnesium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#magnesium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q660"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25107"/>
+        <rdfs:label xml:lang="de">Magnesium</rdfs:label>
+        <rdfs:label xml:lang="en">Magnesium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#maltose -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#maltose">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#disaccharide"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q170002"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17306"/>
+        <rdfs:label xml:lang="de">Maltose</rdfs:label>
+        <rdfs:label xml:lang="en">Maltose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#manganese -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#manganese">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q731"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18291"/>
+        <rdfs:label xml:lang="de">Mangan</rdfs:label>
+        <rdfs:label xml:lang="en">Manganese</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#minerals -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#minerals">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q7946"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_167164"/>
+        <rdfs:label xml:lang="en">Minerals</rdfs:label>
+        <rdfs:label xml:lang="de">Mineralstoffe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#monosaccharide -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#monosaccharide">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#sugar"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q133516"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35381"/>
+        <rdfs:label xml:lang="de">Monosaccharide</rdfs:label>
+        <rdfs:label xml:lang="en">Monosaccharides</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#monounsaturated_fatty_acids -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#monounsaturated_fatty_acids">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#fatty_acids"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q61738980"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25413"/>
+        <rdfs:label xml:lang="de">Einfach ungesättigte Fettsäuren</rdfs:label>
+        <rdfs:label xml:lang="en">Monounsaturated Fatty Acids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#nickel -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#nickel">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q744"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28112"/>
+        <rdfs:label xml:lang="de">Nickel</rdfs:label>
+        <rdfs:label xml:lang="en">Nickel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#nitrogen -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#nitrogen">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q627"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25555"/>
+        <rdfs:label xml:lang="en">Nitrogen</rdfs:label>
+        <rdfs:label xml:lang="de">Stickstoff</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#nutritional_component -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#nutritional_component">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2138622"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutritional Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#phosphorus -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#phosphorus">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q674"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28659"/>
+        <rdfs:label xml:lang="de">Phosphor</rdfs:label>
+        <rdfs:label xml:lang="en">Phosphorus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#plant_secondary_metabolite -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#plant_secondary_metabolite">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q906663"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000013"/>
+        <rdfs:label xml:lang="en">Plant Secondary Metabolite</rdfs:label>
+        <rdfs:label xml:lang="de">Sekundäre Pflanzenstoffe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#polyunsaturated_fatty_acids -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#polyunsaturated_fatty_acids">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#fatty_acids"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2005087"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26208"/>
+        <rdfs:label xml:lang="de">Mehrfach ungesättigte Fettsäuren</rdfs:label>
+        <rdfs:label xml:lang="en">Polyunsaturated Fatty Acids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#potassium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#potassium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q703"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26216"/>
+        <rdfs:label xml:lang="de">Kalium</rdfs:label>
+        <rdfs:label xml:lang="en">Potassium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#protein -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#protein">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q8054"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <rdfs:label xml:lang="de">Protein</rdfs:label>
+        <rdfs:label xml:lang="en">Protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#rubidium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#rubidium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q895"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33322."/>
+        <rdfs:label xml:lang="de">Rubidium</rdfs:label>
+        <rdfs:label xml:lang="en">Rubidium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#salt -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#salt">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q12370"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24866"/>
+        <rdfs:label xml:lang="en">Salt</rdfs:label>
+        <rdfs:label xml:lang="de">Salz</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#saturated_fatty_acids -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#saturated_fatty_acids">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#fatty_acids"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11789887"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26607"/>
+        <rdfs:label xml:lang="de">Gesättigte Fettsäuren</rdfs:label>
+        <rdfs:label xml:lang="en">Saturated Fatty Acids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#selenium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#selenium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q876"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27568"/>
+        <rdfs:label xml:lang="de">Selen</rdfs:label>
+        <rdfs:label xml:lang="en">Selenium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#sodium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#sodium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q658"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26708"/>
+        <rdfs:label xml:lang="de">Natrium</rdfs:label>
+        <rdfs:label xml:lang="en">Sodium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#starch -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#starch">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#carbohydrates"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q41534"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28017"/>
+        <oboI:hasDbXref rdf:resource="http://purl.org/heals/ingredient/Cornstarch"/>
+        <rdfs:label xml:lang="en">Starch</rdfs:label>
+        <rdfs:label xml:lang="de">Stärke</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#sterol -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#sterol">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#lipid"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q143623"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15889"/>
+        <rdfs:label xml:lang="de">Sterol</rdfs:label>
+        <rdfs:label xml:lang="en">Sterol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#strontium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#strontium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q938"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33324"/>
+        <rdfs:label xml:lang="de">Strontium</rdfs:label>
+        <rdfs:label xml:lang="en">Strontium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#sucrose -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#sucrose">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#disaccharide"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q4027534"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17992"/>
+        <rdfs:label xml:lang="de">Saccharose</rdfs:label>
+        <rdfs:label xml:lang="en">Sucrose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#sugar -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#sugar">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#carbohydrates"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11002"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000004"/>
+        <rdfs:label xml:lang="en">Sugar</rdfs:label>
+        <rdfs:label xml:lang="de">Zucker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#sulfur -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#sulfur">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#macro_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q682"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26833"/>
+        <rdfs:label xml:lang="de">Schwefel</rdfs:label>
+        <rdfs:label xml:lang="en">Sulfur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#tin -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#tin">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1096"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27007"/>
+        <rdfs:label xml:lang="en">Tin</rdfs:label>
+        <rdfs:label xml:lang="de">Zinn</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#titanium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#titanium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q716"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33341"/>
+        <rdfs:label xml:lang="de">Titan</rdfs:label>
+        <rdfs:label xml:lang="en">Titanium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#trace_element -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#trace_element">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#minerals"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q351792"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000012"/>
+        <rdfs:label xml:lang="de">Spurenelemente</rdfs:label>
+        <rdfs:label xml:lang="en">Trace Elements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#transfatty_acids -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#transfatty_acids">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#fatty_acids"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q243465"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_166968"/>
+        <rdfs:label xml:lang="en">Trans Fatty Acids</rdfs:label>
+        <rdfs:label xml:lang="de">Trans-Fettsäuren</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vanadium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vanadium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q722"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27698"/>
+        <rdfs:label xml:lang="de">Vanadium</rdfs:label>
+        <rdfs:label xml:lang="en">Vanadium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q34956"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CDNO_0000014"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_A -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_A">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q18225"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_12777"/>
+        <rdfs:label xml:lang="de">Vitamin A</rdfs:label>
+        <rdfs:label xml:lang="en">Vitamin A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_B -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q183206"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_75769"/>
+        <rdfs:label xml:lang="de">Vitamin B</rdfs:label>
+        <rdfs:label xml:lang="en">Vitamin B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_B1 -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q83187"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26948"/>
+        <rdfs:label xml:lang="de">Thiamin</rdfs:label>
+        <rdfs:label xml:lang="en">Thiamin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_B12 -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B12">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q187706"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176843"/>
+        <rdfs:label xml:lang="de">Vitamin B12</rdfs:label>
+        <rdfs:label xml:lang="en">Vitamin B12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_B2 -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q130365"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176838"/>
+        <rdfs:label xml:lang="de">Riboflavin</rdfs:label>
+        <rdfs:label xml:lang="en">Riboflavin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_B3 -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q134658"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176839"/>
+        <rdfs:label xml:lang="en">Niacin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_B5 -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q179894"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176840"/>
+        <rdfs:label xml:lang="en">Pantothenic acid</rdfs:label>
+        <rdfs:label xml:lang="de">Pantothensäure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_B6 -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q205130"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27306"/>
+        <rdfs:label xml:lang="de">Vitamin B6</rdfs:label>
+        <rdfs:label xml:lang="en">Vitamin B6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_B7 -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q181354"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176841"/>
+        <rdfs:label xml:lang="de">Biotin</rdfs:label>
+        <rdfs:label xml:lang="en">Biotin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_B9 -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q127060"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176842"/>
+        <rdfs:label xml:lang="en">Folate</rdfs:label>
+        <rdfs:label xml:lang="de">Folsäure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_C -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q199678"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176783"/>
+        <rdfs:label xml:lang="de">Vitamin C</rdfs:label>
+        <rdfs:label xml:lang="en">Vitamin C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_D -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_D">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q175621"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27300"/>
+        <rdfs:label xml:lang="de">Vitamin D</rdfs:label>
+        <rdfs:label xml:lang="en">Vitamin D</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_E -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_E">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q158348"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33234"/>
+        <rdfs:label xml:lang="de">Vitamin E</rdfs:label>
+        <rdfs:label xml:lang="en">Vitamin E</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#vitamin_K -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_K">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q182338"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28384"/>
+        <rdfs:label xml:lang="de">Vitamin K</rdfs:label>
+        <rdfs:label xml:lang="en">Vitamin K</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#water -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#water">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#nutritional_component"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q283"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15377"/>
+        <rdfs:label xml:lang="de">Wasser</rdfs:label>
+        <rdfs:label xml:lang="en">Water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/nutrition#zinc -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/nutrition#zinc">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/nutrition#trace_element"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q758"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27363"/>
+        <rdfs:label xml:lang="en">Zinc</rdfs:label>
+        <rdfs:label xml:lang="de">Zink</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Anemia -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Anemia">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Hemic_System_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#iron"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B12"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q5445"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000208"/>
+        <rdfs:comment xml:lang="de">Verminderung der Hämoglobin-Konzentration im Blut</rdfs:comment>
+        <rdfs:comment xml:lang="en">decrease in number of red blood cells</rdfs:comment>
+        <rdfs:label xml:lang="en">Anemia</rdfs:label>
+        <rdfs:label xml:lang="de">Anämie</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Anemia"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#iron"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B12"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#DrugBank"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#PatientsLikeMe"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Asthenia -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Asthenia">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#General_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B1"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B12"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q633403"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000225"/>
+        <rdfs:comment xml:lang="de">Kraftlosigkeit</rdfs:comment>
+        <rdfs:comment xml:lang="en">Weakness</rdfs:comment>
+        <rdfs:label xml:lang="en">Asthenia</rdfs:label>
+        <rdfs:label xml:lang="de">Asthenie</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Asthenia"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B1"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B12"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#DrugBank"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#PatientsLikeMe"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Cardiovascular_System_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Cardiovascular_System_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000528"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular System Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Coma -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Coma">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Neurological_Physiological_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#chloride"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#sodium"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q159557"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000605"/>
+        <rdfs:label xml:lang="en">Coma</rdfs:label>
+        <rdfs:label xml:lang="de">Koma</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Coma"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#chloride"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#sodium"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Confusion -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Confusion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Neurological_Physiological_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#chloride"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#sodium"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q557945"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000016"/>
+        <rdfs:label xml:lang="en">Confusion</rdfs:label>
+        <rdfs:label xml:lang="de">Verwirrtheit</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Confusion"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#chloride"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#sodium"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Cramps -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Cramps">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#General_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#chloride"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#magnesium"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#potassium"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#sodium"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000689"/>
+        <rdfs:label xml:lang="en">Cramps</rdfs:label>
+        <rdfs:label xml:lang="de">Krämpfe</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Cramps"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#chloride"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#magnesium"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#potassium"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#sodium"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Dementia -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Dementia">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q83030"/>
+        <rdfs:label xml:lang="en">Dementia</rdfs:label>
+        <rdfs:label xml:lang="de">Demenz</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Depression -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Depression">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Neurological_Physiological_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q42844"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000022"/>
+        <rdfs:label xml:lang="de">Depression</rdfs:label>
+        <rdfs:label xml:lang="en">Depression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Depression"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Dermatitis -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Dermatitis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B3"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B7"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q229256"/>
+        <rdfs:label xml:lang="de">Dermatitis</rdfs:label>
+        <rdfs:label xml:lang="en">Dermatitis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Dermatitis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B3"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B7"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Diarrhea -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Diarrhea">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Digestive_System_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#lipid"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B3"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B9"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q40878"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000570"/>
+        <rdfs:label xml:lang="de">Diarrhea</rdfs:label>
+        <rdfs:label xml:lang="en">Diarrhea</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Diarrhea"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#lipid"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B3"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B9"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Digestive_System_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Digestive_System_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000459"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digestive System Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Disturbed_Wound_Healing -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Disturbed_Wound_Healing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:label xml:lang="en">Disturbed Wound Healing</rdfs:label>
+        <rdfs:label xml:lang="de">gestörte Wundheilung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Dizziness -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Dizziness">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Neurological_Physiological_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q10916362"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000610"/>
+        <rdfs:label xml:lang="en">Dizziness</rdfs:label>
+        <rdfs:label xml:lang="de">Schwindelgefühl</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Dizziness"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#DrugBank"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Dry_Hair -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Dry_Hair">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#lipid"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#water"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Dry Hair</rdfs:label>
+        <rdfs:label xml:lang="de">Trockenes Haar</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Dry_Hair"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#lipid"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#water"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Dry_Skin -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Dry_Skin">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#lipid"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#water"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Dry Skin</rdfs:label>
+        <rdfs:label xml:lang="de">Trockene Haut</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Dry_Skin"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#lipid"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#water"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Dyspnea -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Dyspnea">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Respiratory_System_And_Chest_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#iron"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q188008"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019153"/>
+        <rdfs:label xml:lang="en">Dyspnea</rdfs:label>
+        <rdfs:label xml:lang="de">Dyspnoe</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Dyspnea"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#iron"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Ecchymosis -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Ecchymosis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Skin_And_Integumentary_Tissue_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1322382"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000406"/>
+        <rdfs:label xml:lang="en">Ecchymosis</rdfs:label>
+        <rdfs:label xml:lang="de">Ekcyhmose</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Ecchymosis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Fatigue -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Fatigue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Neurological_Physiological_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#iron"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_D"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#water"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q9690"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019177"/>
+        <rdfs:comment xml:lang="en">Physical and/or mental weakness that does not resolve with rest or sleep</rdfs:comment>
+        <rdfs:comment xml:lang="de">Symptomkomplex von Befindlichkeitsstörungen</rdfs:comment>
+        <rdfs:label xml:lang="de">Erschöpfung</rdfs:label>
+        <rdfs:label xml:lang="en">Fatigue</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Fatigue"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#iron"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_D"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#water"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#PatientsLikeMe"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Fever -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Fever">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Neurological_Physiological_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#magnesium"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q38933"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000613"/>
+        <rdfs:label xml:lang="en">Fever</rdfs:label>
+        <rdfs:label xml:lang="de">Fieber</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Fever"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#magnesium"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#DrugBank"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#PatientsLikeMe"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#General_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#General_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000567"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Gingivitis -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Gingivitis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Head_And_Neck_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q673083"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000742"/>
+        <rdfs:label xml:lang="en">Gingivitis</rdfs:label>
+        <rdfs:label xml:lang="de">Zahnfleischentzündung</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Gingivitis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Glare_Sensitivity -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Glare_Sensitivity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Blendempfindlichkeit</rdfs:label>
+        <rdfs:label xml:lang="en">Glare Sensitivity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Glare_Sensitivity"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_A"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Glossitis -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Glossitis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1324237"/>
+        <rdfs:label xml:lang="de">Glossitis</rdfs:label>
+        <rdfs:label xml:lang="en">Glossitis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Glossitis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Hair_Loss -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Hair_Loss">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Skin_And_Integumentary_Tissue_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#iron"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#lipid"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B7"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2697787"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000440"/>
+        <rdfs:label xml:lang="de">Haarausfall</rdfs:label>
+        <rdfs:label xml:lang="en">Hair Loss</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Hair_Loss"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#iron"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#lipid"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_B7"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Head_And_Neck_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Head_And_Neck_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000597"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Head And Neck Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Headache -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Headache">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Nervous_System_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#caffeine"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#magnesium"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q86"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000504"/>
+        <rdfs:label xml:lang="en">Headache</rdfs:label>
+        <rdfs:label xml:lang="de">Kopfschmerzen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Headache"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#caffeine"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#magnesium"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#DrugBank"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#PatientsLikeMe"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Hemic_System_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Hemic_System_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019139"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood System Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Hyperglycemia -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Hyperglycemia">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#carbohydrates"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q271993"/>
+        <rdfs:label xml:lang="en">Hyperglycemia</rdfs:label>
+        <rdfs:label xml:lang="de">Hyperglykämie</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Hyperglycemia"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#carbohydrates"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Kwashiorkor -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Kwashiorkor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#protein"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q213151"/>
+        <rdfs:label xml:lang="de">Kwashiorkor</rdfs:label>
+        <rdfs:label xml:lang="en">Kwashiorkor</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Kwashiorkor"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#protein"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Linoleic_Acid_Deficiency -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Linoleic_Acid_Deficiency">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#lipid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Linoleic Acid Deficiency</rdfs:label>
+        <rdfs:label xml:lang="de">Linolsäurenmangel</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Linoleic_Acid_Deficiency"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#lipid"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Marasmus -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Marasmus">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#protein"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q582904"/>
+        <rdfs:label xml:lang="de">Marasmus</rdfs:label>
+        <rdfs:label xml:lang="en">Marasmus</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Marasmus"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#protein"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Muscuskeletal_System_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Muscuskeletal_System_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000891"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muscuskeletal System Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Myalgia -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Myalgia">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Nervous_System_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#potassium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q474959"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019161"/>
+        <rdfs:label xml:lang="en">Myalgia</rdfs:label>
+        <rdfs:label xml:lang="de">Myalgie</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Myalgia"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#potassium"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Myasthenia -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Myasthenia">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q270421"/>
+        <rdfs:label xml:lang="en">Myasthenia</rdfs:label>
+        <rdfs:label xml:lang="de">Myasthenie</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Myasthenia"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B1"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Nervous_System_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Nervous_System_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000480"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nervous System Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Neurological_Physiological_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Neurological_Physiological_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000410"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurological Physiological Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Night_Blindness -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Night_Blindness">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q7758678"/>
+        <rdfs:label xml:lang="de">Nachtblindheit</rdfs:label>
+        <rdfs:label xml:lang="en">Night_Blindness</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Night_Blindness"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_A"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non Categorized Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Nosebleed -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Nosebleed">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Head_And_Neck_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_K"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q511818"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000448"/>
+        <rdfs:label xml:lang="de">Nasenbluten</rdfs:label>
+        <rdfs:label xml:lang="en">Nosebleed</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Nosebleed"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_K"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Nutrition_Metabolism_And_Development_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Nutrition_Metabolism_And_Development_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000473"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrition Metabolism And Development Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Osteomalacia -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Osteomalacia">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_D"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q860395"/>
+        <rdfs:label xml:lang="en">Osteomalacia</rdfs:label>
+        <rdfs:label xml:lang="de">Osteomalazie</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Osteomalacia"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_D"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Paralysis -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Paralysis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Nervous_System_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#potassium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q107231"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000030"/>
+        <rdfs:label xml:lang="de">Lähmung</rdfs:label>
+        <rdfs:label xml:lang="en">Paralysis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Paralysis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#potassium"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Paresis -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Paresis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Nervous_System_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#potassium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1126769"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000659"/>
+        <rdfs:label xml:lang="de">Parese</rdfs:label>
+        <rdfs:label xml:lang="en">Paresis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Paresis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#potassium"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Reddening -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Reddening">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B7"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Reddening</rdfs:label>
+        <rdfs:label xml:lang="de">Rötung</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Reddening"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B7"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Respiratory_System_And_Chest_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Respiratory_System_And_Chest_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000514"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Respiratory System And Chest Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Scurvy -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Scurvy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q163865"/>
+        <rdfs:label xml:lang="en">Scurvy</rdfs:label>
+        <rdfs:label xml:lang="de">Skorbut</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Skin_And_Integumentary_Tissue_Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Skin_And_Integumentary_Tissue_Symptom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Symptom"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000488"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skin And Integumentary Tissue Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Skin_Athropy -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Skin_Athropy">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#lipid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Hautatrophie</rdfs:label>
+        <rdfs:label xml:lang="en">Skin Athropy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Skin_Athropy"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#lipid"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Stomatitis -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Stomatitis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q911386"/>
+        <rdfs:label xml:lang="de">Stomatitis</rdfs:label>
+        <rdfs:label xml:lang="en">Stomatitis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Stomatitis"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B6"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Susceptible_To_Infection -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Susceptible_To_Infection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Non_Categorized_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#phosphorus"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_A"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Infektanfälligkeit</rdfs:label>
+        <rdfs:label xml:lang="en">Susceptible To Infection</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Susceptible_To_Infection"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#phosphorus"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_A"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Symptom -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Symptom">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Tachycardia -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Tachycardia">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Cardiovascular_System_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q209583"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000529"/>
+        <rdfs:label xml:lang="en">Tachycarida</rdfs:label>
+        <rdfs:label xml:lang="de">Tachykardie</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Tachycardia"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#vitamin_B1"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Tetany -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Tetany">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Muscuskeletal_System_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#magnesium"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_D"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q511818"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000619"/>
+        <rdfs:label xml:lang="de">Tetanie</rdfs:label>
+        <rdfs:label xml:lang="en">Tetany</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Tetany"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#magnesium"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_D"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Thirst -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Thirst">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#General_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#water"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q474187"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000156"/>
+        <rdfs:label xml:lang="de">Durst</rdfs:label>
+        <rdfs:label xml:lang="en">Thirst</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Thirst"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/NonFoodKG/nutrition#water"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#PatientsLikeMe"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Vitamin_D_Deficiency -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Vitamin_D_Deficiency">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Nutrition_Metabolism_And_Development_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_D"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Vitamin D Deficiency</rdfs:label>
+        <rdfs:label xml:lang="de">Vitamin D Mangel</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Vitamin_D_Deficiency"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_C"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#vitamin_D"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#DrugBank"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#PatientsLikeMe"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom#Weight_Loss -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom#Weight_Loss">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom#Nutrition_Metabolism_And_Development_Symptom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#lipid"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#water"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q718113"/>
+        <oboI:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000178"/>
+        <rdfs:label xml:lang="de">Gewichtsverlust</rdfs:label>
+        <rdfs:label xml:lang="en">Weight Loss</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/NonFoodKG/symptom#Weight_Loss"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#possible_treatment"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#lipid"/>
+                            <rdf:Description rdf:about="http://purl.org/NonFoodKG/nutrition#water"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#Bodyweight_Dependent_Intake -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#Bodyweight_Dependent_Intake">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Recommended_Intake"/>
+        <rdfs:label xml:lang="en">Bodyweight Dependent Intake</rdfs:label>
+        <rdfs:label xml:lang="de">Körpergewichts abhängige Zufuhr</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#Energy_Dependent_Intake -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#Energy_Dependent_Intake">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Recommended_Intake"/>
+        <trust:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.dge.de/wissenschaft/weitere-publikationen/faqs/energie/#pal</trust:source>
+        <rdfs:comment xml:lang="en">PAL-Value = Physical Activity Level a factor which is multiplied to the basal metabolism</rdfs:comment>
+        <rdfs:comment xml:lang="de">PAL-Werte = Physical Activity Level, also ein Faktor für die körperliche Aktivität,welche auf den Grundumsatz aufmultiplizert wird</rdfs:comment>
+        <rdfs:label xml:lang="de">Energie abhängige Zufuhr</rdfs:label>
+        <rdfs:label xml:lang="en">Energy Dependent Intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#Energy_Independent_Intake -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#Energy_Independent_Intake">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Recommended_Intake"/>
+        <rdfs:label xml:lang="de">Energie unabhängige Zufuhr</rdfs:label>
+        <rdfs:label xml:lang="en">Energy Independent Intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#High -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#High">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Energy_Dependent_Intake"/>
+        <rdfs:comment xml:lang="en">PAL-Value = 1.8 for retailers and sellers, waiters, mechanics and craftsman(mainly walking and standing activities</rdfs:comment>
+        <rdfs:comment xml:lang="de">PAL-Wert = 1.8 für Verkäufer, Kellner, Mechaniker, Handwerker (überwiegend gehende und stehende Arbeit) </rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#Information_Entity -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#Information_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#Low -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#Low">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Energy_Dependent_Intake"/>
+        <rdfs:comment xml:lang="en">PAL-Value = 1.4 for office workers and precision engineers (essentially sedentary activities with low to non existent leisure activities</rdfs:comment>
+        <rdfs:comment xml:lang="de">PAL-Wert = 1.4 für Büroangestellte, Feinmechaniker (ausschließlich sitzende Tätigkeit mit wenig oder keiner anstrengenden Freizeitaktivität)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#Medium -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#Medium">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Energy_Dependent_Intake"/>
+        <rdfs:comment xml:lang="en">PAL-Value = 1.6 for  assistants, students and assembly line workers (sitting and precision engineers (sedentary activities and partially standing and walking activities with little to non existent leisure activities</rdfs:comment>
+        <rdfs:comment xml:lang="de">PAL-Wert = 1.6 für Laboranten, Studenten, Fließbandarbeiter (sitzende Tätigkeit, zeitweilig auch zusätzlicher Energieaufwand für gehende und stehende Tätigkeiten, wenig oder keine anstrengende Freizeitaktivität) </rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#Recommended_Intake -->
+
+    <owl:Class rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#Recommended_Intake">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Information_Entity"/>
+        <trust:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.dge.de/wissenschaft/referenzwerte/</trust:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutzt den Referenzwerte-Tool um nach Altersgruppe, Geschlecht und nach Nährstoffe zu filtern,um so Referenzwerte zu bekommen die in einer PDF geschrieben sind und auch als Excel Datei verfügbar ist</rdfs:comment>
+        <rdfs:label xml:lang="de">Empfohlene Zufuhr</rdfs:label>
+        <rdfs:label xml:lang="en">Recommended Intake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#DrugBank -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#DrugBank">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Information_Entity"/>
+        <DUL:isRealizedBy>https://go.drugbank.com/releases/latest#open-data</DUL:isRealizedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#Ernaehrungsmedizin">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Information_Entity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NonFoodKG/symptom-nutrition#PatientsLikeMe -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/symptom-nutrition#PatientsLikeMe">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/symptom-nutrition#Information_Entity"/>
+        <DUL:isRealizedBy>https://www.patientslikeme.com/</DUL:isRealizedBy>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
