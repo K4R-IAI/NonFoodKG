@@ -46,7 +46,8 @@ Please check out the ontologies here:
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.1/ProductInfo.owl">Product Information (nutrition) Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.2/nutrition.owl">Product nutrition Ontology</a></td>
 <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/1.3/nutrition.owl">Product nutrition Ontology</a></td>
-    <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/nutrition.owl">nutrition Ontology</a><hr>
+    <td><a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/symptom-nutrition.owl">symptom to nutrition</a><hr>
+      <a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/nutrition.owl">nutrition Ontology</a><hr>
       <a href="https://raw.githubusercontent.com/K4R-IAI/NonFoodKG/master/WebGraph/2.0/food-nutrition.zip">nutrition to food (zipped)</a></td>
   </tr>
   <tr>
