@@ -126,14 +126,6 @@ As long as you:
     
 
 
-    <!-- http://purl.org/NonFoodKG/quantity#Miligram -->
-
-    <owl:Class rdf:about="http://purl.org/NonFoodKG/quantity#Miligram">
-        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/NonFoodKG/quantity#Milliliter -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/quantity#Milliliter">

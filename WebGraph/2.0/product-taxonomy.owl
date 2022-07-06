@@ -20,7 +20,7 @@
      xmlns:SpecificationMetadata="http://www.omg.org/techprocess/ab/SpecificationMetadata/">
     <owl:Ontology rdf:about="http://purl.org/NonFoodKG/product-taxonomy">
         <owl:versionIRI rdf:resource="http://purl.org/NonFoodKG/product-taxonomy/2.0"/>
-        <owl:imports rdf:resource="http://purl.org/NonFoodKG/linkFoodOn/1.0"/>
+        <owl:imports rdf:resource="http://purl.org/NonFoodKG/linkFoodOn"/>
         <term:contributor>Michaela Kümpel</term:contributor>
         <term:license>https://opendatacommons.org/licenses/by/1-0/</term:license>
         <rdfs:comment>Non-food product classification based on merged online store sitemaps of different websites (https://www.aldi-nord.de/ and https://www.dm.de/).
@@ -327,7 +327,6 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#Chardonnay -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#Chardonnay">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Bottle"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#alcoholic_beverages"/>
     </owl:Class>
     
@@ -380,8 +379,14 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#FettarmeMilch -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#FettarmeMilch">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#milk"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#milk"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -390,8 +395,14 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#FrischeMilch -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#FrischeMilch">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#milk"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#milk"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -416,8 +427,14 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#H-Milch -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#H-Milch">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#milk"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#milk"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -443,8 +460,14 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#JaMilch -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#JaMilch">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#milk"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#milk"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -608,8 +631,14 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#PfannerGruneIcetea -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#PfannerGruneIcetea">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Juice"/>
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Tea-Iced"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#Juice"/>
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#Tea-Iced"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -625,8 +654,14 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#PfannerPfirsichIcetea -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#PfannerPfirsichIcetea">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Juice"/>
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#Tea-Iced"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#Juice"/>
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#Tea-Iced"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -796,8 +831,14 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#VollMilch -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#VollMilch">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#milk"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#milk"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -806,8 +847,14 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#WeideMilch -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#WeideMilch">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#milk"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#milk"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -816,8 +863,14 @@ As long as you:
     <!-- http://knowrob.org/kb/iai-kitchen.owl#WeideMilchSmall -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/iai-kitchen.owl#WeideMilchSmall">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#milk"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#milk"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://knowrob.org/kb/knowrob.owl#pathToCadModel"/>
@@ -921,8 +974,14 @@ As long as you:
     <!-- http://knowrob.org/kb/knowrob.owl#Buttermilk -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#Buttermilk">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#beverage"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#beverage"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
         <rdfs:label xml:lang="de">Buttermilch</rdfs:label>
         <rdfs:label xml:lang="en">buttermilk</rdfs:label>
@@ -1117,8 +1176,14 @@ As long as you:
     <!-- http://knowrob.org/kb/knowrob.owl#TomatoBasedSauce -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#TomatoBasedSauce">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#convenience_food"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#sauce"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#convenience_food"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#sauce"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1127,8 +1192,14 @@ As long as you:
     <!-- http://knowrob.org/kb/knowrob.owl#milk -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#milk">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#beverage"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dairy_product"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#beverage"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#dairy_product"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1155,7 +1226,7 @@ As long as you:
     <!-- http://knowrob.org/kb/shop.owl#BabyBottle -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#BabyBottle">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#baby_food"/>
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/shop.owl#BabyAccessory"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1192,7 +1263,7 @@ As long as you:
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#BathAdditive">
         <owl:equivalentClass rdf:resource="http://knowrob.org/kb/shop.owl#BathroomItem"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1201,7 +1272,7 @@ As long as you:
     <!-- http://knowrob.org/kb/shop.owl#BathroomItem -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#BathroomItem">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1220,7 +1291,7 @@ As long as you:
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#BodyLotion">
         <owl:equivalentClass rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#bodylotion"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1230,7 +1301,7 @@ As long as you:
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#BodyOil">
         <owl:equivalentClass rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_oil"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
     </owl:Class>
     
 
@@ -1248,8 +1319,14 @@ As long as you:
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#CareLotion">
         <owl:equivalentClass rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#bodylotion"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#well-being"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#well-being"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1258,7 +1335,6 @@ As long as you:
     <!-- http://knowrob.org/kb/shop.owl#CareProduct -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#CareProduct">
-        <owl:equivalentClass rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
@@ -1277,8 +1353,14 @@ As long as you:
     <!-- http://knowrob.org/kb/shop.owl#ChildFood -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#ChildFood">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#food"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#baby/child"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#food"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baby/child"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1413,8 +1495,14 @@ As long as you:
     <!-- http://knowrob.org/kb/shop.owl#FruitOrCereal -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#FruitOrCereal">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#cereal"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#cereal"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1442,7 +1530,7 @@ As long as you:
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#HairstylingProduct">
         <owl:equivalentClass rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#hair_care"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1554,7 +1642,7 @@ As long as you:
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#MouthCareProduct">
         <owl:equivalentClass rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#tooth_care"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1619,8 +1707,14 @@ As long as you:
     <!-- http://knowrob.org/kb/shop.owl#ShoeCareProduct -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#ShoeCareProduct">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#Household"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#travel"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#Household"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#travel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1630,7 +1724,7 @@ As long as you:
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#ShowerGel">
         <owl:equivalentClass rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#shower_gel"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1751,8 +1845,14 @@ As long as you:
     <!-- http://knowrob.org/kb/shop.owl#YogurtCup -->
 
     <owl:Class rdf:about="http://knowrob.org/kb/shop.owl#YogurtCup">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dairy_product"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#dairy_product"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
     </owl:Class>
     
@@ -1879,6 +1979,14 @@ As long as you:
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001714 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001714">
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FOODON_00002139 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00002139">
@@ -1900,6 +2008,38 @@ As long as you:
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00002300">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03310306 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03310306">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#seeds"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
+        <rdfs:label xml:lang="en">sesame seed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03315184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03315184">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#seeds"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
+        <rdfs:comment xml:lang="en">A caryopsis fruit of a whole wheat wheat plant.</rdfs:comment>
+        <rdfs:label xml:lang="en">whole wheat kernel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03420177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03420177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001714"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
+        <rdfs:comment xml:lang="en">Extract, concentrate or isolate high in gluten, the predominant protein of wheat or corn.</rdfs:comment>
+        <rdfs:label xml:lang="en">gluten</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1954,8 +2094,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#baby_food -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baby_food">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#food"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#baby/child"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#food"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baby/child"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2033,10 +2179,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#body_care -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#body_care">
-        <owl:equivalentClass rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/shop.owl#CareProduct"/>
     </owl:Class>
     
 
@@ -2044,7 +2187,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#body_oil -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#body_oil">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
     </owl:Class>
     
 
@@ -2052,7 +2195,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#bodylotion -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#bodylotion">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
     </owl:Class>
     
 
@@ -2084,8 +2227,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#butter -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#butter">
-        <rdfs:subClassOf rdf:resource="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2102,14 +2251,6 @@ As long as you:
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#canola_oil">
         <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#vegetable_oil"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/NonFoodKG/product-taxonomy#care_product -->
-
-    <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#care_product">
-        <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
     </owl:Class>
     
 
@@ -2173,7 +2314,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#deodorant -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#deodorant">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
     </owl:Class>
     
 
@@ -2205,8 +2346,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#egg -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#egg">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001274"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001274"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2222,7 +2369,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#eye_care -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#eye_care">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Products designed specifically to care for eyes.</rdfs:comment>
@@ -2247,7 +2394,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#facial_care -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#facial_care">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="de">Gesichtspflege@de</rdfs:label>
@@ -2259,7 +2406,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#feminine_hygiene -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#feminine_hygiene">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q3083164"/>
@@ -2281,8 +2428,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#flour -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#flour">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001056"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001056"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2318,7 +2471,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#hair_care -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#hair_care">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
     </owl:Class>
     
 
@@ -2398,7 +2551,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#lip_care -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#lip_care">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1518347"/>
@@ -2433,7 +2586,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#massage -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#massage">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
     </owl:Class>
     
 
@@ -2457,7 +2610,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#men_product -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#men_product">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A product designed for men.</rdfs:comment>
@@ -2470,8 +2623,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#mini_product -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#mini_product">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#travel"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#travel"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mini products are products in very small sizes, made for travelling or product testing.</rdfs:comment>
@@ -2492,8 +2651,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#nut -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#nut">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001172"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001172"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#snack"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2501,8 +2666,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#oil -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#oil">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002139"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00002139"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2534,8 +2705,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#parfum -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#parfum">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#cosmetics"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#well-being"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#cosmetics"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#well-being"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2571,8 +2748,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#photo -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#photo">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#travel"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#travel"/>
+                    <rdf:Description rdf:about="http://purl.org/goodrelations/v1#ProductOrService"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2628,7 +2811,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#shower_gel -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#shower_gel">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
     </owl:Class>
     
 
@@ -2652,8 +2835,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#spice -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#spice">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001242"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001242"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2661,8 +2850,14 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#sugar -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#sugar">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#sweetener"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baking_ingredients"/>
+                    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#sweetener"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2679,7 +2874,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#sunscreen -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#sunscreen">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
     </owl:Class>
     
 
@@ -2750,7 +2945,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#tooth_care -->
 
     <owl:Class rdf:about="http://purl.org/NonFoodKG/product-taxonomy#tooth_care">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="de">Zahnpflege</rdfs:label>
@@ -9077,7 +9272,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355000903 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355000903">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24189880</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4010355000903</gr:hasEAN_UCC-13>
@@ -9162,7 +9357,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355023131 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355023131">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23096493</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4010355023131</gr:hasEAN_UCC-13>
@@ -9185,7 +9380,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355039934 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355039934">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24531368</has_DAN>
@@ -9303,7 +9498,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355080691 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355080691">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22512116</has_DAN>
@@ -9316,7 +9511,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355080998 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355080998">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24159616</has_DAN>
@@ -9329,7 +9524,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355090935 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355090935">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#eye_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24574259</has_DAN>
@@ -9494,7 +9689,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355117106 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355117106">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24982436</has_DAN>
@@ -9585,7 +9780,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355120199 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355120199">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22564764</has_DAN>
@@ -9598,7 +9793,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355120250 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355120250">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23908420</has_DAN>
@@ -9611,7 +9806,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355120557 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355120557">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22565006</has_DAN>
@@ -9624,9 +9819,9 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355120571 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355120571">
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_oil"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#bodylotion"/>
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24476126</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4010355120571</gr:hasEAN_UCC-13>
@@ -9638,7 +9833,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355120656 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355120656">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22564771</has_DAN>
@@ -9790,7 +9985,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355141583 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355141583">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22565013</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4010355141583</gr:hasEAN_UCC-13>
@@ -9814,7 +10009,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355141835 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355141835">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24685528</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4010355141835</gr:hasEAN_UCC-13>
@@ -9883,7 +10078,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355170026 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355170026">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#eye_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22532541</has_DAN>
@@ -10053,7 +10248,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355195180 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355195180">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24464093</has_DAN>
@@ -10078,7 +10273,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355197481 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355197481">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22565051</has_DAN>
@@ -10091,7 +10286,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355197504 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355197504">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22565112</has_DAN>
@@ -10104,7 +10299,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355197528 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355197528">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24531184</has_DAN>
@@ -10117,7 +10312,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355197542 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355197542">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22510105</has_DAN>
@@ -10130,7 +10325,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355197566 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355197566">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22509963</has_DAN>
@@ -10246,7 +10441,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355206848 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355206848">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22788672</has_DAN>
@@ -10509,7 +10704,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355236173 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355236173">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24769518</has_DAN>
@@ -10522,7 +10717,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355236197 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355236197">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24769358</has_DAN>
@@ -10535,7 +10730,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355236333 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355236333">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25151367</has_DAN>
@@ -10548,7 +10743,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355236418 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355236418">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22511881</has_DAN>
@@ -10573,7 +10768,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355236555 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355236555">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25226034</has_DAN>
@@ -10586,7 +10781,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355236579 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355236579">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25226027</has_DAN>
@@ -10648,7 +10843,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355247056 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355247056">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22509833</has_DAN>
@@ -10661,7 +10856,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355247117 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355247117">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24696791</has_DAN>
@@ -10881,7 +11076,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355267191 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355267191">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#eye_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22531797</has_DAN>
@@ -10894,7 +11089,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355267221 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355267221">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#eye_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22512529</has_DAN>
@@ -10907,7 +11102,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355267283 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355267283">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22663283</has_DAN>
@@ -10920,7 +11115,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355267313 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355267313">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#eye_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22532176</has_DAN>
@@ -10933,7 +11128,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355267436 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355267436">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25185812</has_DAN>
@@ -11195,7 +11390,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355298164 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355298164">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#men_product"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
@@ -11209,7 +11404,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355298188 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355298188">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#men_product"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
@@ -11223,7 +11418,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355298225 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355298225">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#men_product"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
@@ -11272,7 +11467,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355300188 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355300188">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24719759</has_DAN>
@@ -11297,7 +11492,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355300300 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355300300">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22509192</has_DAN>
@@ -11368,7 +11563,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355304889 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355304889">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22565198</has_DAN>
@@ -11759,7 +11954,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355323057 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355323057">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25206890</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4010355323057</gr:hasEAN_UCC-13>
@@ -11961,7 +12156,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355340054 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355340054">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22512192</has_DAN>
@@ -11974,7 +12169,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355340078 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355340078">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24159500</has_DAN>
@@ -11987,7 +12182,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355340092 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355340092">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22508980</has_DAN>
@@ -12120,7 +12315,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355345653 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355345653">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22396501</has_DAN>
@@ -12169,7 +12364,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355346513 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355346513">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25653359</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4010355346513</gr:hasEAN_UCC-13>
@@ -12286,7 +12481,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355370013 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355370013">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#eye_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23907409</has_DAN>
@@ -12415,7 +12610,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355376473 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355376473">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23086272</has_DAN>
@@ -12477,7 +12672,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355384522 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355384522">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28479369</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4010355384522</gr:hasEAN_UCC-13>
@@ -12606,7 +12801,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355407641 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355407641">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22523129</has_DAN>
@@ -13418,7 +13613,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355558343 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355558343">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25698985</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4010355558343</gr:hasEAN_UCC-13>
@@ -13614,7 +13809,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355585813 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355585813">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#men_product"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
@@ -14017,7 +14212,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355929631 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355929631">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22508997</has_DAN>
@@ -14042,7 +14237,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355966223 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355966223">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#eye_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22511874</has_DAN>
@@ -14066,7 +14261,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355992192 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355992192">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24150408</has_DAN>
@@ -14079,7 +14274,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355992413 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355992413">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22509499</has_DAN>
@@ -14092,7 +14287,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355992512 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355992512">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23468641</has_DAN>
@@ -14105,7 +14300,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355995308 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355995308">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22958136</has_DAN>
@@ -14118,7 +14313,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355995339 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355995339">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#eye_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23665552</has_DAN>
@@ -14131,7 +14326,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355995360 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355995360">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#eye_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22567994</has_DAN>
@@ -14144,7 +14339,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355995421 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355995421">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#eye_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22564795</has_DAN>
@@ -14169,7 +14364,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4010355996091 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4010355996091">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#facial_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22958143</has_DAN>
@@ -15029,7 +15224,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P4037900284694 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P4037900284694">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#men_product"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29707881</has_DAN>
@@ -15910,7 +16105,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P42349112 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P42349112">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24955805</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42349112</gr:hasEAN_UCC-13>
@@ -15922,7 +16117,7 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#P42349365 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#P42349365">
-        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
+        <rdf:type rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
         <rdf:type rdf:resource="http://purl.org/goodrelations/v1#ProductOrService"/>
         <has_DAN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28254096</has_DAN>
         <gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42349365</gr:hasEAN_UCC-13>
@@ -17009,6 +17204,12 @@ As long as you:
     
 
 
+    <!-- http://purl.org/NonFoodKG/product-taxonomy#body_care -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#body_care"/>
+    
+
+
     <!-- http://purl.org/NonFoodKG/product-taxonomy#body_oil -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#body_oil"/>
@@ -17048,12 +17249,6 @@ As long as you:
     <!-- http://purl.org/NonFoodKG/product-taxonomy#canola_oil -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#canola_oil"/>
-    
-
-
-    <!-- http://purl.org/NonFoodKG/product-taxonomy#care_product -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/NonFoodKG/product-taxonomy#care_product"/>
     
 
 
@@ -18630,8 +18825,8 @@ As long as you:
     <rdf:Description rdf:about="http://knowrob.org/kb/iai-kitchen.owl#MeerSalz">
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q282694"/>
         <rdfs:label xml:lang="en">sea salt</rdfs:label>
-        <rdfs:label xml:lang="de">Meersalz</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
+        <rdfs:label xml:lang="de">Meersalz</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://knowrob.org/kb/knowrob.owl#CowsMilk-Product">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
@@ -18665,8 +18860,8 @@ As long as you:
         <rdfs:label xml:lang="en">fruit</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://knowrob.org/kb/shop.owl#Vegetable">
-        <rdfs:label xml:lang="en">vegetable</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Vegetable"/>
+        <rdfs:label xml:lang="en">vegetable</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11004"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#knowrob"/>
         <rdfs:label xml:lang="de">Gemüse</rdfs:label>
@@ -18689,9 +18884,6 @@ As long as you:
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001275">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001714">
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00002250">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodOn"/>
     </rdf:Description>
@@ -18710,9 +18902,9 @@ As long as you:
         <rdfs:label xml:lang="de">alkoholhaltiges Getränk</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#baby_food">
-        <rdfs:label xml:lang="de">Babynahrung</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Baby_food"/>
+        <rdfs:label xml:lang="de">Babynahrung</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q797971"/>
         <rdfs:label xml:lang="en">baby food</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
@@ -18720,8 +18912,8 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#beer">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q44"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Beer"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">Beer</rdfs:label>
         <rdfs:label xml:lang="de">Bier</rdfs:label>
     </rdf:Description>
@@ -18733,9 +18925,17 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">Beverage</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#body_care">
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q9292190"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class contains all body care products with classes for different body parts (e.g. eye_care) as well as specific applications (e.g. sunscreen) and certain product specifications (like men_product).</rdfs:comment>
+        <rdfs:label xml:lang="en">personal hygiene</rdfs:label>
+        <rdfs:label xml:lang="de">Körperpflege</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#body_oil">
-        <rdfs:label xml:lang="de">Körperöl</rdfs:label>
         <rdfs:label xml:lang="en">Body oil</rdfs:label>
+        <rdfs:label xml:lang="de">Körperöl</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
     </rdf:Description>
@@ -18781,14 +18981,6 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
         <rdfs:label xml:lang="de">Rapsöl</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#care_product">
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
-        <rdfs:label xml:lang="en">personal hygiene</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class contains all body care products with classes for different body parts (e.g. eye_care) as well as specific applications (e.g. sunscreen) and certain product specifications (like men_product).</rdfs:comment>
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q9292190"/>
-        <rdfs:label xml:lang="de">Körperpflege</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#cereal">
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q768267"/>
         <rdfs:label xml:lang="en">Cereal</rdfs:label>
@@ -18816,15 +19008,15 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#convenience_food">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Convenience_food"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">Convenience food</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q13485782"/>
         <rdfs:label xml:lang="de">Fertiggericht</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#cosmetics">
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Cosmetics"/>
-        <rdfs:label xml:lang="de">Kosmetik</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <rdfs:label xml:lang="de">Kosmetik</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q131207"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="en">Cosmetics</rdfs:label>
@@ -18850,8 +19042,8 @@ As long as you:
         <rdfs:label xml:lang="de">Reiningungsmittel</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q334637"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="en">detergent</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#diet">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
@@ -18882,27 +19074,27 @@ As long as you:
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Energy_drink"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Energy Drink</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q215754"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#first_aid">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">First Aid</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Erste Hilfe</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q133981"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#flour">
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Flour"/>
-        <rdfs:label xml:lang="de">Mehl</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
+        <rdfs:label xml:lang="de">Mehl</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q36465"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">Flour</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#food">
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2095"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Food"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2095"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="en">Food</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
@@ -18910,8 +19102,8 @@ As long as you:
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#glue">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
-        <rdfs:label xml:lang="en">Adhesive</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q500548"/>
+        <rdfs:label xml:lang="en">Adhesive</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Adhesive"/>
         <rdfs:label xml:lang="de">Klebstoff</rdfs:label>
@@ -18920,8 +19112,8 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q72856168"/>
         <rdfs:label xml:lang="en">hair care</rdfs:label>
-        <rdfs:label xml:lang="de">Haarpflege</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <rdfs:label xml:lang="de">Haarpflege</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#hair_removal">
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Hair_removal"/>
@@ -18933,8 +19125,8 @@ As long as you:
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#handbag">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Handbag"/>
         <rdfs:label xml:lang="en">Handbag</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Handbag"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="de">Handtasche</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q467505"/>
@@ -18976,8 +19168,8 @@ As long as you:
         <rdfs:label xml:lang="en">Leggings</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="de">Leggings</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Leggings"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#lemonade">
         <rdfs:label xml:lang="de">Limonade</rdfs:label>
@@ -19022,14 +19214,14 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Non-alcoholic_drink"/>
         <rdfs:label xml:lang="en">Non-alcoholic beverage</rdfs:label>
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2647467"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q2647467"/>
         <rdfs:label xml:lang="de">Alkoholfreies Getränk</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#nut">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
-        <rdfs:label xml:lang="en">nut</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11009"/>
+        <rdfs:label xml:lang="en">nut</rdfs:label>
         <rdfs:label xml:lang="de">Nuss</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#oil">
@@ -19067,8 +19259,8 @@ As long as you:
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Perfume"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q131746"/>
         <rdfs:label xml:lang="en">Parfum</rdfs:label>
-        <rdfs:label xml:lang="de">Perfume</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
+        <rdfs:label xml:lang="de">Perfume</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#pen">
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q165447"/>
@@ -19079,17 +19271,17 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#photo">
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Photography"/>
         <rdfs:label xml:lang="de">Fotografie</rdfs:label>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Photography"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11633"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="en">photo product</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#pizza">
         <rdfs:label xml:lang="en">Pizza</rdfs:label>
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q177"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Pizza"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q177"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="de">Pizza</rdfs:label>
@@ -19097,9 +19289,9 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#plant">
         <rdfs:label xml:lang="en">Plant</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Plant"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q756"/>
         <rdfs:label xml:lang="de">Pflanze</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Plant"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#salt">
@@ -19114,8 +19306,8 @@ As long as you:
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#sauce">
         <rdfs:label xml:lang="de">Sauce</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q178359"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Sauce"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
         <rdfs:label xml:lang="en">sauce</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#seeds">
@@ -19129,14 +19321,14 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:label xml:lang="en">Shampoo</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q180204"/>
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Shampoo"/>
         <rdfs:label xml:lang="de">Shampoo</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Shampoo"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#shower_gel">
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
-        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1267611"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Shower_gel"/>
+        <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q1267611"/>
         <rdfs:label xml:lang="en">Shower gel</rdfs:label>
         <rdfs:label xml:lang="de">Duschgel</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
@@ -19166,10 +19358,10 @@ As long as you:
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#sugar">
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Sugar"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Sugar"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q11002"/>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">sugar</rdfs:label>
         <rdfs:label xml:lang="de">Zucker</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
@@ -19179,16 +19371,16 @@ As long as you:
         <rdfs:label xml:lang="en">Sunscreen</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Sunscreen"/>
-        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="de">Sonnenschutzmittel</rdfs:label>
+        <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#tampons">
         <rdfs:label xml:lang="de">Tampons</rdfs:label>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q976338"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Tampon"/>
-        <rdfs:label xml:lang="en">Tampons</rdfs:label>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
+        <rdfs:label xml:lang="en">Tampons</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#tea">
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Tea"/>
@@ -19260,8 +19452,8 @@ As long as you:
         <rdfs:label xml:lang="en">Water</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#well-being">
-        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Well-being"/>
         <trust:wikientry rdf:resource="https://www.wikidata.org/entity/Q7981051"/>
+        <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/Well-being"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#AldiNordSitemap"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#dmSitemap"/>
         <rdfs:label xml:lang="en">Well-being</rdfs:label>
@@ -19269,8 +19461,8 @@ As long as you:
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#white_sugar">
         <rdfs:label xml:lang="de">Weißer Zucker</rdfs:label>
-        <oboInOwl:hasDbXref rdf:resource="http://purl.org/heals/ingredient/WhiteSugar"/>
         <trust:source rdf:resource="http://purl.org/NonFoodKG/product-taxonomy#FoodKG"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/heals/ingredient/WhiteSugar"/>
         <rdfs:label xml:lang="en">white sugar</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/NonFoodKG/product-taxonomy#wine">
