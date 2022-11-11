@@ -1,21 +1,19 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/ProductCatalog/services/FoodToNonFood/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves location for cheapest baby food (ordered by price)
 #+ tags: 
 #+ - location
 #+ - price
 
-PREFIX loc: <http://knowrob.org/kg/location.owl#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX tax: <http://knowrob.org/kb/product-taxonomy.owl#>
+PREFIX loc: <http://purl.org/NonFoodKG/location#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
 
-
-SELECT ?product ?shelf ?shelf_floor ?price WHERE {
+SELECT ?name ?shelf ?shelf_floor ?price WHERE {
+  ?product gr:name ?name.
   ?product rdf:type tax:baby_food.
-  ?product owl:sameAs ?prod.
-  ?prod loc:stored_in ?shelf.
-  ?prod loc:stored_on ?shelf_floor.
-  ?prod loc:has_price ?price.
+  ?product loc:stored_in ?shelf.
+  ?product loc:stored_on ?shelf_floor.
+  ?product loc:has_price ?price.
 } ORDER BY ?price

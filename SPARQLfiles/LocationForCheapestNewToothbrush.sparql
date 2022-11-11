@@ -1,4 +1,4 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves shelf location for cheapest new toothbrush
 #+ tags: 
@@ -7,15 +7,15 @@
 #+ - price
 
 PREFIX loc: <http://purl.org/NonFoodKG/location#>
-PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?shelf ?shelf_floor ?class WHERE {
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+
+SELECT ?name ?shelf ?shelf_floor ?price WHERE {
+  ?product gr:name ?name.
   ?product rdf:type tax:toothbrush.
-  ?product owl:sameAs ?instance.
-  ?instance loc:has_price ?price.
-  ?instance loc:has_flag "NEU".
-  ?instance loc:stored_in ?shelf.
-  ?instance loc:stored_on ?shelf_floor.
+  ?product loc:has_price ?price.
+  ?product loc:has_flag "NEU".
+  ?product loc:stored_in ?shelf.
+  ?product loc:stored_on ?shelf_floor.
 } ORDER BY ?price

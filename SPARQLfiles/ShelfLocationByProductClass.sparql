@@ -1,17 +1,17 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
-#+ summary: Retrieves shelf location for detergent
+#+ summary: Retrieves shelf location ordered by product class
 #+ tags:
 #+ - location
 
 PREFIX loc: <http://purl.org/NonFoodKG/location#>
-PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
 
-SELECT DISTINCT ?shelf WHERE {
-  ?product rdf:type ?_class.
-  ?product owl:sameAs ?prod.
-  ?prod loc:stored_in ?shelf.
-} 
+SELECT DISTINCT ?name ?tax_class ?shelf WHERE {
+  ?product gr:name ?name.
+  ?product rdf:type ?tax_class.
+  FILTER(?tax_class != tax:Product)
+  ?product loc:stored_in ?shelf.
+} OrderBy ?tax_class

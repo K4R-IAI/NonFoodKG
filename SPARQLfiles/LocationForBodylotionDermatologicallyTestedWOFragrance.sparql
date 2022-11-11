@@ -1,4 +1,4 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves shelf location for bodylotion that is dermatologically tested, without fragrance
 #+ tags: 
@@ -6,24 +6,20 @@
 #+ - ingredients
 #+ - label
 
-PREFIX brand: <http://purl.org/NonFoodKG/brandinfo#>
-PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX loc: <http://purl.org/NonFoodKG/location#>
 PREFIX lbl: <http://purl.org/NonFoodKG/label#>
-PREFIX in: <http://purl.org/NonFoodKG/ingredients#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
+PREFIX in: <http://purl.org/NonFoodKG/nonfoodingredient#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?shelf ?shelf_floor WHERE {
- ?prod in:has_ingredient ?ingredient.
- ?ingredient rdf:type ?inclass.
- FILTER(?inclass != in:Fragrance)
-  ?prod owl:sameAs ?product.
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+
+SELECT ?name ?shelf ?shelf_floor WHERE {
+  ?product gr:name ?name.
+  ?product in:has_ingredient ?ingredient.
+  ?ingredient rdf:type ?inclass.
+  FILTER(?inclass != in:Fragrance)
   ?product rdf:type tax:bodylotion .
-  ?sub owl:sameAs ?product.
-  ?sub lbl:has_label lbl:Dermatologisch_getestet.
-  ?product owl:sameAs ?instance.
-  ?instance loc:stored_in ?shelf.
-  ?instance loc:stored_on ?shelf_floor.
+  ?product lbl:has_label lbl:Dermatologisch_getestet.
+  ?product loc:stored_in ?shelf.
+  ?product loc:stored_on ?shelf_floor.
 } GROUP BY ?shelf

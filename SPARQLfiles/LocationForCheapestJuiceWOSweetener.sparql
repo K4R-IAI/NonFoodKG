@@ -1,27 +1,26 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves shelf location for cheapest juice without sweetener
 #+ tags: 
 #+ - location
 #+ - ingredients
 #+ - price
+#+ no entries for the price
 
-PREFIX in: <http://purl.org/NonFoodKG/ingredients#>
-PREFIX gr: <http://purl.org/goodrelations/v1#>
+
+PREFIX in: <http://purl.org/NonFoodKG/nonfoodingredient#>
 PREFIX loc: <http://purl.org/NonFoodKG/location#>
-PREFIX lbl: <http://purl.org/NonFoodKG/label#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?shelf ?shelf_floor  WHERE {
-   ?prod in:has_ingredient ?ingredient.
-   ?ingredient rdf:type ?inclass.
-   FILTER(?inclass != in:Sweetener)
-  ?prod owl:sameAs ?product.
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+
+SELECT ?name ?shelf ?shelf_floor ?price WHERE {
+  ?product gr:name ?name.
+  ?product in:has_ingredient ?ingredient.
+  ?ingredient rdf:type ?inclass.
+  FILTER(?inclass != in:Sweetener)
   ?product rdf:type tax:juice.
-  ?product owl:sameAs ?instance.
-  ?instance loc:has_price ?price.
-  ?instance loc:stored_in ?shelf.
-  ?instance loc:stored_on ?shelf_floor.
+  ?product loc:has_price ?price.
+  ?product loc:stored_in ?shelf.
+  ?product loc:stored_on ?shelf_floor.
 } ORDER BY ?price

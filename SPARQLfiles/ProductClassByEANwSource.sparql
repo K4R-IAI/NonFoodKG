@@ -1,22 +1,22 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves all product classes and sources for a given EAN
 #+ tags: 
 #+ - source
 
-PREFIX lbl: <http://knowrob.org/kg/Label.owl#>
+PREFIX lbl: <http://purl.org/NonFoodKG/label#>
 PREFIX info: <http://knowrob.org/kg/ProductInfo.owl#>
-PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX trust: <http://purl.org/NonFoodKG/trust#>
 
-
-SELECT ?prod ?psource ?class ?classsource ?name WHERE {
-    ?prod tax:has_EAN ?_EAN.
-    ?prod tax:source ?psource.
-    ?prod rdf:type ?class.
-    ?class tax:source ?classsource.
+SELECT ?name ?_EAN ?psource ?class ?classsource WHERE {
+    ?product gr:name ?name.
+    ?product gr:hasEAN_UCC-13 ?_EAN.
+    ?product trust:source ?psource.
+    ?product rdf:type ?class.
+    ?class trust:source ?classsource.
     FILTER (?class != owl:NamedIndividual && ?class != tax:Product)
-    ?product owl:sameAs ?prod.
-  	?product lbl:has_name ?name.
   } 

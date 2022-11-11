@@ -1,20 +1,19 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves all products with fragrance as ingredient
 #+ tags: 
 #+ - ingredients
 
-PREFIX allergen: <http://knowrob.org/kg/allergen.owl#>
-PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
+PREFIX allergen: <http://purl.org/NonFoodKG/allergen#>
+PREFIX in: <http://purl.org/NonFoodKG/nonfoodingredient#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
 
-SELECT ?prod ?ingr ?class WHERE {
-  {  ?ingredient rdf:type allergen:Fragrance.
-  ?ingredient owl:sameAs ?ingr.}
-  UNION
-  { ?ingr rdf:type in:Fragrance.}
-  
-  ?prod in:has_ingredient ?ingr.} GROUP BY ?prod
+SELECT ?name ?ingredient  WHERE {
+  ?product gr:name ?name.
+  ?ingredient rdf:type allergen:Fragrance.
+  ?ingredient owl:sameAs ?ingredient2.
+  ?product in:has_ingredient ?ingredient2
+} GROUP BY ?product
  

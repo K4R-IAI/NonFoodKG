@@ -1,16 +1,15 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves all products with organic label
 #+ tags:
 #+  - label
 
-PREFIX in: <http://knowrob.org/kg/Ingredients.owl#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX allergen: <http://knowrob.org/kg/Allergen.owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX in: <http://purl.org/NonFoodKG/nonfoodingredient#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?product WHERE {
+SELECT DISTINCT ?product ?name WHERE {
   ?ingredient rdf:type in:organic.
   ?product in:has_ingredient ?ingredient.
+  ?product gr:name ?name.
 } 

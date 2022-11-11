@@ -1,4 +1,4 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves shelf location for new store brand products of type medication
 #+ tags: 
@@ -9,18 +9,15 @@
 PREFIX brand: <http://purl.org/NonFoodKG/brandinfo#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX loc: <http://purl.org/NonFoodKG/location#>
-PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?shelf ?shelf_floor WHERE {
-  ?prod owl:sameAs ?product.
+
+SELECT ?name ?company ?shelf ?shelf_floor WHERE {
+  ?product gr:name ?name.
   ?product rdf:type tax:medication.
-  ?product owl:sameAs ?ob.
-  ?ob gr:hasBrand ?brand.
-  ?company brand:hasStoreBrand ?brand.
-  ?product owl:sameAs ?instance.
-  ?instance loc:has_flag "NEU".
-  ?instance loc:stored_in ?shelf.
-  ?instance loc:stored_on ?shelf_floor.
+  ?product gr:hasBrand ?brand.
+  ?company brand:has_StoreBrand ?brand.
+  ?product loc:has_flag "NEU".
+  ?product loc:stored_in ?shelf.
+  ?product loc:stored_on ?shelf_floor.
 } GROUP BY ?shelf

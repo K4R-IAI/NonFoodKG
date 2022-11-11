@@ -1,18 +1,17 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves all body care products with vegan label
 #+ tags: 
 #+ - label
 
-PREFIX tax: <http://knowrob.org/kg/ProductTaxonomy.owl#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX lbl: <http://knowrob.org/kg/Label.owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX lbl: <http://purl.org/NonFoodKG/label#>
 
-
-SELECT ?product ?label WHERE {
+SELECT ?name ?label ?prod WHERE {
+    ?product gr:name ?name.
 	?product lbl:has_label ?label.
     ?label rdf:type lbl:vegan.
-    ?product owl:sameAs ?prod.
-  	?prod rdf:type tax:care_product.
-  } 
+    ?product rdf:type  tax:body_care.
+  }

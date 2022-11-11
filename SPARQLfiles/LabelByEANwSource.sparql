@@ -1,21 +1,26 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/TrustNonFoodKG/services/TrustNonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves all label and sources for a given EAN
 #+ tags: 
 #+ - source
+# NOTE NASER: mehrere Knowrob instanzen
 
-PREFIX lbl: <http://knowrob.org/kg/Label.owl#>
+PREFIX lbl: <http://purl.org/NonFoodKG/label#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX trust: <http://purl.org/NonFoodKG/trust#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX DUL: <http://www.loa-cnr.it/ontologies/DUL.owl#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
 
-
-SELECT ?product ?productsource ?label ?lblwebsite WHERE {
-  	?product lbl:has_EAN ?_EAN.
+SELECT DISTINCT ?name ?productsource ?label ?lblwebsite WHERE {
+    ?product gr:name ?name.
+  	?product gr:hasEAN_UCC-13 ?_EAN.
     ?product rdf:type ?pclass.
-    ?pclass lbl:source ?productsource.
+    ?pclass trust:source ?productsource.
 	  ?product lbl:has_label ?label.
   	?label rdf:type ?lblclass.
-    ?lblclass lbl:source ?lblsource.
+    ?lblclass trust:source ?lblsource.
     ?lblsource DUL:isRealizedBy ?lblwebsite.
+  
   } 

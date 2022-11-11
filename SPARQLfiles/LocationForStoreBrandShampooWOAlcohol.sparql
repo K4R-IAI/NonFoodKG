@@ -1,4 +1,4 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 
 #+ summary: Retrieves shelf location for store brand shampoo without alcohol
 #+ tags: 
@@ -6,26 +6,22 @@
 #+ - brand
 #+ - ingredients
 
-PREFIX in: <http://purl.org/NonFoodKG/ingredients#>
+PREFIX in: <http://purl.org/NonFoodKG/nonfoodingredient#>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX brand: <http://purl.org/NonFoodKG/brandinfo#>
 PREFIX loc: <http://purl.org/NonFoodKG/location#>
 PREFIX lbl: <http://purl.org/NonFoodKG/label#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy/>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?shelf ?shelf_floor ?label ?brand WHERE {
- ?prod in:has_ingredient ?ingredient.
+SELECT ?name ?company ?shelf ?shelf_floor ?brand WHERE {
+ ?product gr:name ?name.
+ ?product in:has_ingredient ?ingredient.
  ?ingredient rdf:type ?inclass.
  FILTER(?inclass != in:Alcohol)
-  ?prod owl:sameAs ?product.
-  ?product rdf:type tax:shampoo .
-  ?product owl:sameAs ?ob.
-  ?ob gr:hasBrand ?brand.
-  ?company brand:hasStoreBrand ?brand.
-  ?product owl:sameAs ?instance.
-  ?instance loc:stored_in ?shelf.
-  ?instance loc:stored_on ?shelf_floor.
+ ?product rdf:type tax:shampoo .
+ ?ob gr:hasBrand ?brand.
+ ?company brand:has_StoreBrand ?brand.
+ ?product loc:stored_in ?shelf.
+ ?product loc:stored_on ?shelf_floor.
 } GROUP BY ?shelf

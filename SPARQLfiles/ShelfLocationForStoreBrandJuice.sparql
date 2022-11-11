@@ -6,20 +6,17 @@
 #+ - brand
 
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX brand: <http://knowrob.org/kg/brandinfo.owl#>
-PREFIX loc: <http://knowrob.org/kg/location.owl#>
+PREFIX brand: <http://purl.org/NonFoodKG/brandinfo#>
+PREFIX loc: <http://purl.org/NonFoodKG/location#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX tax: <http://knowrob.org/kb/product-taxonomy.owl#>
+PREFIX tax: <http://purl.org/NonFoodKG/product-taxonomy#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?shelf ?shelf_floor WHERE {
+SELECT ?name ?shelf ?shelf_floor ?brand WHERE {
+  ?product gr:name ?name.
   ?product rdf:type tax:juice.
-  ?product owl:sameAs ?brandprod.
-  {?brandprod gr:hasBrand ?brand.}
-  UNION
-  {brand:dm brand:StoreBrand ?brand.}
-  ?product owl:sameAs ?prod.
-  ?prod loc:stored_in ?shelf.
-  ?prod loc:stored_on ?shelf_floor.
+  ?product gr:hasBrand ?brand.
+  brand:dm brand:has_StoreBrand ?brand.
+  ?product loc:stored_in ?shelf.
+  ?product loc:stored_on ?shelf_floor.
 } 

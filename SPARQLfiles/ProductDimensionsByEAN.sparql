@@ -1,5 +1,4 @@
-#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/NonFoodKG/services/NonFoodKG/sparql
-
+#+ endpoint: https://api.krr.triply.cc/datasets/mkumpel/FoodToNonFoodKG/services/FoodToNonFood/sparql
 #+ summary: Retrieves all product dimensions for a given EAN
 #+ tags: 
 #+ - ByEAN
